@@ -1,0 +1,2176 @@
+{
+  "generated_at": "2026-04-18T08:47:04.431782Z",
+  "total": 94,
+  "summary": {
+    "alcoholic": {
+      "label": "Алкоголь",
+      "count": 21,
+      "priority_a": 11,
+      "priority_b": 10,
+      "priority_c": 0
+    },
+    "wine": {
+      "label": "Вино",
+      "count": 20,
+      "priority_a": 12,
+      "priority_b": 7,
+      "priority_c": 1
+    },
+    "non_alcoholic": {
+      "label": "Безалкогольные",
+      "count": 26,
+      "priority_a": 11,
+      "priority_b": 13,
+      "priority_c": 2
+    },
+    "general": {
+      "label": "Брендинг",
+      "count": 27,
+      "priority_a": 9,
+      "priority_b": 12,
+      "priority_c": 6
+    }
+  },
+  "cases": [
+    {
+      "title": "Edenesque",
+      "description": "Агентство Perpendicular создало новый дизайн для растительного молока Edenesque, отойдя от клишированного минимализма: иллюстрации в стиле Матисса, цветовые коды по вкусам и скрытая капля жидкости в логотипе. Упаковка выглядит как произведение искусства, апеллируя к сообществу и эмоциям потребителей.",
+      "agency": "Perpendicular",
+      "published_at": "2026-04-17",
+      "source": "The Dieline",
+      "source_url": "https://thedieline.com/edenesque-plant-milk-looks-like-a-work-of-art/",
+      "image_url": "https://thedieline.com/wp-content/uploads/2026/04/edenesque-plant-milk-perpendicular-rebrand-dieline.jpg",
+      "subcategory": "milk",
+      "tags": [
+        "растительное молоко",
+        "иллюстрация",
+        "ребрендинг",
+        "альтернативное молоко"
+      ],
+      "also_covered_by": [],
+      "priority": "A",
+      "category": "non_alcoholic",
+      "category_label": "Безалкогольные",
+      "id": "non_alcoholic-001",
+      "subcategory_label": "Молоко"
+    },
+    {
+      "title": "Esme Rose — Эмоциональная идентичность",
+      "description": "Luna & Panda Studio создала личный tribute-брендинг: вино-письмо отца дочери, где каллиграфическая этикетка на белом фоне передаёт эмоцию, память и идентичность через минималистичные визуальные элементы. Проект демонстрирует силу personal branding в категории розовых вин.",
+      "agency": "Luna & Panda Studio",
+      "published_at": "2026-04-17",
+      "source": "World Brand Design Society",
+      "source_url": "https://worldbranddesign.com/luna-and-panda-studio-shapes-esme-rose-into-an-emotional-wine-identity-rooted-in-storytelling-and-timeless-elegance/",
+      "image_url": "https://worldbranddesign.com/wp-content/uploads/2026/03/2-Esme-Rose-world-brand-design.jpg",
+      "subcategory": "rose",
+      "tags": [
+        "каллиграфия",
+        "эмоциональный брендинг",
+        "минимализм",
+        "сторителлинг"
+      ],
+      "also_covered_by": [],
+      "priority": "A",
+      "category": "wine",
+      "category_label": "Вино",
+      "id": "wine-007",
+      "subcategory_label": "Розе"
+    },
+    {
+      "title": "Hollow State – An American Whiskey Drawn from the Margins of the Map",
+      "description": "Концептуальный новый бренд американского виски, вдохновлённый забытой картографией и архивными документами США. Дизайн строится на визуальном языке старинных карт и состаренных рукописей.",
+      "agency": "Alliron Studio",
+      "published_at": "2026-04-17",
+      "source": "World of Brand Design",
+      "source_url": "https://worldbranddesign.com/hollow-state-an-american-whiskey-drawn-from-the-margins-of-the-map/",
+      "image_url": "https://worldbranddesign.com/wp-content/uploads/2026/04/Render01.jpg",
+      "subcategory": "whisky",
+      "tags": [
+        "новый запуск",
+        "архивная эстетика",
+        "американский виски",
+        "концепт"
+      ],
+      "also_covered_by": [
+        "Packaging of the World"
+      ],
+      "priority": "A",
+      "category": "alcoholic",
+      "category_label": "Алкоголь",
+      "id": "alcoholic-000",
+      "subcategory_label": "Виски"
+    },
+    {
+      "title": "Purdey's",
+      "description": "Magpie Studio переработало дизайн линейки энергетических напитков Purdey's, создав фирменный элемент «Flow Loop» — бесконечную ленту, которая объединяет все банки в единую систему на полке. Цветовая палитра вдохновлена натуральными фруктами, а не искусственными красителями, что позиционирует бренд в wellness-сегменте.",
+      "agency": "Magpie Studio",
+      "published_at": "2026-04-17",
+      "source": "The Dieline",
+      "source_url": "https://thedieline.com/thankfully-purdeys-energy-drinks-offer-up-some-seriously-non-aggro-branding/",
+      "image_url": "https://thedieline.com/wp-content/uploads/2026/04/purdeys-magpie-studio-energy-drink-rebrand-dieline.jpg",
+      "subcategory": "energy",
+      "tags": [
+        "редизайн",
+        "wellness",
+        "энергетик",
+        "систематика цвета"
+      ],
+      "also_covered_by": [],
+      "priority": "A",
+      "category": "non_alcoholic",
+      "category_label": "Безалкогольные",
+      "id": "non_alcoholic-000",
+      "subcategory_label": "Энергетик"
+    },
+    {
+      "title": "The Well Coffeehouse",
+      "description": "Carpenter Collective разработало смелую систему айдентики и упаковки для The Well Coffeehouse из Нэшвилла, полностью отказавшись от традиционных кофейных коричневых и крафтовых цветов в пользу электрически-кобальтового синего. Восемь уникальных иллюстративных виньеток по вкусам образуют единую миссионерскую систему: каждая чашка кофе финансирует доступ к чистой воде в развивающихся странах.",
+      "agency": "Carpenter Collective",
+      "published_at": "2026-04-17",
+      "source": "Packaging of the World",
+      "source_url": "https://packagingoftheworld.com/2026/04/the-well-coffeehouse-where-blue-became-the-new-brown.html",
+      "image_url": "https://packagingoftheworld.com/wp-content/uploads/2026/04/the-well-coffeehouse-carpenter-collective-packaging.jpg",
+      "subcategory": "coffee",
+      "tags": [
+        "кофе",
+        "миссионерский брендинг",
+        "иллюстрация",
+        "нестандартный цвет"
+      ],
+      "also_covered_by": [
+        "The Dieline",
+        "Brand New"
+      ],
+      "priority": "A",
+      "category": "non_alcoholic",
+      "category_label": "Безалкогольные",
+      "id": "non_alcoholic-019",
+      "subcategory_label": "Кофе"
+    },
+    {
+      "title": "Olympique de Marseille",
+      "description": "Один из самых известных европейских футбольных клубов, Олимпик де Марсель, представил обновлённый логотип и визуальную идентику — первый значительный редизайн марки за многие годы, призванный придать клубу современный облик при сохранении фанатской ДНК.",
+      "agency": null,
+      "published_at": "2026-04-16",
+      "source": "Brand New (UnderConsideration)",
+      "source_url": "https://www.underconsideration.com/brandnew/archives/new_logo_and_identity_for_olympique_de_marseille.php",
+      "image_url": "https://www.underconsideration.com/brandnew/wp/wp-content/uploads/2026/04/olympique_de_marseille_logo_before_after.png",
+      "subcategory": "other",
+      "tags": [
+        "спорт",
+        "футбол",
+        "ребрендинг",
+        "Франция"
+      ],
+      "also_covered_by": [],
+      "priority": "A",
+      "category": "general",
+      "category_label": "Брендинг",
+      "id": "general-007",
+      "subcategory_label": "Прочее"
+    },
+    {
+      "title": "Sooki Food",
+      "description": "Нью-йоркский бренд корейского кунжутного масла Sooki получил роскошную фирменную идентику от The Collected Works: кастомный логотип с каллиграфическими буквами, персонажи в традиционных ханбоках (Sooki Boy с ракетными ногами и бабушка в бийнё), пышная текстурная палитра из красного, тёмно-синего и молочного — образец культурно-бережного, маскотного premium FMCG-брендинга.",
+      "agency": "The Collected Works",
+      "published_at": "2026-04-16",
+      "source": "BP&O",
+      "source_url": "https://bpando.org/2026/04/16/like-so-retro-but-so-the-future/",
+      "image_url": "https://bpando.org/wp-content/uploads/sooki-the-collected-works-branding-identity-logo-wordmark-typography-bpo-review-logo.jpg",
+      "subcategory": "fmcg_food",
+      "tags": [
+        "Корея",
+        "FMCG",
+        "культурный брендинг",
+        "маскот"
+      ],
+      "also_covered_by": [],
+      "priority": "A",
+      "category": "general",
+      "category_label": "Брендинг",
+      "id": "general-024",
+      "subcategory_label": "FMCG еда"
+    },
+    {
+      "title": "Tasmanian Lark Distillery – Rebrand by LOVE.",
+      "description": "Масштабный ребрендинг австралийского виски-дистиллятора Lark, разработанный агентством LOVE. для выхода на мировой рынок. Новая идентичность включает бесплатный флакон, иллюстрации тасманийской природы и стратегию «мистического острова».",
+      "agency": "LOVE",
+      "published_at": "2026-04-16",
+      "source": "World of Brand Design",
+      "source_url": "https://worldbranddesign.com/tasmanian-lark-distillery-takes-flight-with-new-identity-packaging-and-brand-world-designed-by-love/",
+      "image_url": "https://worldbranddesign.com/wp-content/uploads/2026/04/R8_LARK_05_BottleNeck_A.jpg",
+      "subcategory": "whisky",
+      "tags": [
+        "ребрендинг",
+        "люкс",
+        "новый мировой виски",
+        "иллюстрация"
+      ],
+      "also_covered_by": [
+        "Packaging of the World"
+      ],
+      "priority": "A",
+      "category": "alcoholic",
+      "category_label": "Алкоголь",
+      "id": "alcoholic-001",
+      "subcategory_label": "Виски"
+    },
+    {
+      "title": "Young Vic",
+      "description": "Легендарный лондонский театр Young Vic совместно с venturethree представил новую позицию и визуальную идентику: размытый анимированный логотип и обновлённая палитра с жёлтым в центре транслируют идею «побега от алгоритмов» и ставят живой опыт выше цифрового потребления контента.",
+      "agency": "venturethree",
+      "published_at": "2026-04-16",
+      "source": "Creative Review",
+      "source_url": "https://www.creativereview.co.uk/young-vic-new-brand-identity-venturethree/",
+      "image_url": "https://creativereview.imgix.net/uploads/2026/04/Young_Vic_New_Logo_Yellow.jpg",
+      "subcategory": "cultural",
+      "tags": [
+        "театр",
+        "культурная институция",
+        "ребрендинг",
+        "Лондон"
+      ],
+      "also_covered_by": [
+        "Instagram (venturethree)",
+        "YouWorkForThem"
+      ],
+      "priority": "A",
+      "category": "general",
+      "category_label": "Брендинг",
+      "id": "general-011",
+      "subcategory_label": "Культура"
+    },
+    {
+      "title": "Halo Reserve – Small Batch Canadian Whisky Bottle by Miguel Lagasca",
+      "description": "Дизайнер Miguel Lagasca разработал бутылку для канадского малотиражного виски Halo Reserve, используя минималистичный подход: округлый силуэт с гребешковым ободком создаёт едва заметный «ореольный» эффект. Форма говорит вместо слов — сдержанность как высшая роскошь.",
+      "agency": "Miguel Lagasca",
+      "published_at": "2026-04-15",
+      "source": "Packaging of the World",
+      "source_url": "https://packagingoftheworld.com/2026/04/halo-reserve.html",
+      "image_url": null,
+      "subcategory": "whisky",
+      "tags": [
+        "новый запуск",
+        "минимализм",
+        "форм-фактор",
+        "канада"
+      ],
+      "also_covered_by": [],
+      "priority": "A",
+      "category": "alcoholic",
+      "category_label": "Алкоголь",
+      "id": "alcoholic-016",
+      "subcategory_label": "Виски"
+    },
+    {
+      "title": "Sky Barn Oat Milk",
+      "description": "EO SPACE разработало визуальную идентичность для бариста-овсяного молока Sky Barn в стиле ретрофутуризма — с отсылками к NASA-графике и эстетике 1960-х. Высокая цилиндрическая бутылка выглядит как объект из другого времени и резко выделяется в категории растительного молока.",
+      "agency": "EO SPACE",
+      "published_at": "2026-04-15",
+      "source": "The Dieline",
+      "source_url": "https://thedieline.com/sky-barn-desiged-the-future-of-oat-milk-we-were-promised/",
+      "image_url": "https://thedieline.com/wp-content/uploads/2026/04/sky-barn-oat-milk-eo-space-packaging-dieline.jpg",
+      "subcategory": "milk",
+      "tags": [
+        "овсяное молоко",
+        "ретрофутуризм",
+        "бариста",
+        "новый бренд"
+      ],
+      "also_covered_by": [],
+      "priority": "A",
+      "category": "non_alcoholic",
+      "category_label": "Безалкогольные",
+      "id": "non_alcoholic-002",
+      "subcategory_label": "Молоко"
+    },
+    {
+      "title": "Blacklane",
+      "description": "Премиальный сервис бизнес-трансфера Blacklane (находится в процессе приобретения Uber) представил новую корпоративную идентику от агентства Anomaly: обновлённый логотип и визуальная система подчёркивают позиционирование в сегменте modern luxury и переход от трансфертного сервиса к платформе персонализированных путешествий.",
+      "agency": "Anomaly",
+      "published_at": "2026-04-14",
+      "source": "Brand New (UnderConsideration)",
+      "source_url": "https://www.underconsideration.com/brandnew/archives/new_logo_and_identity_for_blacklane_by_anomaly.php",
+      "image_url": "https://www.underconsideration.com/brandnew/wp/wp-content/uploads/2026/04/blacklane_logo_before_after.png",
+      "subcategory": "other",
+      "tags": [
+        "ребрендинг",
+        "luxury-travel",
+        "B2B",
+        "айдентика"
+      ],
+      "also_covered_by": [
+        "The Business Travel Magazine"
+      ],
+      "priority": "A",
+      "category": "general",
+      "category_label": "Брендинг",
+      "id": "general-008",
+      "subcategory_label": "Прочее"
+    },
+    {
+      "title": "Breaking Barrels – \"Not Whisky\" Brand Identity by GRIDCITY",
+      "description": "Breaking Barrels — первый бренд из портфеля Everstill Spirits, разработанный GRIDCITY (Австралия). Классическая типографика и тёплые тона маскируют революционный продукт: гуманизированный олень с топором разрубает бочку, а перевёрнутый горный пейзаж в флуоресцентных цветах сигнализирует о вызове традициям вискикурения через технологию Steel Barrel.",
+      "agency": "GRIDCITY",
+      "published_at": "2026-04-14",
+      "source": "Packaging of the World",
+      "source_url": "https://packagingoftheworld.com/2026/04/breaking-barrels.html",
+      "image_url": null,
+      "subcategory": "whisky",
+      "tags": [
+        "новый запуск",
+        "дизрупция",
+        "австралия",
+        "крафт-нарратив"
+      ],
+      "also_covered_by": [],
+      "priority": "A",
+      "category": "alcoholic",
+      "category_label": "Алкоголь",
+      "id": "alcoholic-015",
+      "subcategory_label": "Виски"
+    },
+    {
+      "title": "IV Sparkling Water",
+      "description": "Widarto Impact разработало брендинг и упаковку для премиальной саудовской газированной воды IV, построенной на принципе «радикальной простоты»: монограмма «IV» напечатана прямо на неокрашенном алюминии без этикетки. Бренд позиционируется для дизайн-грамотной аудитории в Эр-Рияде, Сингапуре и Лондоне.",
+      "agency": "Widarto Impact",
+      "published_at": "2026-04-14",
+      "source": "World of Brand Design",
+      "source_url": "https://worldbranddesign.com/iv-sparkling-water-packaging-design-by-widarto-impact-defines-premium-minimalism-through-radical-simplicity/",
+      "image_url": "https://worldbranddesign.com/wp-content/uploads/2026/04/iv-sparkling-water-widarto-impact-premium-minimalism.jpg",
+      "subcategory": "water",
+      "tags": [
+        "газированная вода",
+        "минимализм",
+        "премиум",
+        "прямая печать на алюминии"
+      ],
+      "also_covered_by": [],
+      "priority": "A",
+      "category": "non_alcoholic",
+      "category_label": "Безалкогольные",
+      "id": "non_alcoholic-006",
+      "subcategory_label": "Вода"
+    },
+    {
+      "title": "Madeira Tinta Negra 50 Years Old (Henriques & Henriques)",
+      "description": "M&A Creative Agency разработала лимитированную упаковку для 50-летней Мадейры старейшего дома с 160-летней историей: деревянный бокс с рафинированным оформлением подчёркивает наследие и люксовую позицию в сегменте крепленых вин.",
+      "agency": "M&A Creative Agency",
+      "published_at": "2026-04-14",
+      "source": "World Brand Design Society",
+      "source_url": "https://worldbranddesign.com/madeira-tinta-negra-50-years-old-packaging-by-ma-creative-agency-reflects-heritage-and-luxury-through-refined-design/",
+      "image_url": "https://worldbranddesign.com/wp-content/uploads/2026/04/Henriques50Anos_ByMACREATIVE_96DPIi-2.jpg",
+      "subcategory": "fortified",
+      "tags": [
+        "лимитированная серия",
+        "наследие",
+        "люкс",
+        "Мадейра"
+      ],
+      "also_covered_by": [],
+      "priority": "A",
+      "category": "wine",
+      "category_label": "Вино",
+      "id": "wine-008",
+      "subcategory_label": "Крепленое"
+    },
+    {
+      "title": "Motorcycle Matcha",
+      "description": "Агентство Saint-Urbain создало систему упаковки для Motorcycle Matcha, основанную на уникальной истории основателя, путешествующего по чайным регионам Японии на мотоцикле. Дизайн отсылает к ретро-рекламе мотоциклов и старым печатным изданиям, полностью отказываясь от банальных листьев и зелёных цветов.",
+      "agency": "Saint-Urbain",
+      "published_at": "2026-04-14",
+      "source": "The Dieline",
+      "source_url": "https://thedieline.com/motorcycle-matcha/",
+      "image_url": "https://thedieline.com/wp-content/uploads/2026/04/motorcycle-matcha-saint-urbain-packaging-dieline.jpg",
+      "subcategory": "tea",
+      "tags": [
+        "матча",
+        "нарративный брендинг",
+        "Япония",
+        "ретро-эстетика"
+      ],
+      "also_covered_by": [],
+      "priority": "A",
+      "category": "non_alcoholic",
+      "category_label": "Безалкогольные",
+      "id": "non_alcoholic-004",
+      "subcategory_label": "Чай"
+    },
+    {
+      "title": "Plankton Tea",
+      "description": "Estudio de Diseño Pablo Guerrero создало экспериментальную упаковку для чая Plankton Tea от La Tetera Azul, полностью погружающую потребителя в подводный мир: переливающаяся бумага, фольга с текстурой акулы и вырубные слои морских водорослей создают многосенсорный опыт. Кит-акула служит одновременно крышкой и пломбой.",
+      "agency": "Estudio de diseño Pablo Guerrero",
+      "published_at": "2026-04-14",
+      "source": "World of Brand Design",
+      "source_url": "https://worldbranddesign.com/estudio-de-diseno-pablo-guerrero-develops-plankton-tea-with-a-multisensory-packaging-design-rooted-in-the-seabed/",
+      "image_url": "https://worldbranddesign.com/wp-content/uploads/2026/04/plankton-tea-pablo-guerrero-multisensory-packaging.jpg",
+      "subcategory": "tea",
+      "tags": [
+        "чай",
+        "мультисенсорная упаковка",
+        "иридесцентная бумага",
+        "концептуальный дизайн"
+      ],
+      "also_covered_by": [],
+      "priority": "A",
+      "category": "non_alcoholic",
+      "category_label": "Безалкогольные",
+      "id": "non_alcoholic-008",
+      "subcategory_label": "Чай"
+    },
+    {
+      "title": "Bidai Berri — одометр на этикетке",
+      "description": "Студия Moruba превратила идею расстояния и путешествия в минималистичную этикетку, вдохновлённую одометром — циферблат отсчитывает «пройденный путь» вина от лозы до бокала. Строгая угольная цветовая схема и концептуальная глубина делают дизайн запоминающимся.",
+      "agency": "Moruba",
+      "published_at": "2026-04-13",
+      "source": "Dieline",
+      "source_url": "https://thedieline.com/remember-odometers-bidai-berris-label-goes-the-distance/",
+      "image_url": "https://thedieline.com/wp-content/uploads/2026/04/Bidai-Berri-botellero-Negro-2-scaled.jpg",
+      "subcategory": "other",
+      "tags": [
+        "минимализм",
+        "концептуальный дизайн",
+        "типографика",
+        "сторителлинг"
+      ],
+      "also_covered_by": [],
+      "priority": "A",
+      "category": "wine",
+      "category_label": "Вино",
+      "id": "wine-004",
+      "subcategory_label": "Прочее"
+    },
+    {
+      "title": "Heaven Soda",
+      "description": "Deuce Studio создало бренд и упаковку для функциональной газировки Heaven с девизом «Naughty flavour, nice ingredients»: дизайн в эстетике Y2K и видеоигр, лого в виде буквы «H» с нимбом, глянцевые 3D-фрукты. Цвет нимба и фон меняются между SKU, создавая яркую систему вкусовой навигации.",
+      "agency": "Deuce Studio",
+      "published_at": "2026-04-13",
+      "source": "World of Brand Design",
+      "source_url": "https://worldbranddesign.com/heaven-soda-branding-by-deuce-studio-delivers-a-playful-identity-for-guilt-free-functional-beverages/",
+      "image_url": "https://worldbranddesign.com/wp-content/uploads/2026/04/heaven-soda-deuce-studio-functional-beverage-branding.jpg",
+      "subcategory": "functional",
+      "tags": [
+        "функциональная газировка",
+        "Y2K",
+        "новый бренд",
+        "3D-дизайн"
+      ],
+      "also_covered_by": [
+        "Packaging of the World"
+      ],
+      "priority": "A",
+      "category": "non_alcoholic",
+      "category_label": "Безалкогольные",
+      "id": "non_alcoholic-009",
+      "subcategory_label": "Функциональные"
+    },
+    {
+      "title": "Quinta de Santa Cristina — Commemorative Sparkling",
+      "description": "Marbra Design Studio создала упаковку к 20-летию Vinho Verde: чёрно-золотая эстетика с поэтапным раскрытием — коробка как ритуал, элементы которого обнаруживаются постепенно. Лаконичность и детали сочетаются в духе «объект без слов».",
+      "agency": "Marbra Design Studio",
+      "published_at": "2026-04-13",
+      "source": "World Brand Design Society",
+      "source_url": "https://worldbranddesign.com/marbra-design-studio-reveals-a-new-packaging-for-quinta-de-santa-cristina-commemorative-sparkling-wine/",
+      "image_url": "https://worldbranddesign.com/wp-content/uploads/2026/04/1-QSCComemorativo-world-brand-design.jpg",
+      "subcategory": "sparkling",
+      "tags": [
+        "юбилейный выпуск",
+        "люкс",
+        "чёрно-золотой",
+        "Vinho Verde"
+      ],
+      "also_covered_by": [],
+      "priority": "A",
+      "category": "wine",
+      "category_label": "Вино",
+      "id": "wine-009",
+      "subcategory_label": "Игристое"
+    },
+    {
+      "title": "SkinnyPop",
+      "description": "Американский бренд попкорна SkinnyPop (Hershey) обновил упаковку и логотип с помощью Pearlfisher New York: новая переменная гарнитура Pillo Sans и увеличенный красный акцент на слове «pop» смещают фокус от «диетической» риторики к радости и вкусу — рост продаж составил 7% после релонча.",
+      "agency": "Pearlfisher",
+      "published_at": "2026-04-13",
+      "source": "Design Week",
+      "source_url": "https://www.designweek.co.uk/pearlfisher-revamps-skinnypop-for-modern-tastes/",
+      "image_url": "https://thedieline.com/wp-content/uploads/2025/03/1.png",
+      "subcategory": "fmcg_food",
+      "tags": [
+        "FMCG",
+        "снеки",
+        "упаковка",
+        "ребрендинг"
+      ],
+      "also_covered_by": [
+        "Dieline",
+        "LinkedIn"
+      ],
+      "priority": "A",
+      "category": "general",
+      "category_label": "Брендинг",
+      "id": "general-012",
+      "subcategory_label": "FMCG еда"
+    },
+    {
+      "title": "L16° Far North Dry Gin – Packaging by Clay Andrews",
+      "description": "Дизайнер Clay Andrews создал бутылку для австралийского джина L16°, передающую ощущение подводного плавания на Большом Барьерном рифе: аква-стекло со скульптурными рёбрами, металлизированные фольги и тщательно откалиброванная цветовая палитра.",
+      "agency": "Clay Andrews",
+      "published_at": "2026-04-10",
+      "source": "Dieline",
+      "source_url": "https://thedieline.com/l16-far-north-dry-gin-is-where-the-great-barrier-reef-meets-the-bottle/",
+      "image_url": "https://thedieline.com/wp-content/uploads/2026/04/L16-Dieline-5-scaled.jpg",
+      "subcategory": "gin",
+      "tags": [
+        "новый запуск",
+        "природные мотивы",
+        "австралия",
+        "авторский дизайн"
+      ],
+      "also_covered_by": [],
+      "priority": "A",
+      "category": "alcoholic",
+      "category_label": "Алкоголь",
+      "id": "alcoholic-007",
+      "subcategory_label": "Джин"
+    },
+    {
+      "title": "Minimalist Wine — Sculpted Metal Label",
+      "description": "M&A Creative Agency применила философию «меньше значит больше»: скульптурная металлическая этикетка из меди с деревянным боксом создаёт рафинированный образ без единого лишнего элемента. Проект демонстрирует тактильный люкс в противовес вербальному.",
+      "agency": "M&A Creative Agency",
+      "published_at": "2026-04-10",
+      "source": "World Brand Design Society",
+      "source_url": "https://worldbranddesign.com/minimalist-wine-packaging-by-ma-creative-agency-defines-a-refined-luxury-identity-through-sculpted-metal-design/",
+      "image_url": "https://worldbranddesign.com/wp-content/uploads/2026/04/MACREATIVEAGENCY_CARNAVAL-1.jpg",
+      "subcategory": "other",
+      "tags": [
+        "металлическая этикетка",
+        "минимализм",
+        "тактильный люкс",
+        "скульптура"
+      ],
+      "also_covered_by": [],
+      "priority": "A",
+      "category": "wine",
+      "category_label": "Вино",
+      "id": "wine-010",
+      "subcategory_label": "Прочее"
+    },
+    {
+      "title": "Treblasé – Italian Aperitivo Branding by OlssønBarbieri",
+      "description": "Новый туринский аперитив Treblasé получил идентичность от норвежского агентства OlssønBarbieri, вдохновлённую итальянским футуризмом и графическим языком Фортунато Депаро. Столкновение шрифтов и альпийские цвета создают неповторимо туринский характер.",
+      "agency": "OlssønBarbieri",
+      "published_at": "2026-04-10",
+      "source": "Dieline",
+      "source_url": "https://thedieline.com/treblase-is-bringing-italian-design-history-back-to-the-bar/",
+      "image_url": "https://thedieline.com/wp-content/uploads/2026/04/1.-Treblase-scaled.jpg",
+      "subcategory": "liqueur",
+      "tags": [
+        "новый запуск",
+        "итальянский футуризм",
+        "аперитив",
+        "историческая референция"
+      ],
+      "also_covered_by": [],
+      "priority": "A",
+      "category": "alcoholic",
+      "category_label": "Алкоголь",
+      "id": "alcoholic-006",
+      "subcategory_label": "Ликёры"
+    },
+    {
+      "title": "300 Limited Edition (Smith Devereux Winery, Napa)",
+      "description": "M&A Creative Agency (США + Португалия) совместно со Smith Devereux выпустили лимитированное Каберне Совиньон «300» с отсылкой к спартанскому наследию: 300 точек-рельефов на этикетке как оммаж к отваге и исторической линии семьи Деверо.",
+      "agency": "M&A Creative Agency",
+      "published_at": "2026-04-09",
+      "source": "World Brand Design Society",
+      "source_url": "https://worldbranddesign.com/300-limited-edition-wine-packaging-by-ma-creative-agency-honors-spartan-legacy-through-luxury-design/",
+      "image_url": "https://worldbranddesign.com/wp-content/uploads/2026/04/MACREATIVE_300NAPAVALLEY-1.jpg",
+      "subcategory": "still_red",
+      "tags": [
+        "лимитированная серия",
+        "Напа",
+        "спартанская тема",
+        "тиснение"
+      ],
+      "also_covered_by": [],
+      "priority": "A",
+      "category": "wine",
+      "category_label": "Вино",
+      "id": "wine-013",
+      "subcategory_label": "Красное"
+    },
+    {
+      "title": "Bodegas LAN — Типографический ребрендинг",
+      "description": "Студия Gravita отказалась от традиционных геральдических элементов в пользу укрупнённого типографического решения: одно слово «Lan» занимает всю этикетку, задавая новую современную идентичность для вин Риохи. Сдержанная цветовая палитра усиливает лаконичность.",
+      "agency": "GRAVITA",
+      "published_at": "2026-04-09",
+      "source": "Dieline",
+      "source_url": "https://thedieline.com/gravita-pours-out-a-clean-typographic-approach-with-lan-wines-refresh/",
+      "image_url": "https://thedieline.com/wp-content/uploads/2026/04/LAN_Dieline_02.jpg",
+      "subcategory": "other",
+      "tags": [
+        "типографика",
+        "ребрендинг",
+        "Риоха",
+        "минимализм"
+      ],
+      "also_covered_by": [],
+      "priority": "A",
+      "category": "wine",
+      "category_label": "Вино",
+      "id": "wine-005",
+      "subcategory_label": "Прочее"
+    },
+    {
+      "title": "Henry of Pelham — Developed Through Time",
+      "description": "Zulu Alpha Kilo создала многослойную этикетку с архивными изображениями, накладывающимися друг на друга — визуальная метафора накопленного наследия канадского виноделия. Осязаемая текстура бумаги усиливает «историческое» ощущение и выделяет бутылку на полке.",
+      "agency": "Zulu Alpha Kilo",
+      "published_at": "2026-04-09",
+      "source": "Dieline",
+      "source_url": "https://thedieline.com/zula-alpha-kilo-layers-in-storytelling-for-henry-of-pelhams-wine-labels/",
+      "image_url": "https://thedieline.com/wp-content/uploads/2026/04/5-scaled.jpg",
+      "subcategory": "other",
+      "tags": [
+        "сторителлинг",
+        "наследие",
+        "слоистый дизайн",
+        "Канада"
+      ],
+      "also_covered_by": [],
+      "priority": "A",
+      "category": "wine",
+      "category_label": "Вино",
+      "id": "wine-006",
+      "subcategory_label": "Прочее"
+    },
+    {
+      "title": "Larsen Cognac – Centenary Rebrand with Viking Ship Identity",
+      "description": "К 100-летию коньячного дома Larsen компания International Beverage представила обновлённую идентичность: ключевым элементом стал пиктограмм Дракара с изящными кривыми, вдохновлёнными формой викингских драккаров. Новая цветовая палитра и более весомый логотип подчёркивают наследие скандинавского первопроходца.",
+      "agency": null,
+      "published_at": "2026-04-09",
+      "source": "The Spirits Business",
+      "source_url": "https://www.thespiritsbusiness.com/2026/04/larsen-cognac-marks-centenary-with-new-look/",
+      "image_url": "https://www.thespiritsbusiness.com/wp-content/uploads/2026/04/Larsen-Cognac-rebrand.jpg",
+      "subcategory": "other",
+      "tags": [
+        "ребрендинг",
+        "коньяк",
+        "столетие",
+        "скандинавское наследие"
+      ],
+      "also_covered_by": [
+        "Drinks International"
+      ],
+      "priority": "A",
+      "category": "alcoholic",
+      "category_label": "Алкоголь",
+      "id": "alcoholic-014",
+      "subcategory_label": "Прочее"
+    },
+    {
+      "title": "Onera Vodka – Identity by Percept Brand Design Agency",
+      "description": "Новая шведская водка Onera получила ледниковую идентичность от агентства Percept: синяя матовая бутылка вдохновлена ледником Storglacиären, слоган «The Last Great Ice Age» подчёркивает скандинавскую чистоту и точность.",
+      "agency": "Percept Brand Design Agency",
+      "published_at": "2026-04-09",
+      "source": "World of Brand Design",
+      "source_url": "https://worldbranddesign.com/percept-brand-design-agency-elevates-onera-vodka-with-a-refined-glacier-inspired-identity/",
+      "image_url": "https://worldbranddesign.com/wp-content/uploads/2026/04/onera-pack-e.jpg",
+      "subcategory": "vodka",
+      "tags": [
+        "новый запуск",
+        "скандинавский минимализм",
+        "премиум",
+        "природные мотивы"
+      ],
+      "also_covered_by": [
+        "Packaging of the World"
+      ],
+      "priority": "A",
+      "category": "alcoholic",
+      "category_label": "Алкоголь",
+      "id": "alcoholic-009",
+      "subcategory_label": "Водка"
+    },
+    {
+      "title": "Tufa Bulza — Люкс-брендинг албанского игристого",
+      "description": "the Labelmaker создал полную идентичность для Kantina Tufa из Албании: бирюзово-тёмная этикетка с каллиграфией вручную претендует на позицию рядом с Шампанью. Проект — пример того, как малоизвестный регион выходит в премиум-сегмент через силу дизайна.",
+      "agency": "the Labelmaker",
+      "published_at": "2026-04-09",
+      "source": "World Brand Design Society",
+      "source_url": "https://worldbranddesign.com/luxury-branding-for-sparkling-wine-the-tufa-bulza-project-by-the-labelmaker/",
+      "image_url": "https://worldbranddesign.com/wp-content/uploads/2026/04/95.jpg",
+      "subcategory": "sparkling",
+      "tags": [
+        "Албания",
+        "каллиграфия",
+        "люкс",
+        "новый регион"
+      ],
+      "also_covered_by": [],
+      "priority": "A",
+      "category": "wine",
+      "category_label": "Вино",
+      "id": "wine-012",
+      "subcategory_label": "Игристое"
+    },
+    {
+      "title": "NICE Wine Rebrand — \"Wine in New Light\"",
+      "description": "Лондонская студия Earthling Studio полностью переосмыслила идентичность бренда NICE: новая система нумерации стилей вместо традиционных названий снижает «тревогу у стеллажа», а магнитная цветовая палитра одинаково работает на банке, бутылке, боксе и кеге.",
+      "agency": "Earthling Studio",
+      "published_at": "2026-04-08",
+      "source": "Design Week",
+      "source_url": "https://www.designweek.co.uk/nice-matures-with-magnetic-earthling-studio-redesign/",
+      "image_url": "https://bpando.org/wp-content/uploads/nice-drinks-earthling-studio-branding-identity-wordmark-bpo-review-logo-box-packaging.jpeg",
+      "subcategory": "other",
+      "tags": [
+        "ребрендинг",
+        "системный дизайн",
+        "multi-format",
+        "доступность"
+      ],
+      "also_covered_by": [
+        "BP&O"
+      ],
+      "priority": "A",
+      "category": "wine",
+      "category_label": "Вино",
+      "id": "wine-002",
+      "subcategory_label": "Прочее"
+    },
+    {
+      "title": "Yes! Apples",
+      "description": "Нью-йоркский коллектив семейных яблочных садов Yes! Apples получил дерзкую потребительскую идентику от Blurr Bureau: вдохновлённый I Love NY логотип, кодированная цветовая система по сортам яблок и типографика, апеллирующая к ностальгии бакалейных рынков, превращают ноу-нейм продукт в любимый городской бренд.",
+      "agency": "Blurr Bureau",
+      "published_at": "2026-04-08",
+      "source": "It's Nice That",
+      "source_url": "https://www.itsnicethat.com/articles/blurr-bureau-yes-apples-branding-graphic-design-project-080426",
+      "image_url": "https://admin.itsnicethat.com/images/Vq6-mLevsb2v63wXJ7esYspdiaI=/276946/width-1440/07-_Blurr_Bureau__YesApples_Copyright__Blurr_Bureau_2026.jpg",
+      "subcategory": "fmcg_food",
+      "tags": [
+        "FMCG",
+        "фермерский бренд",
+        "NYC",
+        "упаковка"
+      ],
+      "also_covered_by": [
+        "BP&O",
+        "Food & Beverage Magazine"
+      ],
+      "priority": "A",
+      "category": "general",
+      "category_label": "Брендинг",
+      "id": "general-014",
+      "subcategory_label": "FMCG еда"
+    },
+    {
+      "title": "Quip",
+      "description": "DTC-бренд электрических зубных щёток Quip, отметивший 10 лет с момента основания, получил гибкую и экспрессивную систему идентики от агентства Center: кастомная геометрическая гарнитура Quip Sans (совместно с Burn Type), «таблеточный» холдинг-элемент, свежая минтово-сиреневая палитра и чёткий tone of voice объединяют бренд для выхода в офлайн-ретейл.",
+      "agency": "Center",
+      "published_at": "2026-04-07",
+      "source": "BP&O",
+      "source_url": "https://bpando.org/2026/04/07/quip-by-center/",
+      "image_url": "https://bpando.org/wp-content/uploads/quip-center-brand-identity-wordmark-logo-typography-bpo-review-packaging-box.png",
+      "subcategory": "fmcg_beauty",
+      "tags": [
+        "DTC",
+        "здоровье",
+        "ребрендинг",
+        "США"
+      ],
+      "also_covered_by": [
+        "Dieline (март 2026)",
+        "Dieline.com"
+      ],
+      "priority": "A",
+      "category": "general",
+      "category_label": "Брендинг",
+      "id": "general-025",
+      "subcategory_label": "FMCG бьюти"
+    },
+    {
+      "title": "SC Asset (SC)",
+      "description": "Один из крупнейших тайских девелоперов SC Asset Corporation провёл первый за 20 лет ребрендинг совместно с лондонским Pentagram: новый логотип «SC» вдохновлён структурой семени подсолнуха (фитотаксис), бипоследовательная типографская система на Thai и Latin, палитра восходящего солнца — визуальный сигнал о трансформации из жилого застройщика в многопрофильный лайфстайл-бренд.",
+      "agency": "Pentagram (London)",
+      "published_at": "2026-04-07",
+      "source": "Pentagram",
+      "source_url": "https://www.pentagram.com/work/sc",
+      "image_url": "https://pentagram-production.imgix.net/19c22ea8-950c-4351-863d-805ed72f09af/sc-01.png",
+      "subcategory": "other",
+      "tags": [
+        "ребрендинг",
+        "недвижимость",
+        "Азия",
+        "Pentagram"
+      ],
+      "also_covered_by": [
+        "Asian News Network",
+        "Hashtag Legend Thailand",
+        "Taiwan News",
+        "LinkedIn"
+      ],
+      "priority": "A",
+      "category": "general",
+      "category_label": "Брендинг",
+      "id": "general-022",
+      "subcategory_label": "Прочее"
+    },
+    {
+      "title": "Bron Wine — Premium Artisan Label & Packaging Design",
+      "description": "Премиальный брендинг бутикового виноградника: ручная иллюстрация в сочетании с изысканной типографикой создаёт ощущение ремесленного производства и высокого класса. Проект демонстрирует баланс между традиционным рисунком и современной компоновкой этикетки.",
+      "agency": "Olena Nepomiashcha",
+      "published_at": "2026-04-03",
+      "source": "Behance",
+      "source_url": "https://www.behance.net/gallery/246948141/Bron-Wine-Premium-Artisan-Label-Packaging-Design",
+      "image_url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/6ce5de246948141.69cf96f393826.png",
+      "subcategory": "still_white",
+      "tags": [
+        "ручная иллюстрация",
+        "премиум",
+        "артизан",
+        "этикетка"
+      ],
+      "also_covered_by": [],
+      "priority": "A",
+      "category": "wine",
+      "category_label": "Вино",
+      "id": "wine-001",
+      "subcategory_label": "Белое"
+    },
+    {
+      "title": "Ironroot Republic – Full Rebrand by HUMAN. Studio",
+      "description": "Полный ребрендинг техасской бурбонной дистиллерии Ironroot Republic от мексиканской студии HUMAN.: новый кастомный силуэт бутылки и авторская пробка разработаны с нуля, типографика, цвет и иерархия перестроены для масштабируемой портфельной системы. Итог — «Bolder. Rooted. Refined.»",
+      "agency": "HUMAN.",
+      "published_at": "2026-04-02",
+      "source": "Behance",
+      "source_url": "https://www.behance.net/gallery/246730969/IronRoot",
+      "image_url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/8e1d71246730969.69cb308ad4fad.png",
+      "subcategory": "whisky",
+      "tags": [
+        "ребрендинг",
+        "техасский бурбон",
+        "кастомная бутылка",
+        "Латинская Америка"
+      ],
+      "also_covered_by": [],
+      "priority": "A",
+      "category": "alcoholic",
+      "category_label": "Алкоголь",
+      "id": "alcoholic-018",
+      "subcategory_label": "Виски"
+    },
+    {
+      "title": "Madison Blue",
+      "description": "Makers & Allies разработало упаковку для премиальной воды Madison Blue из Мэдисонского водоносного горизонта: типографика выдавлена прямо в стекло, вертикальное расположение текста имитирует геологические пласты. Минималистичный кобальтово-синий акцент на крышке — единственный цветовой акцент на полностью прозрачной бутылке.",
+      "agency": "Makers & Allies",
+      "published_at": "2026-04-02",
+      "source": "The Dieline",
+      "source_url": "https://thedieline.com/madison-blue-lets-its-gorgeous-glass-bottle-do-all-the-talking/",
+      "image_url": "https://thedieline.com/wp-content/uploads/2026/04/madison-blue-makers-allies-glass-bottle-packaging-dieline.jpg",
+      "subcategory": "water",
+      "tags": [
+        "вода",
+        "стеклянная бутылка",
+        "минимализм",
+        "тиснение"
+      ],
+      "also_covered_by": [],
+      "priority": "A",
+      "category": "non_alcoholic",
+      "category_label": "Безалкогольные",
+      "id": "non_alcoholic-013",
+      "subcategory_label": "Вода"
+    },
+    {
+      "title": "KGC (Korea Ginseng Corp.)",
+      "description": "Южнокорейский производитель женьшеня с историей 127 лет — Korea Ginseng Corp. — провёл первый за 14 лет ребрендинг: новое имя KGC, логотип с символом «Seed» (знак материнского холдинга KT&G) и тёмно-серая типографика отражают стратегический разворот от нишевого гинзень-бренда к глобальной wellness-компании.",
+      "agency": null,
+      "published_at": "2026-04-01",
+      "source": "Korea Herald",
+      "source_url": "https://www.koreaherald.com/article/10706626",
+      "image_url": "https://wimg.heraldcorp.com/news/cms/2026/03/31/news-p.v1.20260331.10f7fcaa053a4cceb0b081d480c0a0fc_T1.jpg",
+      "subcategory": "fmcg_food",
+      "tags": [
+        "Корея",
+        "здоровье",
+        "ребрендинг",
+        "FMCG"
+      ],
+      "also_covered_by": [
+        "Korea Times",
+        "Seoul Economic Daily",
+        "Chosunbiz",
+        "Maeil Business"
+      ],
+      "priority": "A",
+      "category": "general",
+      "category_label": "Брендинг",
+      "id": "general-023",
+      "subcategory_label": "FMCG еда"
+    },
+    {
+      "title": "Trails of Wine — Georgian Landscapes, Bottled",
+      "description": "Концептуальный брендинг грузинского вина: каждый лейбл воспроизводит конкретный ландшафт — рельеф, цвет и атмосферу терруара, переведённые в визуальную систему, которая варьируется от сорта к сорту. Сорт Горули Мцване оформлен как пейзаж в жанре акварельной живописи.",
+      "agency": "Elene Shengelia",
+      "published_at": "2026-04-01",
+      "source": "Behance",
+      "source_url": "https://www.behance.net/gallery/246585973/Trails-of-Wine-Georgian-Landscapes-Bottled",
+      "image_url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/d3bb08246585973.69ced450161db.jpg",
+      "subcategory": "still_white",
+      "tags": [
+        "сторителлинг",
+        "ландшафт",
+        "акварель",
+        "Грузия"
+      ],
+      "also_covered_by": [],
+      "priority": "A",
+      "category": "wine",
+      "category_label": "Вино",
+      "id": "wine-000",
+      "subcategory_label": "Белое"
+    },
+    {
+      "title": "HIGHGINLAND Whisky – Label & Brand Identity by Cosovan Svetlana",
+      "description": "Айдентика молдавского виски HIGHGINLAND построена вокруг индустриальной метафоры паровоза — символа давления, трансформации и движения. Три экспрессии (Platinum / Rose Gold / Copper) дифференцируются через металлические фольги; 3D-рельеф на золотой фольге, матовая бумага и spot UV создают эффект живой гравюры.",
+      "agency": "Cosovan Svetlana",
+      "published_at": "2026-03-31",
+      "source": "Packaging of the World",
+      "source_url": "https://packagingoftheworld.com/2026/03/highginland-whisky.html",
+      "image_url": null,
+      "subcategory": "whisky",
+      "tags": [
+        "новый запуск",
+        "индустриальная эстетика",
+        "Восточная Европа",
+        "многоуровневая линейка"
+      ],
+      "also_covered_by": [],
+      "priority": "A",
+      "category": "alcoholic",
+      "category_label": "Алкоголь",
+      "id": "alcoholic-013",
+      "subcategory_label": "Виски"
+    },
+    {
+      "title": "Poju Organic Pomegranate Juice",
+      "description": "Toolbox Design создали дизайн для органического гранатового сока Poju из Азербайджана: аптечная прозрачная стеклянная бутылка без этикетки позволяет самому соку быть главным визуальным элементом. Два варианта — с мякотью (розовый) и без (красный) — различаются только цветом крышки.",
+      "agency": "Toolbox Design",
+      "published_at": "2026-03-31",
+      "source": "The Dieline",
+      "source_url": "https://thedieline.com/poju-organic/",
+      "image_url": "https://thedieline.com/wp-content/uploads/2026/03/poju-organic-pomegranate-juice-toolbox-design-dieline.jpg",
+      "subcategory": "juice",
+      "tags": [
+        "гранатовый сок",
+        "прозрачная упаковка",
+        "органика",
+        "без этикетки"
+      ],
+      "also_covered_by": [],
+      "priority": "A",
+      "category": "non_alcoholic",
+      "category_label": "Безалкогольные",
+      "id": "non_alcoholic-014",
+      "subcategory_label": "Сок"
+    },
+    {
+      "title": "UFO Bean Coffee",
+      "description": "Venore Creative Worldwide разработало концептуальную упаковку для кофе UFO Bean в форме летающей тарелки — НЛО-капсулы из матового синего пластика, которые сами по себе являются скульптурными объектами. Дизайн позиционирует кофе как «топливо для ума» и эскапистский опыт.",
+      "agency": "Venore Creative Worldwide",
+      "published_at": "2026-03-12",
+      "source": "Behance",
+      "source_url": "https://www.behance.net/gallery/245683949/Ufobean-Coffee",
+      "image_url": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/245683949/Ufobean-Coffee.jpg",
+      "subcategory": "coffee",
+      "tags": [
+        "кофе",
+        "концептуальная упаковка",
+        "НЛО",
+        "sci-fi эстетика"
+      ],
+      "also_covered_by": [
+        "The Dieline"
+      ],
+      "priority": "A",
+      "category": "non_alcoholic",
+      "category_label": "Безалкогольные",
+      "id": "non_alcoholic-010",
+      "subcategory_label": "Кофе"
+    },
+    {
+      "title": "Patrón Tequila – First Bottle Redesign in 36 Years by Servaire & Co",
+      "description": "Первый за 36 лет редизайн бутылки Patrón Tequila от агентства Servaire & Co: тиснёный рисунок «пиньи» агавы на стекле улучшает хват и отсылает к происхождению продукта, золотая пчела и филигранный воротник символизируют мексиканское мастерство. Вес бутылки снижен на 8% ради уменьшения углеродного следа.",
+      "agency": "Servaire & Co, Butterfly Cannon (gift boxes)",
+      "published_at": "2025-08-22",
+      "source": "The Spirits Business",
+      "source_url": "https://www.thespiritsbusiness.com/2025/08/patron-tequila-unveils-first-redesign/",
+      "image_url": "https://www.thespiritsbusiness.com/wp-content/uploads/2025/08/patron-tequila-new-bottle-design.jpg",
+      "subcategory": "tequila",
+      "tags": [
+        "ребрендинг",
+        "устойчивость",
+        "мексиканское наследие",
+        "суперпремиум"
+      ],
+      "also_covered_by": [
+        "Trend Hunter",
+        "Packaging World"
+      ],
+      "priority": "A",
+      "category": "alcoholic",
+      "category_label": "Алкоголь",
+      "id": "alcoholic-020",
+      "subcategory_label": "Текила"
+    },
+    {
+      "title": "Beckn Protocol",
+      "description": "Технологическая B2B-платформа с открытым протоколом для цифровых рынков Beckn получила стратегию и ребрендинг от Small Town Folk: новая айдентика транслирует принципы открытости и децентрализации в понятном корпоративном языке, готовя компанию к масштабированию на глобальных рынках.",
+      "agency": "Small Town Folk",
+      "published_at": "2026-04-16",
+      "source": "World Brand Design",
+      "source_url": "https://worldbranddesign.com/strategy-and-rebrand-for-beckn-by-small-town-folk/",
+      "image_url": "https://worldbranddesign.com/wp-content/uploads/2026/04/1-beckn-world-brand-design.jpg",
+      "subcategory": "b2b",
+      "tags": [
+        "B2B",
+        "tech",
+        "open-source",
+        "ребрендинг"
+      ],
+      "also_covered_by": [],
+      "priority": "B",
+      "category": "general",
+      "category_label": "Брендинг",
+      "id": "general-019",
+      "subcategory_label": "B2B"
+    },
+    {
+      "title": "Coconaut – Taste The Nature",
+      "description": "Редизайн Coconaut усилил систему цветового кодирования бренда кокосовой воды, упростив иллюстративного персонажа до деликатной детали и сделав логотип и название более заметными на полке. Расширенная линейка включает чистую кокосовую воду и миксы с NFC-соками (ананас, арбуз, юдзу, манго, белый персик) — каждый вкус читается мгновенно благодаря цветовой навигации.",
+      "agency": "Aboutad",
+      "published_at": "2026-04-16",
+      "source": "Packaging of the World",
+      "source_url": "https://packagingoftheworld.com/2026/04/coconaut-taste-the-nature.html",
+      "image_url": "https://packagingoftheworld.com/wp-content/uploads/2026/04/coconaut-taste-the-nature-packaging-redesign.jpg",
+      "subcategory": "water",
+      "tags": [
+        "кокосовая вода",
+        "редизайн",
+        "цветовое кодирование",
+        "NFC-соки"
+      ],
+      "also_covered_by": [],
+      "priority": "B",
+      "category": "non_alcoholic",
+      "category_label": "Безалкогольные",
+      "id": "non_alcoholic-020",
+      "subcategory_label": "Вода"
+    },
+    {
+      "title": "Convida — Latino-Inspired Wine Brand",
+      "description": "Treasury Wine Estates запустила новый бренд Convida с иллюстрацией в стиле алебрихе и культурными отсылками к латиноамериканскому наследию. Rosado и Blanco по $14,99 позиционированы как для самостоятельного употребления, так и для коктейлей — ставка на мультикультурную молодёжную аудиторию США.",
+      "agency": "Internal / Alejandra Ballesteros (illustrator)",
+      "published_at": "2026-04-16",
+      "source": "Wine Industry Advisor",
+      "source_url": "https://wineindustryadvisor.com/2026/04/16/introducing-convida-a-bold-flavor-forward-wine-brand/",
+      "image_url": "https://win-advisor-media-library.s3.us-west-1.amazonaws.com/wp-content/uploads/2026/04/16131156/TREASURY_WINE_ESTATES__Convida__Blanco_and_Rosado_ftimg.jpg",
+      "subcategory": "rose",
+      "tags": [
+        "латинская культура",
+        "иллюстрация",
+        "новый бренд",
+        "массовый премиум"
+      ],
+      "also_covered_by": [],
+      "priority": "B",
+      "category": "wine",
+      "category_label": "Вино",
+      "id": "wine-015",
+      "subcategory_label": "Розе"
+    },
+    {
+      "title": "Kontrapunkt для Suntory -196",
+      "description": "Датское агентство Kontrapunkt разработало глобальную кампанию «Minus is More» для RTD-коктейля Suntory -196, переосмыслив технологию Freeze Crush Infuse как метафору самовыражения. Кампания объединяет аутдор, диджитал и POS-материалы в едином гиперреалистичном 3D-мире японской уличной культуры.",
+      "agency": "Kontrapunkt",
+      "published_at": "2026-04-16",
+      "source": "World of Brand Design",
+      "source_url": "https://worldbranddesign.com/kontrapunkt-transforms-technical-story-into-lifestyle-driven-campaign-for-suntorys-196/",
+      "image_url": "https://worldbranddesign.com/wp-content/uploads/2026/04/kontrapunkt-suntory-196-minus-is-more-campaign.jpg",
+      "subcategory": "other",
+      "tags": [
+        "RTD",
+        "кампания",
+        "3D-визуализация",
+        "Gen Z"
+      ],
+      "also_covered_by": [],
+      "priority": "B",
+      "category": "non_alcoholic",
+      "category_label": "Безалкогольные",
+      "id": "non_alcoholic-007",
+      "subcategory_label": "Прочее"
+    },
+    {
+      "title": "Kontrapunkt – Campaign for Suntory's -196 RTD",
+      "description": "Глобальная брендинговая кампания для японского RTD-коктейля Suntory -196 от агентства Kontrapunkt. Творческая платформа «Minus is More» переосмысливает уникальную технологию заморозки и переводит её в язык Gen Z с 3D-иллюстрациями и кинетической типографикой.",
+      "agency": "Kontrapunkt",
+      "published_at": "2026-04-16",
+      "source": "World of Brand Design",
+      "source_url": "https://worldbranddesign.com/kontrapunkt-transforms-technical-story-into-lifestyle-driven-campaign-for-suntorys-196/",
+      "image_url": "https://worldbranddesign.com/wp-content/uploads/2026/04/Case-Asset-01.jpg",
+      "subcategory": "rtd",
+      "tags": [
+        "кампания",
+        "RTD",
+        "3D-дизайн",
+        "ребрендинг"
+      ],
+      "also_covered_by": [],
+      "priority": "B",
+      "category": "alcoholic",
+      "category_label": "Алкоголь",
+      "id": "alcoholic-002",
+      "subcategory_label": "RTD"
+    },
+    {
+      "title": "Tio Pepe En Rama 2026 (Gonzalez Byass)",
+      "description": "Ежегодный весенний выпуск Tío Pepe En Rama 2026 — нефильтрованный Fino прямо из бочки, тщательно отобранный Антонио и Сильвией. Специальная коллекционная упаковка подчёркивает живой, органический характер вина и сохраняет традицию ежегодного обновления визуальной идентичности.",
+      "agency": "Hugo Zapata (design)",
+      "published_at": "2026-04-16",
+      "source": "Packaging of the World",
+      "source_url": "https://packagingoftheworld.com/2026/04/tio-pepe-en-rama-2026-sherry-wine.html",
+      "image_url": null,
+      "subcategory": "fortified",
+      "tags": [
+        "Херес",
+        "ежегодный выпуск",
+        "нефильтрованное",
+        "Испания"
+      ],
+      "also_covered_by": [],
+      "priority": "B",
+      "category": "wine",
+      "category_label": "Вино",
+      "id": "wine-018",
+      "subcategory_label": "Крепленое"
+    },
+    {
+      "title": "Trishi",
+      "description": "Mumbaiский модный бренд Trishi, основанный на принципах устойчивой моды и наследия города, получил современную айдентику от дизайнера Shakshi Maheshwari: типографика, архивные отсылки к текстильной истории Мумбаи и чистая визуальная система создают образ contemporary fashion с локальными корнями.",
+      "agency": "Shakshi Maheshwari",
+      "published_at": "2026-04-16",
+      "source": "World Brand Design",
+      "source_url": "https://worldbranddesign.com/shakshi-maheshwari-develops-trishi-into-a-contemporary-fashion-brand-rooted-in-mumbai-heritage-and-sustainable-design/",
+      "image_url": "https://worldbranddesign.com/wp-content/uploads/2026/04/1-trishi.jpg",
+      "subcategory": "fashion",
+      "tags": [
+        "мода",
+        "sustainable",
+        "Индия",
+        "айдентика"
+      ],
+      "also_covered_by": [],
+      "priority": "B",
+      "category": "general",
+      "category_label": "Брендинг",
+      "id": "general-020",
+      "subcategory_label": "Fashion"
+    },
+    {
+      "title": "Bon Elliot",
+      "description": "Австралийский семейный стартап в сфере люксовой дерматологической косметики Bon Elliot запустил полноценную идентику и первую коллекцию продуктов, разработанных дизайн-студией Little Troop: монохромная палитра нейтральных оттенков, логотип из инициалов BE в виде слоёв кожи и кампания в духе Ирвинга Пенна создают баланс между клинической серьёзностью и современным люксом.",
+      "agency": "Little Troop",
+      "published_at": "2026-04-15",
+      "source": "It's Nice That",
+      "source_url": "https://www.itsnicethat.com/articles/little-troop-bon-elliot-branding-graphic-design-project-150426",
+      "image_url": "https://admin.itsnicethat.com/images/3yy-fK9ex6N0ubXi8yiuRj0qqps=/277267/width-1440/Little-Troop_Bon-Elliot_01_1.jpg",
+      "subcategory": "fmcg_beauty",
+      "tags": [
+        "косметика",
+        "luxury skincare",
+        "стартап",
+        "айдентика"
+      ],
+      "also_covered_by": [],
+      "priority": "B",
+      "category": "general",
+      "category_label": "Брендинг",
+      "id": "general-015",
+      "subcategory_label": "FMCG бьюти"
+    },
+    {
+      "title": "Funfields",
+      "description": "Австралийский парк водных развлечений Funfields представил масштабный ребрендинг от агентства Self—titled: яркая, энергичная идентика с новым логотипом и визуальной системой репозиционирует парк как destination-бренд семейного отдыха.",
+      "agency": "Self—titled",
+      "published_at": "2026-04-15",
+      "source": "Brand New (UnderConsideration)",
+      "source_url": "https://www.underconsideration.com/brandnew/archives/new_logo_and_identity_for_funfields_by_self_titled.php",
+      "image_url": "https://www.underconsideration.com/brandnew/wp/wp-content/uploads/2026/04/Funfields_before_after.jpg",
+      "subcategory": "other",
+      "tags": [
+        "ребрендинг",
+        "развлечения",
+        "туризм",
+        "destination-бренд"
+      ],
+      "also_covered_by": [],
+      "priority": "B",
+      "category": "general",
+      "category_label": "Брендинг",
+      "id": "general-003",
+      "subcategory_label": "Прочее"
+    },
+    {
+      "title": "Steve McQueen Coffee",
+      "description": "Cactus Country разработало брендинг для кофейного бренда Steve McQueen Coffee, вдохновившись любовью актёра к автоспорту: жестяные банки в стиле масляных ёмкостей, гоночные полосы и потёртая состаренная эстетика. Коллекционная упаковка передаёт дух «Короля крутизны».",
+      "agency": "Cactus Country",
+      "published_at": "2026-04-15",
+      "source": "The Dieline",
+      "source_url": "https://thedieline.com/cactus-country-adds-high-octane-design-to-steve-mcqueen-coffee/",
+      "image_url": "https://thedieline.com/wp-content/uploads/2026/04/steve-mcqueen-coffee-cactus-country-packaging-dieline.jpg",
+      "subcategory": "coffee",
+      "tags": [
+        "кофе",
+        "лицензированный бренд",
+        "коллекционная упаковка",
+        "vintage"
+      ],
+      "also_covered_by": [],
+      "priority": "B",
+      "category": "non_alcoholic",
+      "category_label": "Безалкогольные",
+      "id": "non_alcoholic-003",
+      "subcategory_label": "Кофе"
+    },
+    {
+      "title": "Coaltown Coffee",
+      "description": "Уэльская обжарочная компания Coaltown Coffee получила обновлённую идентику от шведского агентства Smörgåsbord — эволюция, а не революция: переработанный логотип и система упаковки сохраняют наследие бренда, усиливая его современность и выразительность на полке.",
+      "agency": "Smörgåsbord",
+      "published_at": "2026-04-14",
+      "source": "Brand New (UnderConsideration)",
+      "source_url": "https://www.underconsideration.com/brandnew/archives/new_logo_and_identity_for_coaltown_coffee_by_smorgasbord.php",
+      "image_url": "https://www.underconsideration.com/brandnew/wp/wp-content/uploads/2026/04/Coaltown_Logo_before_after.png",
+      "subcategory": "fmcg_food",
+      "tags": [
+        "ребрендинг",
+        "кофе",
+        "FMCG",
+        "упаковка"
+      ],
+      "also_covered_by": [],
+      "priority": "B",
+      "category": "general",
+      "category_label": "Брендинг",
+      "id": "general-001",
+      "subcategory_label": "FMCG еда"
+    },
+    {
+      "title": "Desert Kid Coffee",
+      "description": "The Working Assembly создало визуальную и пространственную идентичность для Desert Kid Coffee — кофейни и ростерии в Коачелла-Вэлли, основанной друзьями детства. Дизайн черпает вдохновение из местных символов: динозавры Кабазона, пустынные суперцветения и ветряные мельницы.",
+      "agency": "The Working Assembly",
+      "published_at": "2026-04-14",
+      "source": "The Dieline",
+      "source_url": "https://thedieline.com/the-working-assembly-weaves-homegrown-authenticity-into-desert-kid-coffee/",
+      "image_url": "https://thedieline.com/wp-content/uploads/2026/04/desert-kid-coffee-working-assembly-branding-dieline.jpg",
+      "subcategory": "coffee",
+      "tags": [
+        "кофе",
+        "локальный брендинг",
+        "региональная идентичность",
+        "ростерия"
+      ],
+      "also_covered_by": [],
+      "priority": "B",
+      "category": "non_alcoholic",
+      "category_label": "Безалкогольные",
+      "id": "non_alcoholic-005",
+      "subcategory_label": "Кофе"
+    },
+    {
+      "title": "FOX Advertising",
+      "description": "FOX Advertising запустил новую корпоративную идентику и платформу «Turn Passion into Performance» совместно с Sibling Rivalry: единая B2B-марка объединяет все вертикали (FOX Sports, FOX News, FOX Entertainment, Tubi, FOX One) под одним визуальным языком — энергичным, насыщенным движением и эмоциональной интенсивностью.",
+      "agency": "Sibling Rivalry",
+      "published_at": "2026-04-14",
+      "source": "World Brand Design",
+      "source_url": "https://worldbranddesign.com/fox-advertising-unveils-new-brand-strategy-and-identity-turn-passion-into-performance-in-collaboration-with-sibling-rivalry/",
+      "image_url": "https://worldbranddesign.com/wp-content/uploads/2026/04/01_FOX_AD_Logo_still.jpg",
+      "subcategory": "media",
+      "tags": [
+        "медиа",
+        "B2B",
+        "ребрендинг",
+        "США"
+      ],
+      "also_covered_by": [
+        "FoxCorporation.com",
+        "Ads of the World",
+        "GDUSA",
+        "Adweek"
+      ],
+      "priority": "B",
+      "category": "general",
+      "category_label": "Брендинг",
+      "id": "general-013",
+      "subcategory_label": "Медиа"
+    },
+    {
+      "title": "Fair State Brewing – Identity Redesign by Matt Erickson & Cody Petts",
+      "description": "Ребрендинг крафтовой пивоварни Fair State Brewing (Миннеаполис): новая система идентификации объединяет флагманские и лимитированные сорта через знак Infinity Pint, создавая единый визуальный блок на полке.",
+      "agency": "Matt Erickson & Cody Petts",
+      "published_at": "2026-04-14",
+      "source": "World of Brand Design",
+      "source_url": "https://worldbranddesign.com/fair-state-brewing-packaging-design-by-matt-erickson-cody-petts-unifies-the-brand-through-the-infinity-pint-identity/",
+      "image_url": "https://worldbranddesign.com/wp-content/uploads/2026/04/1-fairstate-world-brand-design.jpg",
+      "subcategory": "beer",
+      "tags": [
+        "ребрендинг",
+        "крафтовое пиво",
+        "система идентичности",
+        "типографика"
+      ],
+      "also_covered_by": [],
+      "priority": "B",
+      "category": "alcoholic",
+      "category_label": "Алкоголь",
+      "id": "alcoholic-003",
+      "subcategory_label": "Пиво"
+    },
+    {
+      "title": "Drama Theatre of Plovdiv",
+      "description": "Старейший болгарский драматический театр получил новую визуальную идентику от punkt.studio: современный логотип и гибкая графическая система подчёркивают культурную смелость театра и его значимость в европейском контексте.",
+      "agency": "punkt.studio",
+      "published_at": "2026-04-13",
+      "source": "Brand New (UnderConsideration)",
+      "source_url": "https://www.underconsideration.com/brandnew/archives/new_logo_and_identity_for_drama_theatre_of_plovdiv_by_punkt_studio.php",
+      "image_url": "https://www.underconsideration.com/brandnew/wp/wp-content/uploads/2026/04/drama_theatre_plovdiv_logo_before_after.png",
+      "subcategory": "cultural",
+      "tags": [
+        "культурная институция",
+        "театр",
+        "айдентика",
+        "Болгария"
+      ],
+      "also_covered_by": [],
+      "priority": "B",
+      "category": "general",
+      "category_label": "Брендинг",
+      "id": "general-002",
+      "subcategory_label": "Культура"
+    },
+    {
+      "title": "Friday (fast food)",
+      "description": "Киевская студия Creativ.na разработала яркую идентику для нового фастфуд-бренда Friday, ориентированного на поколение Z: смелая типографика, насыщенная цветовая палитра и игривые визуальные элементы строят эмоциональный bridge между скоростью сервиса и культурой уличной еды.",
+      "agency": "Creativ.na",
+      "published_at": "2026-04-13",
+      "source": "World Brand Design",
+      "source_url": "https://worldbranddesign.com/creativ-na-launches-friday-with-a-vibrant-fast-food-brand-identity-built-for-gen-z-engagement/",
+      "image_url": "https://worldbranddesign.com/wp-content/uploads/2026/04/2-FRIDAY-world-brand-design.jpg",
+      "subcategory": "fmcg_food",
+      "tags": [
+        "фастфуд",
+        "Gen Z",
+        "ресторан",
+        "стартап"
+      ],
+      "also_covered_by": [],
+      "priority": "B",
+      "category": "general",
+      "category_label": "Брендинг",
+      "id": "general-018",
+      "subcategory_label": "FMCG еда"
+    },
+    {
+      "title": "Huckberry",
+      "description": "Американский мультибрендовый ретейлер одежды и снаряжения для активного отдыха переосмыслил визуальную идентику после 15 лет на рынке: новый логотип, обновлённая цветовая палитра в тонах «золотого часа» и расширенная типографика отражают переход от цифрового стартапа к культурному институту с собственными физическими магазинами.",
+      "agency": "This Design",
+      "published_at": "2026-04-13",
+      "source": "Brand New (UnderConsideration)",
+      "source_url": "https://www.underconsideration.com/brandnew/archives/new_logo_and_identity_for_huckberry_by_this_design.php",
+      "image_url": "https://www.underconsideration.com/brandnew/wp/wp-content/uploads/2026/04/huckberry_2026_logo_before_after.png",
+      "subcategory": "retail",
+      "tags": [
+        "ребрендинг",
+        "ритейл",
+        "аутдор-стиль",
+        "корпоративная айдентика"
+      ],
+      "also_covered_by": [
+        "LinkedIn (Brand New)",
+        "Huckberry.com journal"
+      ],
+      "priority": "B",
+      "category": "general",
+      "category_label": "Брендинг",
+      "id": "general-000",
+      "subcategory_label": "Ритейл"
+    },
+    {
+      "title": "Montira Gin – Packaging by Percept Brand Design Agency",
+      "description": "Новая упаковка для новозеландского джина Montira, разработанная сиднейским агентством Percept. Матовая бутылка с белым чернильным погружением отражает климат Южного острова Новой Зеландии.",
+      "agency": "Percept Brand Design Agency",
+      "published_at": "2026-04-13",
+      "source": "World of Brand Design",
+      "source_url": "https://worldbranddesign.com/montira-gin-packaging-design-by-percept-brand-design-agency-captures-south-island-heritage-through-a-distinctive-visual-identity/",
+      "image_url": "https://worldbranddesign.com/wp-content/uploads/2026/04/montira-pack-a.jpg",
+      "subcategory": "gin",
+      "tags": [
+        "новый запуск",
+        "минимализм",
+        "натуральные мотивы",
+        "премиум"
+      ],
+      "also_covered_by": [],
+      "priority": "B",
+      "category": "alcoholic",
+      "category_label": "Алкоголь",
+      "id": "alcoholic-005",
+      "subcategory_label": "Джин"
+    },
+    {
+      "title": "Porter Bałtycki Rum Barrel Edition – Packaging by KJS Craft",
+      "description": "Лимитированное издание упаковки для польского портера, выдержанного в ромовых бочках с Барбадоса (пивоварня Browar Mikołajki). Морской нуар-дизайн с медной фольгой на тёмно-синем фоне отражает напряжение между Балтикой и тропиками.",
+      "agency": "KJS Craft",
+      "published_at": "2026-04-13",
+      "source": "World of Brand Design",
+      "source_url": "https://worldbranddesign.com/porter-baltycki-rum-barrel-edition-packaging-by-kjs-craft-captures-baltic-depth-and-tropical-warmth/",
+      "image_url": "https://worldbranddesign.com/wp-content/uploads/2026/04/01_PORTER_BALTYCKI_kjscraft.jpg",
+      "subcategory": "beer",
+      "tags": [
+        "лимитированная серия",
+        "крафтовое пиво",
+        "барел-эйдж",
+        "иллюстрация"
+      ],
+      "also_covered_by": [],
+      "priority": "B",
+      "category": "alcoholic",
+      "category_label": "Алкоголь",
+      "id": "alcoholic-004",
+      "subcategory_label": "Пиво"
+    },
+    {
+      "title": "Ferrari Trento DOC — Vinitaly Design Award 2026 (Restyling)",
+      "description": "Gruppo Lunelli получил награду Vinitaly Design Award 2026 в категории Restyling за обновлённый облик Ferrari Trento DOC: сохраняя ДНК премиального итальянского игристого, рестайлинг усиливает современное прочтение марки на международном рынке.",
+      "agency": "Gruppo Lunelli",
+      "published_at": "2026-04-12",
+      "source": "Vinitaly",
+      "source_url": "https://www.vinitaly.com/en/press/press-releases/vinitaly-design-award-2026-94-awards-announced-awards-for-packaging-ready-to-compete-on-global-markets/",
+      "image_url": "https://www.vinitaly.com/media/zi4npdss/034_enolitech_archivioveronafiere_ennevifoto.jpg",
+      "subcategory": "sparkling",
+      "tags": [
+        "премия",
+        "рестайлинг",
+        "Trentodoc",
+        "Италия"
+      ],
+      "also_covered_by": [],
+      "priority": "B",
+      "category": "wine",
+      "category_label": "Вино",
+      "id": "wine-017",
+      "subcategory_label": "Игристое"
+    },
+    {
+      "title": "Vinitaly Design Award 2026 — Best in Show: Nino Negri 3000",
+      "description": "Гран-при Vinitaly Design Award 2026 получила лимитированная коллекция Nino Negri 3000 из Вальтеллины: упаковка разработана как сенсорный опыт с многослойной текстурой и элементами тактильного взаимодействия, отражающими высотный терруар региона.",
+      "agency": "Nino Negri (production details not specified)",
+      "published_at": "2026-04-12",
+      "source": "Vinitaly",
+      "source_url": "https://www.vinitaly.com/en/press/press-releases/vinitaly-design-award-2026-94-awards-announced-awards-for-packaging-ready-to-compete-on-global-markets/",
+      "image_url": "https://www.vinitaly.com/media/zi4npdss/034_enolitech_archivioveronafiere_ennevifoto.jpg",
+      "subcategory": "still_red",
+      "tags": [
+        "премия",
+        "Vinitaly 2026",
+        "лимитированная серия",
+        "Вальтеллина"
+      ],
+      "also_covered_by": [],
+      "priority": "B",
+      "category": "wine",
+      "category_label": "Вино",
+      "id": "wine-016",
+      "subcategory_label": "Красное"
+    },
+    {
+      "title": "Neuberger (Neuberger Berman)",
+      "description": "Американская инвестиционная управляющая компания Neuberger Berman обновила корпоративную идентику и запустила редизайн сайта, одновременно закрепив сокращённое название «Neuberger» — шаг, отражающий стратегию цифровой трансформации за 85+ лет работы на рынке.",
+      "agency": null,
+      "published_at": "2026-04-11",
+      "source": "Brand New (UnderConsideration)",
+      "source_url": "https://www.underconsideration.com/brandnew/archives/new_logo_for_neuberger.php",
+      "image_url": "https://www.underconsideration.com/brandnew/wp/wp-content/uploads/2026/04/neuberger_logo_before_after.png",
+      "subcategory": "fintech",
+      "tags": [
+        "финансы",
+        "ребрендинг",
+        "инвестиции",
+        "B2B"
+      ],
+      "also_covered_by": [
+        "Financial Promoter",
+        "LinkedIn (официальный аккаунт Neuberger Berman)",
+        "nb.com"
+      ],
+      "priority": "B",
+      "category": "general",
+      "category_label": "Брендинг",
+      "id": "general-009",
+      "subcategory_label": "Финтех"
+    },
+    {
+      "title": "Helmsman — Maritime Heritage Branding (Douro Valley)",
+      "description": "M&A Creative Agency создала полную идентичность бренда Helmsman: морская экспедиция как метафора предпринимательского пути семьи, воплощённая в полиграфии, этикетке и коммуникации. Долина Дору + атлантическая навигация = убедительный нарратив для международного рынка.",
+      "agency": "M&A Creative Agency",
+      "published_at": "2026-04-09",
+      "source": "World Brand Design Society",
+      "source_url": "https://worldbranddesign.com/helmsman-wine-branding-by-ma-creative-agency-navigates-heritage-and-exploration-through-refined-packaging-design/",
+      "image_url": "https://worldbranddesign.com/wp-content/uploads/2026/04/Helmsman_BY_MACREATIVEAGENCY_BaixaRes-1.jpg",
+      "subcategory": "other",
+      "tags": [
+        "морская тема",
+        "сторителлинг",
+        "Португалия",
+        "полная идентичность"
+      ],
+      "also_covered_by": [],
+      "priority": "B",
+      "category": "wine",
+      "category_label": "Вино",
+      "id": "wine-014",
+      "subcategory_label": "Прочее"
+    },
+    {
+      "title": "Mizzica – Italian Crema Liqueur Packaging by Percept",
+      "description": "Новый итальянский кремовый ликёр Mizzica для австралийского рынка получил современную упаковку от агентства Percept: чистый, уверенный дизайн с сицилийскими корнями, рассчитанный на масштабирование всей линейки.",
+      "agency": "Percept Brand Design Agency",
+      "published_at": "2026-04-09",
+      "source": "World of Brand Design",
+      "source_url": "https://worldbranddesign.com/mizzica-packaging-design-by-percept-brand-design-agency-brings-contemporary-italian-crema-liqueur-to-the-australian-market/",
+      "image_url": "https://worldbranddesign.com/wp-content/uploads/2026/04/mizzica-packaging-k.jpg",
+      "subcategory": "liqueur",
+      "tags": [
+        "новый запуск",
+        "ликёр",
+        "итальянский стиль",
+        "современный дизайн"
+      ],
+      "also_covered_by": [],
+      "priority": "B",
+      "category": "alcoholic",
+      "category_label": "Алкоголь",
+      "id": "alcoholic-008",
+      "subcategory_label": "Ликёры"
+    },
+    {
+      "title": "PSI Software",
+      "description": "Берлинская технологическая компания PSI Software SE обновила корпоративный дизайн в рамках стратегической трансформации: новый логотип на основе пиксельной матрицы, палитра из антрацита, белого, аквамарина и сиреневого позиционируют PSI как современного AI- и cloud-провайдера для энергетики и промышленности.",
+      "agency": null,
+      "published_at": "2026-04-09",
+      "source": "Brand New (UnderConsideration)",
+      "source_url": "https://www.underconsideration.com/brandnew/archives/new_logo_and_identity_for_psi_software_by_an.php",
+      "image_url": "https://www.underconsideration.com/brandnew/wp/wp-content/uploads/2026/04/sabre_logo_before_after.png",
+      "subcategory": "b2b",
+      "tags": [
+        "B2B",
+        "tech",
+        "корпоративный ребрендинг",
+        "Германия"
+      ],
+      "also_covered_by": [
+        "psi.de (официальный пресс-релиз)"
+      ],
+      "priority": "B",
+      "category": "general",
+      "category_label": "Брендинг",
+      "id": "general-017",
+      "subcategory_label": "B2B"
+    },
+    {
+      "title": "Sabre",
+      "description": "Глобальная технологическая компания Sabre, крупнейший провайдер систем бронирования для авиаотрасли, представила новый логотип с компасом и фирменный оранжевый цвет взамен традиционного красного: ребрендинг сигнализирует о трансформации из GDS в современную travel tech-платформу.",
+      "agency": null,
+      "published_at": "2026-04-09",
+      "source": "Brand New (UnderConsideration)",
+      "source_url": "https://www.underconsideration.com/brandnew/archives/new_logo_for_sabre.php",
+      "image_url": "https://www.underconsideration.com/brandnew/wp/wp-content/uploads/2026/04/sabre_logo_before_after.png",
+      "subcategory": "tech",
+      "tags": [
+        "tech",
+        "travel",
+        "ребрендинг",
+        "B2B"
+      ],
+      "also_covered_by": [
+        "Skift",
+        "Travel Weekly",
+        "LinkedIn"
+      ],
+      "priority": "B",
+      "category": "general",
+      "category_label": "Брендинг",
+      "id": "general-010",
+      "subcategory_label": "Tech"
+    },
+    {
+      "title": "Via Vinera Special Selection (Karabunar Estate)",
+      "description": "the Labelmaker разработал этикетку на хлопковой бумаге с медальонным элементом для болгарского виноградника Karabunar Estate — Каберне Фран и Карменер из Фракийской долины. Наследие как стратегия позиционирования: органическое ощущение материала усиливает историю происхождения.",
+      "agency": "the Labelmaker",
+      "published_at": "2026-04-09",
+      "source": "World Brand Design Society",
+      "source_url": "https://worldbranddesign.com/heritage-wine-label-design-via-vinera-special-selection-by-the-labelmaker/",
+      "image_url": "https://worldbranddesign.com/wp-content/uploads/2026/04/105.jpg",
+      "subcategory": "still_red",
+      "tags": [
+        "наследие",
+        "хлопковая бумага",
+        "Болгария",
+        "медальон"
+      ],
+      "also_covered_by": [
+        "Packaging of the World"
+      ],
+      "priority": "B",
+      "category": "wine",
+      "category_label": "Вино",
+      "id": "wine-011",
+      "subcategory_label": "Красное"
+    },
+    {
+      "title": "Bahamas Botanicals Digestifs – Bahamian Heritage Spirits by Typesense",
+      "description": "Дистиллерия из Нассау представила линейку дижестивов с упаковкой от Typesense Graphic Design: концепция «Bahamian Farming in a Bottle» переводит местное растительное наследие в сторителлинг о национальной гордости, поддержке местных фермеров и устойчивом производстве.",
+      "agency": "Typesense Graphic Design",
+      "published_at": "2026-04-08",
+      "source": "Packaging of the World",
+      "source_url": "https://packagingoftheworld.com/2026/04/bahamas-botanicals-digestifs.html",
+      "image_url": null,
+      "subcategory": "liqueur",
+      "tags": [
+        "новый запуск",
+        "тропический сторителлинг",
+        "устойчивость",
+        "локальное наследие"
+      ],
+      "also_covered_by": [],
+      "priority": "B",
+      "category": "alcoholic",
+      "category_label": "Алкоголь",
+      "id": "alcoholic-017",
+      "subcategory_label": "Ликёры"
+    },
+    {
+      "title": "Waterbird RTD Cocktails – Packaging by Tavern Agency",
+      "description": "Редизайн упаковки RTD-коктейлей Waterbird от агентства Tavern: смелая типографика в стиле американской середины XX века с высококонтрастными цветовыми решениями для дифференциации вкусов.",
+      "agency": "Tavern Agency",
+      "published_at": "2026-04-08",
+      "source": "Dieline",
+      "source_url": "https://thedieline.com/bold-typography-rtd-cocktail-packaging-design/",
+      "image_url": "https://thedieline.com/wp-content/uploads/2026/04/TAVERN_AWARDS_DIELINE_WATERBIRD_01-1-scaled.jpg",
+      "subcategory": "rtd",
+      "tags": [
+        "ребрендинг",
+        "RTD",
+        "американская эстетика",
+        "типографика"
+      ],
+      "also_covered_by": [],
+      "priority": "B",
+      "category": "alcoholic",
+      "category_label": "Алкоголь",
+      "id": "alcoholic-010",
+      "subcategory_label": "RTD"
+    },
+    {
+      "title": "Coca-Cola America250",
+      "description": "Coca-Cola совместно с WPP Open X и Ogilvy запустили лимитированную серию из 52 мини-банок с символикой всех штатов США к 250-летию страны. Параллельно вышел ролик-ремейк легендарного «Hilltop» 1971 года в госпел-версии.",
+      "agency": "WPP Open X / Ogilvy",
+      "published_at": "2026-04-07",
+      "source": "The Dieline",
+      "source_url": "https://thedieline.com/coca-cola-revives-hilltop-commercial-and-releases-limited-edition-america250-cans/",
+      "image_url": "https://thedieline.com/wp-content/uploads/2026/04/coca-cola-america250-limited-edition-cans-dieline.jpg",
+      "subcategory": "soda",
+      "tags": [
+        "Coca-Cola",
+        "лимитированная серия",
+        "патриотический дизайн",
+        "коллаборация"
+      ],
+      "also_covered_by": [],
+      "priority": "B",
+      "category": "non_alcoholic",
+      "category_label": "Безалкогольные",
+      "id": "non_alcoholic-012",
+      "subcategory_label": "Газировка"
+    },
+    {
+      "title": "Blue Diamond Barista Almond Milk",
+      "description": "Turner Duckworth переработали упаковку бариста-миндального молока Blue Diamond, создав иллюстрации в стиле ксилографии, прославляющие кооперативное фермерство бренда. Новый дизайн апеллирует к независимым кофейням и передаёт ценности «от фермы к чашке».",
+      "agency": "Turner Duckworth",
+      "published_at": "2026-04-06",
+      "source": "The Dieline",
+      "source_url": "https://thedieline.com/turner-duckwroth-redesigns-blue-diamonds-barista-almond-milk-for-the-coffee-shop-market/",
+      "image_url": "https://thedieline.com/wp-content/uploads/2026/04/blue-diamond-barista-almond-milk-turner-duckworth-redesign-dieline.jpg",
+      "subcategory": "milk",
+      "tags": [
+        "миндальное молоко",
+        "ребрендинг",
+        "иллюстрация",
+        "B2B-упаковка"
+      ],
+      "also_covered_by": [],
+      "priority": "B",
+      "category": "non_alcoholic",
+      "category_label": "Безалкогольные",
+      "id": "non_alcoholic-011",
+      "subcategory_label": "Молоко"
+    },
+    {
+      "title": "Champagne Chavost",
+      "description": "Небольшой шампанский дом братьев Давио привлекает молодую аудиторию иллюстративными мультяшными этикетками, ориентированными на нативный шампанский стиль: природное вино, нулевое содержание сульфитов, нефильтрованный подход.",
+      "agency": "Fabian Daviaux (in-house)",
+      "published_at": "2026-04-06",
+      "source": "Vinepair",
+      "source_url": "https://vinepair.com/articles/champagne-chavost-young-drinker-popularity/",
+      "image_url": "https://vinepair.com/wp-content/uploads/2026/04/champagne-chavost-lead-social.jpg",
+      "subcategory": "champagne",
+      "tags": [
+        "иллюстрация",
+        "натуральное вино",
+        "молодёжная аудитория",
+        "Шампань"
+      ],
+      "also_covered_by": [],
+      "priority": "B",
+      "category": "wine",
+      "category_label": "Вино",
+      "id": "wine-003",
+      "subcategory_label": "Шампанское"
+    },
+    {
+      "title": "KLIFFHANGER Whisky & Spirits Concept by Konstantin Birukov",
+      "description": "Концептуальная работа петербургского дизайнера Константина Бирюкова: кинематографический визуальный язык кино-нуар (кинолента, зернистость плёнки, жёлтый фон) перенесён на виски-бренд KLIFFHANGER. Концепт демонстрирует альтернативный подход к premium whisky через культ экранного саспенса.",
+      "agency": "Konstantin Birukov",
+      "published_at": "2026-04-05",
+      "source": "Behance",
+      "source_url": "https://www.behance.net/gallery/247058307/KLIFFHANGER-Whisky-Spirits-Concept",
+      "image_url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/8c2baa247058307.69d2bfedf0ba9.jpg",
+      "subcategory": "whisky",
+      "tags": [
+        "концепт",
+        "кино-нуар",
+        "Восточная Европа",
+        "провокационный дизайн"
+      ],
+      "also_covered_by": [],
+      "priority": "B",
+      "category": "alcoholic",
+      "category_label": "Алкоголь",
+      "id": "alcoholic-019",
+      "subcategory_label": "Виски"
+    },
+    {
+      "title": "The Temple Bar Irish Vodka – Branding by Widakk Design Studio",
+      "description": "Новая ирландская водка для паба The Temple Bar в Дублине получила мифологическую идентичность от сербского агентства Widakk: боги рек, иллюстрации и смелая типографика как символ дублинского духа.",
+      "agency": "Widakk Design Studio",
+      "published_at": "2026-03-31",
+      "source": "World of Brand Design",
+      "source_url": "https://worldbranddesign.com/widakk-design-studio-gives-the-temple-bar-irish-vodka-a-myth-led-identity-rooted-in-dublin/",
+      "image_url": "https://worldbranddesign.com/wp-content/uploads/2026/03/TTB_IrishVodka1WBDS.jpg",
+      "subcategory": "vodka",
+      "tags": [
+        "новый запуск",
+        "ирландская мифология",
+        "иллюстрация",
+        "паб-культура"
+      ],
+      "also_covered_by": [],
+      "priority": "B",
+      "category": "alcoholic",
+      "category_label": "Алкоголь",
+      "id": "alcoholic-011",
+      "subcategory_label": "Водка"
+    },
+    {
+      "title": "Sauna Water",
+      "description": "Malley Design обновили упаковку бренда Sauna Water, ставшего самостоятельным после отделения от Portage Brewing: сдержанный дизайн, вдохновлённый Миннесотой, передаёт ощущение сауны, а не её визуальные образы. Упаковка выделяется уверенной простотой в категории велнес-напитков.",
+      "agency": "Malley Design",
+      "published_at": "2026-03-30",
+      "source": "The Dieline",
+      "source_url": "https://thedieline.com/malley-gives-sauna-water-a-refresh-that-doesnt-break-a-sweat/",
+      "image_url": "https://thedieline.com/wp-content/uploads/2026/03/sauna-water-malley-design-refresh-dieline.jpg",
+      "subcategory": "functional",
+      "tags": [
+        "велнес-вода",
+        "ребрендинг",
+        "Скандинавия",
+        "минимализм"
+      ],
+      "also_covered_by": [],
+      "priority": "B",
+      "category": "non_alcoholic",
+      "category_label": "Безалкогольные",
+      "id": "non_alcoholic-015",
+      "subcategory_label": "Функциональные"
+    },
+    {
+      "title": "ZUDI Coffee Co.",
+      "description": "Vorá Design Studio создало высокоэнергетическую айдентику для ZUDI Coffee Co.: гигантская вертикальная типографика, контрастные цветовые пары (коричневый + синий/зелёный/пурпурный) и абстрактные принты в духе звериных узоров. Дизайн визуально передаёт «прыжок энергии» ещё до первого глотка.",
+      "agency": "Vorá Design Studio",
+      "published_at": "2026-03-27",
+      "source": "The Dieline",
+      "source_url": "https://thedieline.com/zudi-brings-a-jolt-of-caffeinated-energy-before-you-even-sip/",
+      "image_url": "https://thedieline.com/wp-content/uploads/2026/03/zudi-coffee-vora-design-studio-packaging-dieline.jpg",
+      "subcategory": "coffee",
+      "tags": [
+        "кофе",
+        "экспрессивная типографика",
+        "specialty coffee",
+        "новый бренд"
+      ],
+      "also_covered_by": [],
+      "priority": "B",
+      "category": "non_alcoholic",
+      "category_label": "Безалкогольные",
+      "id": "non_alcoholic-016",
+      "subcategory_label": "Кофе"
+    },
+    {
+      "title": "Spritz Society × Kiehl's Ultra Berry Sparkling Hydration",
+      "description": "Spritz Society выпустил первый безалкогольный вариант Ultra Berry Sparkling Hydration в коллаборации с Kiehl's: кокосовая вода, электролиты, ноль сахара и витаминный комплекс. Лимитированный набор Ultra Hydration Kit моментально распродался — упаковка объединяет бьюти-эстетику Kiehl's и лаконичный стиль Spritz Society.",
+      "agency": null,
+      "published_at": "2026-03-14",
+      "source": "Trend Hunter",
+      "source_url": "https://www.trendhunter.com/trends/sparkling-hydration",
+      "image_url": "https://cdn.trendhunter.com/thumbs/sparkling-hydration.jpg",
+      "subcategory": "functional",
+      "tags": [
+        "коллаборация",
+        "бьюти × напитки",
+        "электролиты",
+        "лимитированная серия"
+      ],
+      "also_covered_by": [
+        "Drugstore News"
+      ],
+      "priority": "B",
+      "category": "non_alcoholic",
+      "category_label": "Безалкогольные",
+      "id": "non_alcoholic-021",
+      "subcategory_label": "Функциональные"
+    },
+    {
+      "title": "TRIP Lightly Sparkling Adaptogen Seltzer",
+      "description": "TRIP запустил лёгкий газированный адаптогенный сельтер с магнием, ашвагандой, грибом Льва и L-теанином — велнес-альтернатива алкоголю для вечернего расслабления. Упаковка сочетает аптечную чистоту дизайна с функциональными заявлениями, ориентированными на потребителей, отказывающихся от алкоголя.",
+      "agency": null,
+      "published_at": "2026-03-13",
+      "source": "Trend Hunter",
+      "source_url": "https://www.trendhunter.com/trends/trip-lightly-sparkling-adaptogen",
+      "image_url": "https://cdn.trendhunter.com/thumbs/trip-lightly-sparkling-adaptogen.jpg",
+      "subcategory": "functional",
+      "tags": [
+        "адаптогены",
+        "low/no-alcohol",
+        "велнес",
+        "функциональный напиток"
+      ],
+      "also_covered_by": [],
+      "priority": "B",
+      "category": "non_alcoholic",
+      "category_label": "Безалкогольные",
+      "id": "non_alcoholic-022",
+      "subcategory_label": "Функциональные"
+    },
+    {
+      "title": "Snapple",
+      "description": "Keurig Dr Pepper объявили о рефреше Snapple, возвращающем бренд к эстетике 1990-х: обновлённый логотип-сериф, новая графика и бутылка с отсылкой к оригинальному стеклу. Ребрендинг следует ностальгической стратегии бренда, однако стеклянные бутылки в массовых продажах пока не вернутся.",
+      "agency": "Deutsch Design",
+      "published_at": "2026-02-26",
+      "source": "The Dieline",
+      "source_url": "https://thedieline.com/snapple-mostly-revives-its-90s-look-but-dont-expect-a-glass-bottle-comeback/",
+      "image_url": "https://thedieline.com/wp-content/uploads/2026/02/snapple-90s-rebrand-2026-dieline.jpg",
+      "subcategory": "other",
+      "tags": [
+        "ребрендинг",
+        "ностальгия",
+        "чайный RTD",
+        "масс-маркет"
+      ],
+      "also_covered_by": [
+        "Behance"
+      ],
+      "priority": "B",
+      "category": "non_alcoholic",
+      "category_label": "Безалкогольные",
+      "id": "non_alcoholic-017",
+      "subcategory_label": "Прочее"
+    },
+    {
+      "title": "Prešov Brewery Beer – Can Packaging by Majkut Works",
+      "description": "Разработка комплексной системы упаковки для крафтовой пивоварни из Прешова (Словакия): единая серия из девяти сортов пива в банках с характерной иллюстративной айдентикой, вдохновлённой архетипом восточно-словацкого мужчины.",
+      "agency": "Majkut Works",
+      "published_at": "2026-02-21",
+      "source": "World of Brand Design",
+      "source_url": "https://worldbranddesign.com/presov-brewery-beer-packaging-design-by-majkut-works-unifies-nine-beer-varieties-into-a-consistent-can-series/",
+      "image_url": "https://worldbranddesign.com/wp-content/uploads/2026/02/01_PLECHOVKY_PRESOVSKY_SPOLOCNY_1B-Camera-2-kopie-2.jpg",
+      "subcategory": "beer",
+      "tags": [
+        "новый запуск",
+        "крафтовое пиво",
+        "иллюстрация",
+        "система идентичности"
+      ],
+      "also_covered_by": [],
+      "priority": "B",
+      "category": "alcoholic",
+      "category_label": "Алкоголь",
+      "id": "alcoholic-012",
+      "subcategory_label": "Пиво"
+    },
+    {
+      "title": "Cygnet Infinity",
+      "description": "Валлийский бренд Cygnet, основанный оперной певицей Кэтрин Дженкинс, выпустил безалкогольный ботанический «спирит» Infinity с маноукой, грибом Льва и женьшенем, оформленный в элегантной тёмно-синей бутылке с золотыми акцентами. Продукт получил золото на Low & No Masters 2026 за «элегантную структуру и пряный финиш».",
+      "agency": null,
+      "published_at": "2026-01-20",
+      "source": "The Spirits Business",
+      "source_url": "https://www.thespiritsbusiness.com/2026/01/cygnet-infinity-creates-third-space-for-spirits/",
+      "image_url": "https://www.thespiritsbusiness.com/wp-content/uploads/2026/01/cygnet-infinity-non-alcoholic-botanical-spirit.jpg",
+      "subcategory": "na_spirit",
+      "tags": [
+        "безалкогольный спирит",
+        "ботаника",
+        "премиум",
+        "low/no-alcohol"
+      ],
+      "also_covered_by": [],
+      "priority": "B",
+      "category": "non_alcoholic",
+      "category_label": "Безалкогольные",
+      "id": "non_alcoholic-025",
+      "subcategory_label": "0% алкоголь"
+    },
+    {
+      "title": "Lyre's Non-Alcoholic Spirits",
+      "description": "Lyre's запустили масштабный ребрендинг всей линейки безалкогольных спиритусов: обновлённые бутылки 700 мл и RTD-банки в новом фирменном флотском синем с металлическими акцентами и QR-кодами на коктейльное вдохновение. Переименование SKU (например, «Dry London Spirit» → «Gin Alternative») повышает понятность для новых потребителей.",
+      "agency": null,
+      "published_at": "2026-01-01",
+      "source": "Beverage Industry",
+      "source_url": "https://www.bevindustry.com/articles/97992-lyres-non-alcoholic-spirits-launches-new-packaging-design",
+      "image_url": "https://www.bevindustry.com/ext/resources/Issues/2025/12-December/lyres-rebrand-packaging-2026.jpg",
+      "subcategory": "na_spirit",
+      "tags": [
+        "безалкогольные спиритусы",
+        "ребрендинг",
+        "RTD",
+        "premiumisation"
+      ],
+      "also_covered_by": [],
+      "priority": "B",
+      "category": "non_alcoholic",
+      "category_label": "Безалкогольные",
+      "id": "non_alcoholic-018",
+      "subcategory_label": "0% алкоголь"
+    },
+    {
+      "title": "Kale",
+      "description": "Технологический веб-сервис Kale запустил новую корпоративную идентику от The Working Assembly: переосмысленный логотип и визуальная система отражают эволюцию платформы в сфере создания контента и партнёрского маркетинга.",
+      "agency": "The Working Assembly",
+      "published_at": "2026-04-17",
+      "source": "Brand New (UnderConsideration)",
+      "source_url": "https://www.underconsideration.com/brandnew/archives/new_logo_and_identity_for_kale_by_the_working_assembly.php",
+      "image_url": "https://www.underconsideration.com/brandnew/wp/wp-content/uploads/2026/04/kale_logo_before_after.png",
+      "subcategory": "tech",
+      "tags": [
+        "tech",
+        "ребрендинг",
+        "SaaS",
+        "айдентика"
+      ],
+      "also_covered_by": [],
+      "priority": "C",
+      "category": "general",
+      "category_label": "Брендинг",
+      "id": "general-006",
+      "subcategory_label": "Tech"
+    },
+    {
+      "title": "WISEQ AI",
+      "description": "Новая AI-платформа для рабочих процессов и создания контента WISEQ получила чистую человекоориентированную идентику от Davut Tekin: минималистичный логотип и строгая визуальная система позиционируют продукт как инструмент ясности и продуктивности в хаосе AI-рынка.",
+      "agency": "Davut Tekin",
+      "published_at": "2026-04-16",
+      "source": "World Brand Design",
+      "source_url": "https://worldbranddesign.com/davut-tekin-introduces-wiseq-ai-as-a-clear-and-human-centered-platform-for-smarter-work-and-content-creation/",
+      "image_url": "https://worldbranddesign.com/wp-content/uploads/2026/04/wiseqai_1_world-brand-design.jpg",
+      "subcategory": "tech",
+      "tags": [
+        "AI",
+        "стартап",
+        "tech",
+        "SaaS"
+      ],
+      "also_covered_by": [],
+      "priority": "C",
+      "category": "general",
+      "category_label": "Брендинг",
+      "id": "general-021",
+      "subcategory_label": "Tech"
+    },
+    {
+      "title": "X4 FIT",
+      "description": "Британская сеть фитнес-клубов X4 FIT получила полностью новую визуальную идентику от агентства Matey: динамичный логотип и энергичная система дизайна позиционируют бренд в конкурентном сегменте boutique fitness.",
+      "agency": "Matey",
+      "published_at": "2026-04-16",
+      "source": "Brand New (UnderConsideration)",
+      "source_url": "https://www.underconsideration.com/brandnew/archives/new_logo_and_identity_for_x4_fit_by_matey.php",
+      "image_url": "https://www.underconsideration.com/brandnew/wp/wp-content/uploads/2026/04/X42026_01_W_BeforeAfter.jpg",
+      "subcategory": "other",
+      "tags": [
+        "ребрендинг",
+        "фитнес",
+        "здоровье",
+        "айдентика"
+      ],
+      "also_covered_by": [],
+      "priority": "C",
+      "category": "general",
+      "category_label": "Брендинг",
+      "id": "general-005",
+      "subcategory_label": "Прочее"
+    },
+    {
+      "title": "Navy Yard",
+      "description": "Исторический район Военно-морской верфи в Вашингтоне, округ Колумбия, представил новую айдентику от Planthouse Studio: визуальный язык соединяет индустриальное наследие места с современным статусом делового и культурного квартала.",
+      "agency": "Planthouse Studio",
+      "published_at": "2026-04-15",
+      "source": "Brand New (UnderConsideration)",
+      "source_url": "https://www.underconsideration.com/brandnew/archives/new_logo_and_identity_for_navy_yard_by_planthouse_studio.php",
+      "image_url": "https://www.underconsideration.com/brandnew/wp/wp-content/uploads/2026/04/navy_yard_logo_before_after.png",
+      "subcategory": "other",
+      "tags": [
+        "Place branding",
+        "айдентика",
+        "недвижимость",
+        "США"
+      ],
+      "also_covered_by": [],
+      "priority": "C",
+      "category": "general",
+      "category_label": "Брендинг",
+      "id": "general-004",
+      "subcategory_label": "Прочее"
+    },
+    {
+      "title": "Ollo Padel Club",
+      "description": "Лидский клуб падел-тенниса Ollo, созданный на месте заброшенного Roundhouse, получил полную идентику от Manchester-агентства Creative Spark: название, позиционирование и визуальная система построены вокруг «радости» как стратегической территории, превращая спортивный объект в destination-бренд социального опыта.",
+      "agency": "Creative Spark",
+      "published_at": "2026-04-13",
+      "source": "World Brand Design",
+      "source_url": "https://worldbranddesign.com/ollo-padel-club-branding-by-creative-spark-transforms-a-sports-venue-into-a-joy-driven-destination-brand/",
+      "image_url": "https://worldbranddesign.com/wp-content/uploads/2026/04/Ollo-LI-1-1.jpeg",
+      "subcategory": "other",
+      "tags": [
+        "спорт",
+        "стартап",
+        "destination-бренд",
+        "Великобритания"
+      ],
+      "also_covered_by": [],
+      "priority": "C",
+      "category": "general",
+      "category_label": "Брендинг",
+      "id": "general-016",
+      "subcategory_label": "Прочее"
+    },
+    {
+      "title": "Culture Pop Soda Sparkling Raspberry Lemonade",
+      "description": "Culture Pop Soda расширила линейку первым вкусом лимонада — Sparkling Raspberry Lemonade с живыми пробиотиками, органическими соками и без добавленного сахара. Лимитированная 15-банная упаковка с ярким малиново-жёлтым дизайном апеллирует к ностальгии и функциональным преимуществам одновременно.",
+      "agency": null,
+      "published_at": "2026-04-09",
+      "source": "Beverage Industry",
+      "source_url": "https://www.bevindustry.com/articles/98291-culture-pop-soda-delivers-nostalgic-taste-with-better-for-you-benefits",
+      "image_url": "https://www.bevindustry.com/ext/resources/Issues/2026/04-April/culture-pop-soda-raspberry-lemonade-2026.jpg",
+      "subcategory": "soda",
+      "tags": [
+        "пробиотики",
+        "лимонад",
+        "better-for-you",
+        "лимитированная серия"
+      ],
+      "also_covered_by": [
+        "Trend Hunter"
+      ],
+      "priority": "C",
+      "category": "non_alcoholic",
+      "category_label": "Безалкогольные",
+      "id": "non_alcoholic-024",
+      "subcategory_label": "Газировка"
+    },
+    {
+      "title": "Four Cousins Mimosa & Katemba (Gentry)",
+      "description": "Gentry разработала единую визуальную систему для двух продуктов South African Drinks House: Mimosa с традиционной корковой пробкой референсирует игристые вина, Katemba с винтовой — современный фреш. Два продукта, одна кросс-категорийная дизайн-система.",
+      "agency": "Gentry",
+      "published_at": "2026-04-08",
+      "source": "Packaging of the World",
+      "source_url": "https://packagingoftheworld.com/2026/04/four-cousins-mimosa-katemba.html",
+      "image_url": null,
+      "subcategory": "sparkling",
+      "tags": [
+        "ЮАР",
+        "системный дизайн",
+        "кросс-категория",
+        "игристое"
+      ],
+      "also_covered_by": [],
+      "priority": "C",
+      "category": "wine",
+      "category_label": "Вино",
+      "id": "wine-019",
+      "subcategory_label": "Игристое"
+    },
+    {
+      "title": "Enesel Group",
+      "description": "Один из крупнейших частных судовладельцев Греции, Enesel Group, запустил полноценную корпоративную систему брендинга: комплексная айдентика для группы и 8 дочерних судоходных компаний семьи Лемос охватывает логотип, руководства, визитки, корпоративные отчёты, digital-активы и корпоративный сайт.",
+      "agency": "Irene Demetri",
+      "published_at": "2026-04-02",
+      "source": "Behance",
+      "source_url": "https://www.behance.net/gallery/246901563/Enesel-Group-Comprehensive-Branding",
+      "image_url": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/246901563.66acde2c23b96.jpg",
+      "subcategory": "b2b",
+      "tags": [
+        "B2B",
+        "судоходство",
+        "корпоративная айдентика",
+        "Греция"
+      ],
+      "also_covered_by": [],
+      "priority": "C",
+      "category": "general",
+      "category_label": "Брендинг",
+      "id": "general-026",
+      "subcategory_label": "B2B"
+    },
+    {
+      "title": "Belvoir Farm Hugo Spritz Mocktail",
+      "description": "Belvoir Farm представил Hugo Spritz Mocktail — безалкогольный газированный напиток, вдохновлённый популярным летним коктейлем Hugo Spritz с бузиной, мятой и лаймом. Бренд с 30-летней историей органических напитков запустил новинку в Sainsbury's и Waitrose к лету 2026, позиционируя её как премиальную безалкогольную альтернативу для домашнего развлечения.",
+      "agency": null,
+      "published_at": "2026-03-16",
+      "source": "Retail Times",
+      "source_url": "https://retailtimes.co.uk/a-new-spritz-takes-the-crown-belvoir-farms-hugo-spritz-mocktail-lands-for-summer-2026/",
+      "image_url": "https://retailtimes.co.uk/wp-content/uploads/2026/03/belvoir-farm-hugo-spritz-mocktail-2026.jpg",
+      "subcategory": "other",
+      "tags": [
+        "мокейл",
+        "low/no-alcohol",
+        "Hugo Spritz",
+        "органика"
+      ],
+      "also_covered_by": [
+        "Trend Hunter"
+      ],
+      "priority": "C",
+      "category": "non_alcoholic",
+      "category_label": "Безалкогольные",
+      "id": "non_alcoholic-023",
+      "subcategory_label": "Прочее"
+    }
+  ]
+}

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kingbee · Ежедневный дайджест брендинга</title>
+  <meta name="description" content="Ежедневная витрина свежих кейсов брендинга и упаковки по категориям: алкоголь, вино, безалкогольные напитки, общий брендинг.">
+
+  <!-- Fonts: Boska (display) + Satoshi (body) -->
+  <link href="https://api.fontshare.com/v2/css?f[]=boska@500,700&f[]=satoshi@300,400,500,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Theme init before paint -->
+  <script>
+    (function(){
+      const d = matchMedia('(prefers-color-scheme:dark)').matches ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', d);
+    })();
+  </script>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#" class="brand" aria-label="Kingbee дайджест брендинга">
+        <svg width="28" height="28" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <path d="M16 2L28 9V23L16 30L4 23V9L16 2Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+          <circle cx="16" cy="16" r="4" fill="currentColor"/>
+        </svg>
+        <span class="brand-text">
+          <strong>Kingbee</strong>
+          <span>Дайджест брендинга</span>
+        </span>
+      </a>
+
+      <div class="header-actions">
+        <button class="btn btn-ghost" id="btn-archive" aria-haspopup="dialog" aria-expanded="false">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+          <span id="archive-label">Архив</span>
+        </button>
+        <button class="btn btn-primary" id="btn-export" aria-label="Экспорт в PDF">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+          <span>Экспорт PDF</span>
+        </button>
+        <button class="btn btn-icon" data-theme-toggle aria-label="Переключить тему"></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Archive viewing banner -->
+  <div class="archive-banner" id="archive-banner" hidden>
+    <div class="archive-banner-inner">
+      <span class="archive-banner-label">Архив · <strong id="archive-banner-date"></strong></span>
+      <button class="btn btn-ghost btn-sm" id="btn-archive-back">Вернуться к сегодняшнему</button>
+    </div>
+  </div>
+
+  <main class="main">
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="hero-text">
+          <div class="hero-meta" id="hero-meta">Обновлено сегодня · 08:00 МСК</div>
+          <h1 class="hero-title">Свежие кейсы брендинга за <span id="hero-period">последние 14 дней</span></h1>
+          <p class="hero-subtitle">Отобрано из 26 источников с дедупликацией. Приоритет A — сразу в клиентскую презентацию.</p>
+        </div>
+
+        <div class="hero-stats" id="hero-stats" role="list">
+          <!-- populated by JS -->
+        </div>
+      </div>
+    </section>
+
+    <section class="filters" aria-label="Фильтры">
+      <div class="filters-row">
+        <div class="search-wrap">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+          <input type="search" id="search" placeholder="Поиск по названию, агентству, тегам…" aria-label="Поиск">
+        </div>
+
+        <div class="filter-group" role="group" aria-label="Категория">
+          <button class="chip is-active" data-filter="category" data-value="all">Все</button>
+          <button class="chip" data-filter="category" data-value="alcoholic">Алкоголь</button>
+          <button class="chip" data-filter="category" data-value="wine">Вино</button>
+          <button class="chip" data-filter="category" data-value="non_alcoholic">Безалкогольные</button>
+          <button class="chip" data-filter="category" data-value="general">Брендинг</button>
+        </div>
+      </div>
+
+      <div class="filters-row filters-row-sub">
+        <div class="filter-group" role="group" aria-label="Период">
+          <span class="filter-label">Период:</span>
+          <button class="chip chip-sm" data-filter="period" data-value="yesterday">Вчера</button>
+          <button class="chip chip-sm" data-filter="period" data-value="3d">3 дня</button>
+          <button class="chip chip-sm is-active" data-filter="period" data-value="7d">7 дней</button>
+          <button class="chip chip-sm" data-filter="period" data-value="14d">14 дней</button>
+          <button class="chip chip-sm" data-filter="period" data-value="all">Всё</button>
+        </div>
+
+        <div class="filter-group" role="group" aria-label="Приоритет">
+          <span class="filter-label">Приоритет:</span>
+          <button class="chip chip-sm is-active" data-filter="priority" data-value="all">Все</button>
+          <button class="chip chip-sm chip-priority-a" data-filter="priority" data-value="A">A</button>
+          <button class="chip chip-sm chip-priority-b" data-filter="priority" data-value="B">B</button>
+          <button class="chip chip-sm chip-priority-c" data-filter="priority" data-value="C">C</button>
+        </div>
+
+        <div class="filter-group filter-group-right">
+          <span class="filter-label">Сортировка:</span>
+          <select id="sort" aria-label="Сортировка">
+            <option value="relevance">По релевантности</option>
+            <option value="date_desc">Сначала свежие</option>
+            <option value="date_asc">Сначала старые</option>
+            <option value="priority">По приоритету</option>
+            <option value="title">По алфавиту</option>
+          </select>
+          <button class="btn btn-icon btn-ghost" id="btn-reset" aria-label="Сбросить фильтры" title="Сбросить фильтры">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="filters-meta">
+        <span id="results-count">—</span>
+        <span class="filters-meta-divider">·</span>
+        <span id="max-cards-hint">Максимум 32 карточки</span>
+      </div>
+    </section>
+
+    <section class="grid" id="grid" aria-live="polite"></section>
+
+    <section class="empty-state" id="empty-state" hidden>
+      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+      <h2>Ничего не найдено</h2>
+      <p>Попробуйте изменить фильтры или расширить период.</p>
+      <button class="btn btn-ghost" id="btn-reset-empty">Сбросить фильтры</button>
+    </section>
+  </main>
+
+  <!-- Archive modal -->
+  <dialog class="modal" id="archive-modal" aria-labelledby="archive-title">
+    <div class="modal-inner">
+      <header class="modal-header">
+        <h2 id="archive-title">Архив дайджестов</h2>
+        <button class="btn btn-icon" id="btn-archive-close" aria-label="Закрыть">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6L6 18M6 6l12 12"/></svg>
+        </button>
+      </header>
+
+      <div class="archive-body">
+        <section class="archive-recent">
+          <h3>Последние дни</h3>
+          <ul class="archive-list" id="archive-list"></ul>
+        </section>
+
+        <section class="archive-calendar">
+          <div class="calendar-header">
+            <button class="btn btn-icon btn-ghost" id="cal-prev" aria-label="Предыдущий месяц">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+            </button>
+            <h3 id="cal-month">—</h3>
+            <button class="btn btn-icon btn-ghost" id="cal-next" aria-label="Следующий месяц">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+            </button>
+          </div>
+          <div class="calendar-weekdays">
+            <span>Пн</span><span>Вт</span><span>Ср</span><span>Чт</span><span>Пт</span><span>Сб</span><span>Вс</span>
+          </div>
+          <div class="calendar-grid" id="cal-grid"></div>
+        </section>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Detail modal -->
+  <dialog class="modal modal-detail" id="detail-modal" aria-labelledby="detail-title">
+    <div class="modal-inner" id="detail-inner"></div>
+  </dialog>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>Kingbee · Ежедневный дайджест брендинга · Обновление в 08:00 МСК</div>
+      <div class="footer-sources">Источники: World of Brand Design, Pentawards, Behance, Dieline, The Spirits Business, Packaging of the World, Brand New, и ещё 19.</div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
