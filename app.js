@@ -438,17 +438,11 @@ function renderNewsPlaceholderHTML(source) {
 }
 
 function renderPlaceholderHTML(title, source) {
-  // Правка 2: яркая плитка + название кейса + CTA
+  // Плитка на карточке: только монограмма (текст ниже дублирует карточку)
   const b = getSourceBrand(source);
   return `
     <div class="source-tile source-tile-case" style="--tile-bg:${b.bg};--tile-fg:${b.fg}">
       <div class="source-tile-mark">${escapeHTML(b.mark)}</div>
-      <div class="source-tile-case-title">${escapeHTML(title || 'Кейс')}</div>
-      ${source ? `<div class="source-tile-source">${escapeHTML(source)}</div>` : ''}
-      <div class="source-tile-cta">
-        Смотреть кейс
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
-      </div>
     </div>
   `;
 }

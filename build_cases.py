@@ -80,6 +80,42 @@ def main():
         c["title"],
     ))
 
+    # Дедупликация картинок: если несколько кейсов ссылаются на один URL
+    # или делят одну og:image — картинку оставляем только у первого (по приоритету/дате),
+    # остальным очищаем image → рендерится фирменная плитка источника.
+    def _imgkey(c):
+        img = (c.get("image_url") or c.get("image") or "").strip()
+        return img.lower() if img else None
+    def _urlkey(c):
+        u = (c.get("source_url") or c.get("url") or "").strip()
+        return u.lower().rstrip("/") if u else None
+
+    seen_urls = set()
+    seen_imgs = set()
+    dedup_stats = {"url_dupes": 0, "img_dupes": 0}
+    for c in all_cases:
+        img = _imgkey(c)
+        url = _urlkey(c)
+        if not img:
+            # картинки нет — ничего не делаем
+            if url:
+                seen_urls.add(url)
+            continue
+        if url and url in seen_urls:
+            c["image_url"] = ""
+            c["image"] = ""
+            dedup_stats["url_dupes"] += 1
+            continue
+        if img in seen_imgs:
+            c["image_url"] = ""
+            c["image"] = ""
+            dedup_stats["img_dupes"] += 1
+            continue
+        if url:
+            seen_urls.add(url)
+        seen_imgs.add(img)
+    print(f"  Дедуп: {dedup_stats['url_dupes']} дублей по URL, {dedup_stats['img_dupes']} дублей по картинке")
+
     output = {
         "generated_at": datetime.utcnow().isoformat() + "Z",
         "total": len(all_cases),

@@ -425,6 +425,20 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 500; line-height: 1.
   color: var(--color-text);
   border: 1px solid var(--color-divider);
 }
+
+/* На фирменной плитке — тёмная полупрозрачная капсула, чтобы не перекрывать монограмму */
+.card-media:has(.source-tile) .badge-category {
+  background: rgba(0, 0, 0, 0.35);
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+.card-media:has(.source-tile) .badge-region {
+  background: rgba(0, 0, 0, 0.35);
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.15);
+}
 .badge-priority-A { background: var(--color-priority-a); color: #fff; }
 .badge-priority-B { background: var(--color-priority-b); color: #fff; }
 .badge-priority-C { background: var(--color-priority-c); color: #fff; }
@@ -1036,8 +1050,8 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 500; line-height: 1.
   color: var(--tile-fg, #fff);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   padding: 1rem 1.1rem;
   position: relative;
   overflow: hidden;
@@ -1120,6 +1134,8 @@ h1, h2, h3 { font-family: var(--font-display); font-weight: 500; line-height: 1.
   min-height: 100%;
   padding: 2rem 2.2rem;
   gap: 1rem;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 .source-tile-mark-large {
   font-size: clamp(4.5rem, 3rem + 6vw, 8rem);

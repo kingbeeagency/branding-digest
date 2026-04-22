@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-22T14:01:53.027978Z",
+  "generated_at": "2026-04-22T14:53:44.271586Z",
   "total": 88,
   "summary": {
     "alcoholic": {
@@ -318,7 +318,7 @@
       "published_at": "2026-04-18",
       "source": "Craft Spirits Magazine",
       "source_url": "https://craftspiritsmag.com/2026/04/18/announcing-the-results-of-the-sixth-annual-craft-spirits-packaging-awards/",
-      "image_url": "https://craftspiritsmag.com/wp-content/uploads/2026/04/Koala-Bare-Range-Visual-1-1-1200x630.jpg",
+      "image_url": "",
       "subcategory": "Джин",
       "subcategory_label": "Джин",
       "subcategory_tag": "gin",
@@ -336,7 +336,8 @@
       "priority": "A",
       "category": "alcoholic",
       "category_label": "Алкоголь",
-      "region": "global"
+      "region": "global",
+      "image": ""
     },
     {
       "id": "alcoholic-003",
@@ -346,7 +347,7 @@
       "published_at": "2026-04-18",
       "source": "Craft Spirits Magazine",
       "source_url": "https://craftspiritsmag.com/2026/04/18/announcing-the-results-of-the-sixth-annual-craft-spirits-packaging-awards/",
-      "image_url": "https://craftspiritsmag.com/wp-content/uploads/2026/04/Koala-Bare-Range-Visual-1-1-1200x630.jpg",
+      "image_url": "",
       "subcategory": "Водка",
       "subcategory_label": "Водка",
       "subcategory_tag": "vodka",
@@ -364,7 +365,8 @@
       "priority": "A",
       "category": "alcoholic",
       "category_label": "Алкоголь",
-      "region": "global"
+      "region": "global",
+      "image": ""
     },
     {
       "id": "alcoholic-002",
@@ -374,7 +376,7 @@
       "published_at": "2026-04-18",
       "source": "Craft Spirits Magazine",
       "source_url": "https://craftspiritsmag.com/2026/04/18/announcing-the-results-of-the-sixth-annual-craft-spirits-packaging-awards/",
-      "image_url": "https://craftspiritsmag.com/wp-content/uploads/2026/04/Koala-Bare-Range-Visual-1-1-1200x630.jpg",
+      "image_url": "",
       "subcategory": "Виски / Бурбон (портфолио)",
       "subcategory_label": "Виски / Бурбон (Портфолио)",
       "subcategory_tag": "whiskey",
@@ -392,7 +394,8 @@
       "priority": "A",
       "category": "alcoholic",
       "category_label": "Алкоголь",
-      "region": "global"
+      "region": "global",
+      "image": ""
     },
     {
       "id": "non_alcoholic-006",
@@ -467,7 +470,7 @@
       "published_at": "2026-04-18",
       "source": "Craft Spirits Magazine",
       "source_url": "https://craftspiritsmag.com/2026/04/18/announcing-the-results-of-the-sixth-annual-craft-spirits-packaging-awards/",
-      "image_url": "https://craftspiritsmag.com/wp-content/uploads/2026/04/Koala-Bare-Range-Visual-1-1-1200x630.jpg",
+      "image_url": "",
       "subcategory": "Джин (Best in Show) / Виски-бурбон (портфолио)",
       "subcategory_label": "Джин (Best In Show) / Виски-Бурбон (Портфолио)",
       "subcategory_tag": "gin",
@@ -490,7 +493,8 @@
       "priority": "A",
       "category": "alcoholic",
       "category_label": "Алкоголь",
-      "region": "global"
+      "region": "global",
+      "image": ""
     },
     {
       "id": "non_alcoholic-007",
@@ -663,7 +667,7 @@
       "published_at": "2026-04-12",
       "source": "Vinitaly",
       "source_url": "https://www.vinitaly.com/en/press/press-releases/vinitaly-design-award-2026-94-awards-announced-awards-for-packaging-ready-to-compete-on-global-markets/",
-      "image_url": "https://www.vinitaly.com/media/zi4npdss/034_enolitech_archivioveronafiere_ennevifoto.jpg",
+      "image_url": "",
       "subcategory": "still",
       "subcategory_label": "Still",
       "tags": [
@@ -678,7 +682,8 @@
       "priority": "A",
       "category": "wine",
       "category_label": "Вино",
-      "region": "global"
+      "region": "global",
+      "image": ""
     },
     {
       "id": "wine-014",
@@ -1210,7 +1215,7 @@
       "published_at": "2026-04-18",
       "source": "Craft Spirits Magazine",
       "source_url": "https://craftspiritsmag.com/2026/04/18/announcing-the-results-of-the-sixth-annual-craft-spirits-packaging-awards/",
-      "image_url": "https://craftspiritsmag.com/wp-content/uploads/2026/04/Koala-Bare-Range-Visual-1-1-1200x630.jpg",
+      "image_url": "",
       "subcategory": "Ликёр",
       "subcategory_label": "Ликёр",
       "subcategory_tag": "liqueur",
@@ -1228,7 +1233,8 @@
       "priority": "B",
       "category": "alcoholic",
       "category_label": "Алкоголь",
-      "region": "global"
+      "region": "global",
+      "image": ""
     },
     {
       "id": "alcoholic-005",
@@ -1238,7 +1244,7 @@
       "published_at": "2026-04-18",
       "source": "Craft Spirits Magazine",
       "source_url": "https://craftspiritsmag.com/2026/04/18/announcing-the-results-of-the-sixth-annual-craft-spirits-packaging-awards/",
-      "image_url": "https://craftspiritsmag.com/wp-content/uploads/2026/04/Koala-Bare-Range-Visual-1-1-1200x630.jpg",
+      "image_url": "",
       "subcategory": "Виски",
       "subcategory_label": "Виски",
       "subcategory_tag": "whiskey",
@@ -1255,7 +1261,8 @@
       "priority": "B",
       "category": "alcoholic",
       "category_label": "Алкоголь",
-      "region": "global"
+      "region": "global",
+      "image": ""
     },
     {
       "id": "general-016",
@@ -1291,7 +1298,7 @@
       "published_at": "2026-04-18",
       "source": "Craft Spirits Magazine",
       "source_url": "https://craftspiritsmag.com/2026/04/18/announcing-the-results-of-the-sixth-annual-craft-spirits-packaging-awards/",
-      "image_url": "https://craftspiritsmag.com/wp-content/uploads/2026/04/Koala-Bare-Range-Visual-1-1-1200x630.jpg",
+      "image_url": "",
       "subcategory": "Водка",
       "subcategory_label": "Водка",
       "subcategory_tag": "vodka",
@@ -1308,7 +1315,8 @@
       "priority": "B",
       "category": "alcoholic",
       "category_label": "Алкоголь",
-      "region": "global"
+      "region": "global",
+      "image": ""
     },
     {
       "id": "alcoholic-006",
@@ -1318,7 +1326,7 @@
       "published_at": "2026-04-18",
       "source": "Craft Spirits Magazine",
       "source_url": "https://craftspiritsmag.com/2026/04/18/announcing-the-results-of-the-sixth-annual-craft-spirits-packaging-awards/",
-      "image_url": "https://craftspiritsmag.com/wp-content/uploads/2026/04/Koala-Bare-Range-Visual-1-1-1200x630.jpg",
+      "image_url": "",
       "subcategory": "Ром",
       "subcategory_label": "Ром",
       "subcategory_tag": "rum",
@@ -1336,7 +1344,8 @@
       "priority": "B",
       "category": "alcoholic",
       "category_label": "Алкоголь",
-      "region": "global"
+      "region": "global",
+      "image": ""
     },
     {
       "id": "alcoholic-009",
@@ -1346,7 +1355,7 @@
       "published_at": "2026-04-18",
       "source": "Craft Spirits Magazine",
       "source_url": "https://craftspiritsmag.com/2026/04/18/announcing-the-results-of-the-sixth-annual-craft-spirits-packaging-awards/",
-      "image_url": "https://craftspiritsmag.com/wp-content/uploads/2026/04/Koala-Bare-Range-Visual-1-1-1200x630.jpg",
+      "image_url": "",
       "subcategory": "Водка",
       "subcategory_label": "Водка",
       "subcategory_tag": "vodka",
@@ -1364,7 +1373,8 @@
       "priority": "B",
       "category": "alcoholic",
       "category_label": "Алкоголь",
-      "region": "global"
+      "region": "global",
+      "image": ""
     },
     {
       "id": "alcoholic-010",
@@ -1374,7 +1384,7 @@
       "published_at": "2026-04-18",
       "source": "Craft Spirits Magazine",
       "source_url": "https://craftspiritsmag.com/2026/04/18/announcing-the-results-of-the-sixth-annual-craft-spirits-packaging-awards/",
-      "image_url": "https://craftspiritsmag.com/wp-content/uploads/2026/04/Koala-Bare-Range-Visual-1-1-1200x630.jpg",
+      "image_url": "",
       "subcategory": "Джин / Водка / RTD (портфолио)",
       "subcategory_label": "Джин / Водка / Rtd (Портфолио)",
       "subcategory_tag": "gin",
@@ -1393,7 +1403,8 @@
       "priority": "B",
       "category": "alcoholic",
       "category_label": "Алкоголь",
-      "region": "global"
+      "region": "global",
+      "image": ""
     },
     {
       "id": "general-007",
@@ -2023,7 +2034,7 @@
       "published_at": "2026-04-20",
       "source": "The Dieline",
       "source_url": "https://thedieline.com/schweppes-reclaims-its-brand-with-jkr-instead-of-reinventing/",
-      "image_url": "https://thedieline.com/wp-content/uploads/2026/04/JKR_Schweppes_DielineAwards-02-1024x576.png",
+      "image_url": "",
       "subcategory": "soda",
       "subcategory_label": "Газировка",
       "tags": [
@@ -2045,7 +2056,8 @@
       "priority": "C",
       "category": "non_alcoholic",
       "category_label": "Безалкогольные",
-      "region": "KR"
+      "region": "KR",
+      "image": ""
     },
     {
       "id": "general-010",
@@ -2105,7 +2117,7 @@
       "published_at": "2026-04-18",
       "source": "Craft Spirits Magazine",
       "source_url": "https://craftspiritsmag.com/2026/04/18/announcing-the-results-of-the-sixth-annual-craft-spirits-packaging-awards/",
-      "image_url": "https://craftspiritsmag.com/wp-content/uploads/2026/04/Koala-Bare-Range-Visual-1-1-1200x630.jpg",
+      "image_url": "",
       "subcategory": "Ром",
       "subcategory_label": "Ром",
       "subcategory_tag": "rum",
@@ -2122,7 +2134,8 @@
       "priority": "C",
       "category": "alcoholic",
       "category_label": "Алкоголь",
-      "region": "global"
+      "region": "global",
+      "image": ""
     },
     {
       "id": "alcoholic-011",
@@ -2132,7 +2145,7 @@
       "published_at": "2026-04-18",
       "source": "Craft Spirits Magazine",
       "source_url": "https://craftspiritsmag.com/2026/04/18/announcing-the-results-of-the-sixth-annual-craft-spirits-packaging-awards/",
-      "image_url": "https://craftspiritsmag.com/wp-content/uploads/2026/04/Koala-Bare-Range-Visual-1-1-1200x630.jpg",
+      "image_url": "",
       "subcategory": "Виски / Бурбон",
       "subcategory_label": "Виски / Бурбон",
       "subcategory_tag": "whiskey",
@@ -2150,7 +2163,8 @@
       "priority": "C",
       "category": "alcoholic",
       "category_label": "Алкоголь",
-      "region": "global"
+      "region": "global",
+      "image": ""
     },
     {
       "id": "alcoholic-016",
@@ -2160,7 +2174,7 @@
       "published_at": "2026-04-18",
       "source": "Craft Spirits Magazine",
       "source_url": "https://craftspiritsmag.com/2026/04/18/announcing-the-results-of-the-sixth-annual-craft-spirits-packaging-awards/",
-      "image_url": "https://craftspiritsmag.com/wp-content/uploads/2026/04/Koala-Bare-Range-Visual-1-1-1200x630.jpg",
+      "image_url": "",
       "subcategory": "Водка",
       "subcategory_label": "Водка",
       "subcategory_tag": "vodka",
@@ -2178,7 +2192,8 @@
       "priority": "C",
       "category": "alcoholic",
       "category_label": "Алкоголь",
-      "region": "global"
+      "region": "global",
+      "image": ""
     },
     {
       "id": "alcoholic-013",
@@ -2188,7 +2203,7 @@
       "published_at": "2026-04-18",
       "source": "Craft Spirits Magazine",
       "source_url": "https://craftspiritsmag.com/2026/04/18/announcing-the-results-of-the-sixth-annual-craft-spirits-packaging-awards/",
-      "image_url": "https://craftspiritsmag.com/wp-content/uploads/2026/04/Koala-Bare-Range-Visual-1-1-1200x630.jpg",
+      "image_url": "",
       "subcategory": "Виски",
       "subcategory_label": "Виски",
       "subcategory_tag": "whiskey",
@@ -2205,7 +2220,8 @@
       "priority": "C",
       "category": "alcoholic",
       "category_label": "Алкоголь",
-      "region": "global"
+      "region": "global",
+      "image": ""
     },
     {
       "id": "alcoholic-012",
@@ -2215,7 +2231,7 @@
       "published_at": "2026-04-18",
       "source": "Craft Spirits Magazine",
       "source_url": "https://craftspiritsmag.com/2026/04/18/announcing-the-results-of-the-sixth-annual-craft-spirits-packaging-awards/",
-      "image_url": "https://craftspiritsmag.com/wp-content/uploads/2026/04/Koala-Bare-Range-Visual-1-1-1200x630.jpg",
+      "image_url": "",
       "subcategory": "Текила",
       "subcategory_label": "Текила",
       "subcategory_tag": "tequila",
@@ -2233,7 +2249,8 @@
       "priority": "C",
       "category": "alcoholic",
       "category_label": "Алкоголь",
-      "region": "global"
+      "region": "global",
+      "image": ""
     },
     {
       "id": "alcoholic-018",
@@ -2243,7 +2260,7 @@
       "published_at": "2026-04-18",
       "source": "Craft Spirits Magazine",
       "source_url": "https://craftspiritsmag.com/2026/04/18/announcing-the-results-of-the-sixth-annual-craft-spirits-packaging-awards/",
-      "image_url": "https://craftspiritsmag.com/wp-content/uploads/2026/04/Koala-Bare-Range-Visual-1-1-1200x630.jpg",
+      "image_url": "",
       "subcategory": "Текила",
       "subcategory_label": "Текила",
       "subcategory_tag": "tequila",
@@ -2260,7 +2277,8 @@
       "priority": "C",
       "category": "alcoholic",
       "category_label": "Алкоголь",
-      "region": "global"
+      "region": "global",
+      "image": ""
     },
     {
       "id": "general-021",
