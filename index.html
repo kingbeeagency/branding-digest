@@ -60,7 +60,7 @@
       <div class="hero-inner">
         <div class="hero-text">
           <div class="hero-meta" id="hero-meta">Обновлено сегодня · 08:00 МСК</div>
-          <h1 class="hero-title">Свежие кейсы брендинга за <span id="hero-period">последние 14 дней</span></h1>
+          <h1 class="hero-title">Свежие кейсы брендинга за <span id="hero-period">последние 7 дней</span></h1>
           <p class="hero-subtitle">Отобрано из 26 источников с дедупликацией. Приоритет A — сразу в клиентскую презентацию.</p>
         </div>
 
@@ -70,69 +70,116 @@
       </div>
     </section>
 
-    <section class="filters" aria-label="Фильтры">
-      <div class="filters-row">
-        <div class="search-wrap">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
-          <input type="search" id="search" placeholder="Поиск по названию, агентству, тегам…" aria-label="Поиск">
+    <!-- Weekly News Section -->
+    <section class="news-section" id="news-section" hidden>
+      <div class="news-header">
+        <div class="news-header-text">
+          <h2 class="news-title">Новости недели</h2>
+          <p class="news-subtitle">Топ-10 событий индустрии брендинга и напитков за последние 7 дней</p>
         </div>
-
-        <div class="filter-group" role="group" aria-label="Категория">
-          <button class="chip is-active" data-filter="category" data-value="all">Все</button>
-          <button class="chip" data-filter="category" data-value="alcoholic">Алкоголь</button>
-          <button class="chip" data-filter="category" data-value="wine">Вино</button>
-          <button class="chip" data-filter="category" data-value="non_alcoholic">Безалкогольные</button>
-          <button class="chip" data-filter="category" data-value="general">Брендинг</button>
-        </div>
+        <div class="news-meta" id="news-meta"></div>
       </div>
-
-      <div class="filters-row filters-row-sub">
-        <div class="filter-group" role="group" aria-label="Период">
-          <span class="filter-label">Период:</span>
-          <button class="chip chip-sm" data-filter="period" data-value="yesterday">Вчера</button>
-          <button class="chip chip-sm" data-filter="period" data-value="3d">3 дня</button>
-          <button class="chip chip-sm is-active" data-filter="period" data-value="7d">7 дней</button>
-          <button class="chip chip-sm" data-filter="period" data-value="14d">14 дней</button>
-          <button class="chip chip-sm" data-filter="period" data-value="all">Всё</button>
-        </div>
-
-        <div class="filter-group" role="group" aria-label="Приоритет">
-          <span class="filter-label">Приоритет:</span>
-          <button class="chip chip-sm is-active" data-filter="priority" data-value="all">Все</button>
-          <button class="chip chip-sm chip-priority-a" data-filter="priority" data-value="A">A</button>
-          <button class="chip chip-sm chip-priority-b" data-filter="priority" data-value="B">B</button>
-          <button class="chip chip-sm chip-priority-c" data-filter="priority" data-value="C">C</button>
-        </div>
-
-        <div class="filter-group filter-group-right">
-          <span class="filter-label">Сортировка:</span>
-          <select id="sort" aria-label="Сортировка">
-            <option value="relevance">По релевантности</option>
-            <option value="date_desc">Сначала свежие</option>
-            <option value="date_asc">Сначала старые</option>
-            <option value="priority">По приоритету</option>
-            <option value="title">По алфавиту</option>
-          </select>
-          <button class="btn btn-icon btn-ghost" id="btn-reset" aria-label="Сбросить фильтры" title="Сбросить фильтры">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></svg>
-          </button>
-        </div>
-      </div>
-
-      <div class="filters-meta">
-        <span id="results-count">—</span>
-        <span class="filters-meta-divider">·</span>
-        <span id="max-cards-hint">Максимум 32 карточки</span>
+      <div class="news-grid" id="news-grid" aria-live="polite">
+        <!-- populated by JS -->
       </div>
     </section>
 
-    <section class="grid" id="grid" aria-live="polite"></section>
+    <section class="cases-section">
+      <h2 class="section-title">Кейсы брендинга</h2>
 
-    <section class="empty-state" id="empty-state" hidden>
-      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
-      <h2>Ничего не найдено</h2>
-      <p>Попробуйте изменить фильтры или расширить период.</p>
-      <button class="btn btn-ghost" id="btn-reset-empty">Сбросить фильтры</button>
+      <section class="filters" aria-label="Фильтры">
+        <div class="filters-row">
+          <div class="search-wrap">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+            <input type="search" id="search" placeholder="Поиск по названию, агентству, тегам…" aria-label="Поиск">
+          </div>
+
+          <div class="filter-group" role="group" aria-label="Категория">
+            <button class="chip is-active" data-filter="category" data-value="all">Все</button>
+            <button class="chip" data-filter="category" data-value="alcoholic">Алкоголь</button>
+            <button class="chip" data-filter="category" data-value="wine">Вино</button>
+            <button class="chip" data-filter="category" data-value="non_alcoholic">Безалкогольные</button>
+            <button class="chip" data-filter="category" data-value="general">Брендинг</button>
+          </div>
+        </div>
+
+        <!-- Alcohol subcategory row (hidden unless category=alcoholic) -->
+        <div class="filters-row filters-row-sub filters-row-alco" id="filters-alco" hidden>
+          <span class="filter-label">Подкатегория:</span>
+          <div class="filter-group filter-group-wrap" role="group" aria-label="Подкатегория алкоголя">
+            <button class="chip chip-sm is-active" data-filter="subcategory_tag" data-value="all">Все</button>
+            <button class="chip chip-sm" data-filter="subcategory_tag" data-value="whiskey">Виски</button>
+            <button class="chip chip-sm" data-filter="subcategory_tag" data-value="cognac">Коньяк</button>
+            <button class="chip chip-sm" data-filter="subcategory_tag" data-value="rum">Ром</button>
+            <button class="chip chip-sm" data-filter="subcategory_tag" data-value="tequila">Текила</button>
+            <button class="chip chip-sm" data-filter="subcategory_tag" data-value="mezcal">Мескаль</button>
+            <button class="chip chip-sm" data-filter="subcategory_tag" data-value="vodka">Водка</button>
+            <button class="chip chip-sm" data-filter="subcategory_tag" data-value="gin">Джин</button>
+            <button class="chip chip-sm" data-filter="subcategory_tag" data-value="liqueur">Ликёр</button>
+            <button class="chip chip-sm" data-filter="subcategory_tag" data-value="aperitif">Аперитив</button>
+            <button class="chip chip-sm" data-filter="subcategory_tag" data-value="beer">Пиво</button>
+            <button class="chip chip-sm" data-filter="subcategory_tag" data-value="cider">Сидр</button>
+            <button class="chip chip-sm" data-filter="subcategory_tag" data-value="sake">Саке</button>
+            <button class="chip chip-sm" data-filter="subcategory_tag" data-value="rtd">RTD</button>
+          </div>
+        </div>
+
+        <div class="filters-row filters-row-sub">
+          <div class="filter-group" role="group" aria-label="Период">
+            <span class="filter-label">Период:</span>
+            <button class="chip chip-sm" data-filter="period" data-value="yesterday">Вчера</button>
+            <button class="chip chip-sm" data-filter="period" data-value="3d">3 дня</button>
+            <button class="chip chip-sm is-active" data-filter="period" data-value="7d">7 дней</button>
+            <button class="chip chip-sm" data-filter="period" data-value="14d">14 дней</button>
+            <button class="chip chip-sm" data-filter="period" data-value="all">Всё</button>
+          </div>
+
+          <div class="filter-group" role="group" aria-label="Приоритет">
+            <span class="filter-label">Приоритет:</span>
+            <button class="chip chip-sm is-active" data-filter="priority" data-value="all">Все</button>
+            <button class="chip chip-sm chip-priority-a" data-filter="priority" data-value="A">A</button>
+            <button class="chip chip-sm chip-priority-b" data-filter="priority" data-value="B">B</button>
+            <button class="chip chip-sm chip-priority-c" data-filter="priority" data-value="C">C</button>
+          </div>
+
+          <div class="filter-group" role="group" aria-label="Регион">
+            <span class="filter-label">Регион:</span>
+            <button class="chip chip-sm is-active" data-filter="region" data-value="all">Все</button>
+            <button class="chip chip-sm" data-filter="region" data-value="asia" title="Китай, Япония, Южная Корея, Индия">Азия</button>
+          </div>
+        </div>
+
+        <div class="filters-row filters-row-sub">
+          <div class="filter-group filter-group-right">
+            <span class="filter-label">Сортировка:</span>
+            <select id="sort" aria-label="Сортировка">
+              <option value="relevance">По релевантности</option>
+              <option value="date_desc">Сначала свежие</option>
+              <option value="date_asc">Сначала старые</option>
+              <option value="priority">По приоритету</option>
+              <option value="title">По алфавиту</option>
+            </select>
+            <button class="btn btn-icon btn-ghost" id="btn-reset" aria-label="Сбросить фильтры" title="Сбросить фильтры">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="filters-meta">
+          <span id="results-count">—</span>
+          <span class="filters-meta-divider">·</span>
+          <span id="max-cards-hint">Максимум 32 карточки</span>
+        </div>
+      </section>
+
+      <section class="grid" id="grid" aria-live="polite"></section>
+
+      <section class="empty-state" id="empty-state" hidden>
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+        <h2>Ничего не найдено</h2>
+        <p>Попробуйте изменить фильтры или расширить период.</p>
+        <button class="btn btn-ghost" id="btn-reset-empty">Сбросить фильтры</button>
+      </section>
     </section>
   </main>
 
@@ -179,7 +226,7 @@
   <footer class="site-footer">
     <div class="footer-inner">
       <div>Kingbee · Ежедневный дайджест брендинга · Обновление в 08:00 МСК</div>
-      <div class="footer-sources">Источники: World of Brand Design, Pentawards, Behance, Dieline, The Spirits Business, Packaging of the World, Brand New, и ещё 19.</div>
+      <div class="footer-sources">Источники: World of Brand Design, Pentawards, Behance, Dieline, The Spirits Business, Packaging of the World, Brand New и ещё 19.</div>
     </div>
   </footer>
 

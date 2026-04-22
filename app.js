@@ -10,6 +10,31 @@ const CATEGORY_LABELS = {
   general: 'Брендинг',
 };
 
+const SUBCATEGORY_LABELS = {
+  whiskey: 'Виски', cognac: 'Коньяк', rum: 'Ром', tequila: 'Текила',
+  mezcal: 'Мескаль', vodka: 'Водка', gin: 'Джин', liqueur: 'Ликёр',
+  aperitif: 'Аперитив', beer: 'Пиво', cider: 'Сидр', sake: 'Саке', rtd: 'RTD',
+};
+
+const PERIOD_LABELS = {
+  yesterday: 'вчера',
+  '3d': '3 дня',
+  '7d': '7 дней',
+  '14d': '14 дней',
+  'all': 'всё время',
+};
+
+const NEWS_TYPE_LABELS = {
+  launch: 'Запуск',
+  rebrand: 'Ребрендинг',
+  ma: 'M&A',
+  appointment: 'Назначение',
+  trend: 'Тренд',
+  award: 'Награда',
+};
+
+const ASIAN_REGIONS = new Set(['CN', 'JP', 'KR', 'IN', 'asia']);
+
 const MONTHS_RU = [
   'Январь','Февраль','Март','Апрель','Май','Июнь',
   'Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'
@@ -21,17 +46,20 @@ const MONTHS_RU_GENITIVE = [
 
 // ===== State =====
 const state = {
-  data: null,           // current cases.json payload
-  archiveIndex: null,   // list of available archive dates
-  currentDate: null,    // null = "today"; YYYY-MM-DD for archive view
+  data: null,
+  news: null,
+  archiveIndex: null,
+  currentDate: null,
   filters: {
     category: 'all',
     period: '7d',
     priority: 'all',
+    region: 'all',
+    subcategory_tag: 'all',
     search: '',
   },
   sort: 'relevance',
-  calMonth: null,       // Date at first of month being viewed
+  calMonth: null,
 };
 
 // ===== Utils =====
@@ -68,6 +96,10 @@ function escapeHTML(s) {
   return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 }
 
+function isAsian(region) {
+  return region && ASIAN_REGIONS.has(region);
+}
+
 // ===== Data loading =====
 async function loadData(dateKey = null) {
   const url = dateKey ? `archive/${dateKey}.json` : 'cases.json';
@@ -77,7 +109,10 @@ async function loadData(dateKey = null) {
     const data = await res.json();
     state.data = data;
     state.currentDate = dateKey;
+    // Also try to load matching news snapshot for this date
+    await loadNews(dateKey);
     render();
+    renderNews();
     renderArchiveBanner();
   } catch (err) {
     console.error('Failed to load data:', err);
@@ -85,28 +120,36 @@ async function loadData(dateKey = null) {
   }
 }
 
+async function loadNews(dateKey = null) {
+  const url = dateKey ? `archive/news-${dateKey}.json` : 'data/news.json';
+  try {
+    const res = await fetch(url);
+    if (!res.ok) { state.news = null; return; }
+    state.news = await res.json();
+  } catch {
+    state.news = null;
+  }
+}
+
 async function loadArchiveIndex() {
   try {
     const res = await fetch('archive/index.json');
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    state.archiveIndex = await res.json();
+    const data = await res.json();
+    // Support both { dates: [...] } and plain array formats
+    state.archiveIndex = Array.isArray(data) ? data : (data.dates || []);
   } catch {
-    // Fall back to listing just today if no index
     state.archiveIndex = [{ date: todayISO(), count: state.data ? state.data.total : 0 }];
   }
 }
 
 // ===== Filtering & sorting =====
-function filterCases() {
-  if (!state.data) return [];
-  const { cases } = state.data;
-  const { category, period, priority, search } = state.filters;
-  const q = search.trim().toLowerCase();
+function filterCasesBase(cases) {
+  // Applies period filter only — used to compute hero stats
+  const { period } = state.filters;
   const today = state.currentDate || todayISO();
 
   return cases.filter(c => {
-    if (category !== 'all' && c.category !== category) return false;
-    if (priority !== 'all' && c.priority !== priority) return false;
     if (period !== 'all' && c.published_at) {
       const days = Math.abs(daysBetween(c.published_at, today));
       if (period === 'yesterday' && days > 1) return false;
@@ -114,9 +157,26 @@ function filterCases() {
       if (period === '7d' && days > 7) return false;
       if (period === '14d' && days > 14) return false;
     } else if (period !== 'all' && !c.published_at) {
-      // Cases without explicit date — include only if period is "all" or 14d
       if (period !== '14d') return false;
     }
+    return true;
+  });
+}
+
+function filterCases() {
+  if (!state.data) return [];
+  const { cases } = state.data;
+  const { category, priority, region, subcategory_tag, search } = state.filters;
+  const q = search.trim().toLowerCase();
+
+  // First apply period filter (shared with hero stats)
+  const periodFiltered = filterCasesBase(cases);
+
+  return periodFiltered.filter(c => {
+    if (category !== 'all' && c.category !== category) return false;
+    if (priority !== 'all' && c.priority !== priority) return false;
+    if (region === 'asia' && !isAsian(c.region)) return false;
+    if (category === 'alcoholic' && subcategory_tag !== 'all' && c.subcategory_tag !== subcategory_tag) return false;
     if (q) {
       const hay = [c.title, c.agency, c.description, c.source, ...(c.tags||[])].join(' ').toLowerCase();
       if (!hay.includes(q)) return false;
@@ -131,17 +191,14 @@ function sortCases(arr) {
   const byDateAsc = (a, b) => (a.published_at || '9').localeCompare(b.published_at || '9');
 
   switch (state.sort) {
-    case 'date_desc':
-      return [...arr].sort(byDateDesc);
-    case 'date_asc':
-      return [...arr].sort(byDateAsc);
+    case 'date_desc': return [...arr].sort(byDateDesc);
+    case 'date_asc': return [...arr].sort(byDateAsc);
     case 'priority':
       return [...arr].sort((a, b) => (pOrder[a.priority] ?? 3) - (pOrder[b.priority] ?? 3) || byDateDesc(a, b));
     case 'title':
       return [...arr].sort((a, b) => a.title.localeCompare(b.title, 'ru'));
     case 'relevance':
     default:
-      // Relevance = priority (A/B/C), then recency, then source tier
       return [...arr].sort((a, b) => {
         const p = (pOrder[a.priority] ?? 3) - (pOrder[b.priority] ?? 3);
         if (p) return p;
@@ -154,14 +211,21 @@ function sortCases(arr) {
 function renderStats() {
   if (!state.data) return;
   const host = $('#hero-stats');
-  const total = state.data.total;
-  const s = state.data.summary;
+
+  // Правка #5: Пересчитываем статистику с учётом активного фильтра периода
+  const periodFiltered = filterCasesBase(state.data.cases);
+
+  const counts = { all: periodFiltered.length, alcoholic: 0, wine: 0, non_alcoholic: 0, general: 0 };
+  periodFiltered.forEach(c => {
+    if (counts[c.category] !== undefined) counts[c.category]++;
+  });
+
   const stats = [
-    { label: 'Всего кейсов', value: total },
-    { label: 'Алкоголь', value: s.alcoholic.count },
-    { label: 'Вино', value: s.wine.count },
-    { label: 'Безалк.', value: s.non_alcoholic.count },
-    { label: 'Брендинг', value: s.general.count },
+    { label: 'Всего кейсов', value: counts.all },
+    { label: 'Алкоголь', value: counts.alcoholic },
+    { label: 'Вино', value: counts.wine },
+    { label: 'Безалк.', value: counts.non_alcoholic },
+    { label: 'Брендинг', value: counts.general },
   ];
   host.innerHTML = stats.map(st => `
     <div class="stat" role="listitem">
@@ -170,13 +234,24 @@ function renderStats() {
     </div>
   `).join('');
 
+  // Hero period label
+  const heroPeriod = $('#hero-period');
+  if (heroPeriod) {
+    const p = state.filters.period;
+    if (p === 'yesterday') heroPeriod.textContent = 'вчерашний день';
+    else if (p === '3d') heroPeriod.textContent = 'последние 3 дня';
+    else if (p === '7d') heroPeriod.textContent = 'последние 7 дней';
+    else if (p === '14d') heroPeriod.textContent = 'последние 14 дней';
+    else heroPeriod.textContent = 'всё время';
+  }
+
   // Hero meta
   const meta = $('#hero-meta');
   if (state.currentDate) {
     meta.textContent = `Архив · ${formatDateRu(state.currentDate)}`;
   } else if (state.data.generated_at) {
     const d = new Date(state.data.generated_at);
-    const hh = String(d.getUTCHours()+3).padStart(2,'0'); // MSK = UTC+3
+    const hh = String(d.getUTCHours()+3).padStart(2,'0');
     const mm = String(d.getUTCMinutes()).padStart(2,'0');
     meta.textContent = `Обновлено · ${formatDateRu(todayISO())} · ${hh}:${mm} МСК`;
   }
@@ -194,12 +269,109 @@ function renderArchiveBanner() {
   }
 }
 
+// ===== News rendering =====
+function renderNews() {
+  const section = $('#news-section');
+  const grid = $('#news-grid');
+  const meta = $('#news-meta');
+  if (!section || !grid) return;
+
+  const items = (state.news && state.news.news) || [];
+  if (!items.length) {
+    section.hidden = true;
+    return;
+  }
+  section.hidden = false;
+
+  const top = items.slice(0, 10);
+  if (meta) {
+    meta.textContent = state.news.period ? `Период: ${state.news.period}` : '';
+  }
+  grid.innerHTML = top.map(n => renderNewsCardHTML(n)).join('');
+}
+
+function renderNewsCardHTML(n) {
+  const dateStr = n.date ? formatDateShort(n.date) : '—';
+  const typeLabel = NEWS_TYPE_LABELS[n.type] || '';
+  const hasImage = !!n.image_url;
+  const href = n.source_url || '#';
+
+  // Правка #1: плашка-заглушка если нет картинки (в news-body уже есть заголовок — плашку упрощаем)
+  const mediaHTML = hasImage
+    ? `<img src="${escapeHTML(n.image_url)}" alt="${escapeHTML(n.title_ru)}" loading="lazy" data-fallback="1">`
+    : renderNewsPlaceholderHTML(n.source);
+
+  return `
+    <a class="news-card" href="${escapeHTML(href)}" target="_blank" rel="noopener" aria-label="${escapeHTML(n.title_ru)}">
+      <div class="news-card-media">
+        ${mediaHTML}
+        <div class="card-badges">
+          ${typeLabel ? `<span class="badge badge-category">${escapeHTML(typeLabel)}</span>` : ''}
+          ${n.priority ? `<span class="badge badge-priority-${n.priority}">${n.priority}</span>` : ''}
+        </div>
+      </div>
+      <div class="news-card-body">
+        <div class="card-meta">
+          <span>${dateStr}</span>
+          <span class="card-meta-divider">·</span>
+          <span>${escapeHTML(n.source || '')}</span>
+        </div>
+        <h3 class="news-card-title">${escapeHTML(n.title_ru)}</h3>
+        <p class="news-card-summary">${escapeHTML(n.summary_ru || '')}</p>
+      </div>
+    </a>
+  `;
+}
+
+function renderNewsPlaceholderHTML(source) {
+  // Упрощённая плашка для новостей: только источник + CTA (заголовок уже в body)
+  return `
+    <div class="card-media-fallback news-media-fallback">
+      <div class="card-media-fallback-inner">
+        <div class="card-media-fallback-source">${escapeHTML(source || '')}</div>
+        <div class="card-media-fallback-cta">
+          Читать
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+function renderPlaceholderHTML(title, source) {
+  // Правка #1: плашка-заглушка с названием кейса + источником + "Смотреть кейс"
+  return `
+    <div class="card-media-fallback">
+      <div class="card-media-fallback-inner">
+        <div class="card-media-fallback-title">${escapeHTML(title || 'Кейс')}</div>
+        ${source ? `<div class="card-media-fallback-source">${escapeHTML(source)}</div>` : ''}
+        <div class="card-media-fallback-cta">
+          Смотреть кейс
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
 function renderCards(cases) {
   const grid = $('#grid');
   const empty = $('#empty-state');
   const limited = cases.slice(0, MAX_CARDS);
 
-  $('#results-count').textContent = `Найдено ${cases.length}`;
+  // Правка #4: явная подпись активных фильтров
+  const parts = [`Найдено ${cases.length}`];
+  const p = state.filters.period;
+  if (p && p !== 'all') parts.push(`период ${PERIOD_LABELS[p] || p}`);
+  if (state.filters.category !== 'all') parts.push(`категория: ${CATEGORY_LABELS[state.filters.category] || state.filters.category}`);
+  if (state.filters.category === 'alcoholic' && state.filters.subcategory_tag !== 'all') {
+    parts.push(`подкатегория: ${SUBCATEGORY_LABELS[state.filters.subcategory_tag] || state.filters.subcategory_tag}`);
+  }
+  if (state.filters.priority !== 'all') parts.push(`приоритет ${state.filters.priority}`);
+  if (state.filters.region === 'asia') parts.push('регион: Азия');
+  if (state.filters.search) parts.push(`поиск: «${state.filters.search}»`);
+
+  $('#results-count').innerHTML = `<strong>${parts[0]}</strong>` + (parts.length > 1 ? ' · ' + parts.slice(1).join(' · ') : '');
   $('#max-cards-hint').textContent = cases.length > MAX_CARDS
     ? `Показано ${MAX_CARDS} из ${cases.length} — уточните фильтры`
     : 'Максимум 32 карточки';
@@ -215,17 +387,18 @@ function renderCards(cases) {
 
   grid.innerHTML = limited.map(c => renderCardHTML(c)).join('');
 
-  // Fallback placeholder on broken images
+  // Fallback placeholder on broken images — сохраняем кликабельность
   $$('img[data-fallback]', grid).forEach(img => {
     img.addEventListener('error', () => {
+      const card = img.closest('.card');
+      const c = card ? state.data.cases.find(x => x.id === card.dataset.id) : null;
       const ph = document.createElement('div');
-      ph.className = 'card-media-placeholder';
-      ph.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>';
-      img.replaceWith(ph);
+      ph.innerHTML = renderPlaceholderHTML(c ? c.title : '', c ? c.source : '');
+      img.replaceWith(ph.firstElementChild);
     }, { once: true });
   });
 
-  // Attach click handlers
+  // Attach click handlers for detail modal
   $$('.card', grid).forEach(el => {
     el.addEventListener('click', () => openDetail(el.dataset.id));
     el.addEventListener('keydown', e => {
@@ -236,12 +409,19 @@ function renderCards(cases) {
 
 function renderCardHTML(c) {
   const catLabel = CATEGORY_LABELS[c.category] || c.category;
+
+  // Правка #1: для битых картинок — плашка с названием, источником и CTA
   const mediaHTML = c.image_url
     ? `<img src="${escapeHTML(c.image_url)}" alt="${escapeHTML(c.title)}" loading="lazy" data-fallback="1">`
-    : `<div class="card-media-placeholder"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg></div>`;
+    : renderPlaceholderHTML(c.title, c.source);
 
   const dateStr = c.published_at ? formatDateShort(c.published_at) : 'Дата не указана';
   const tags = (c.tags || []).slice(0, 3).map(t => `<span class="tag">${escapeHTML(t)}</span>`).join('');
+
+  // Правка #3: маленький значок региона для азиатских
+  const regionBadge = isAsian(c.region)
+    ? `<span class="badge badge-region" title="Азиатский дизайн">Азия</span>`
+    : '';
 
   return `
     <article class="card" data-id="${escapeHTML(c.id)}" tabindex="0" role="button" aria-label="${escapeHTML(c.title)}">
@@ -249,6 +429,7 @@ function renderCardHTML(c) {
         ${mediaHTML}
         <div class="card-badges">
           <span class="badge badge-category">${escapeHTML(catLabel)}</span>
+          ${regionBadge}
           <span class="badge badge-priority-${c.priority}">${c.priority}</span>
         </div>
       </div>
@@ -273,9 +454,27 @@ function renderError(msg) {
 
 function render() {
   renderStats();
+  renderAlcoFilter();
   const filtered = filterCases();
   const sorted = sortCases(filtered);
   renderCards(sorted);
+}
+
+// Правка #6: показывать подкатегории только для алкоголя
+function renderAlcoFilter() {
+  const row = $('#filters-alco');
+  if (!row) return;
+  if (state.filters.category === 'alcoholic') {
+    row.hidden = false;
+  } else {
+    row.hidden = true;
+    if (state.filters.subcategory_tag !== 'all') {
+      state.filters.subcategory_tag = 'all';
+      $$('[data-filter="subcategory_tag"]').forEach(b =>
+        b.classList.toggle('is-active', b.dataset.value === 'all')
+      );
+    }
+  }
 }
 
 // ===== Detail modal =====
@@ -287,10 +486,30 @@ function openDetail(id) {
   const catLabel = CATEGORY_LABELS[c.category] || c.category;
   const mediaHTML = c.image_url
     ? `<img src="${escapeHTML(c.image_url)}" alt="${escapeHTML(c.title)}">`
-    : `<div class="card-media-placeholder" style="min-height:320px;"><svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg></div>`;
+    : renderPlaceholderHTML(c.title, c.source);
 
-  const covered = (c.also_covered_by || []).length
-    ? `<div class="detail-covered">Также освещали: ${(c.also_covered_by).map(escapeHTML).join(' · ')}</div>`
+  // Правка #2: also_covered_by — кликабельные ссылки, если есть URL
+  let coveredHTML = '';
+  if (c.also_covered_by && c.also_covered_by.length) {
+    const items = c.also_covered_by.map(item => {
+      // Поддержка обоих форматов: строка или объект {source, url}
+      if (typeof item === 'string') {
+        return `<span>${escapeHTML(item)}</span>`;
+      }
+      if (item && item.url) {
+        return `<a href="${escapeHTML(item.url)}" target="_blank" rel="noopener" class="covered-link">
+          ${escapeHTML(item.source || item.url)}
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6M10 14 21 3"/></svg>
+        </a>`;
+      }
+      return `<span>${escapeHTML((item && item.source) || '')}</span>`;
+    }).join(' · ');
+    coveredHTML = `<div class="detail-covered">Также освещали: ${items}</div>`;
+  }
+
+  // Правка #3: бейдж региона в деталях
+  const regionBadge = isAsian(c.region)
+    ? `<span class="badge badge-region">Азиатский дизайн${c.region && c.region !== 'asia' ? ' · ' + c.region : ''}</span>`
     : '';
 
   inner.innerHTML = `
@@ -304,6 +523,7 @@ function openDetail(id) {
           <span class="badge badge-category">${escapeHTML(catLabel)}</span>
           <span class="badge badge-priority-${c.priority}">Приоритет ${c.priority}</span>
           ${c.subcategory_label ? `<span class="badge badge-category">${escapeHTML(c.subcategory_label)}</span>` : ''}
+          ${regionBadge}
         </div>
         <h2 class="detail-title">${escapeHTML(c.title)}</h2>
         ${c.agency ? `<div class="detail-agency">${escapeHTML(c.agency)}</div>` : ''}
@@ -323,11 +543,11 @@ function openDetail(id) {
         <div class="detail-section">
           <div class="detail-section-title">Источник</div>
           <div class="detail-sources">
-            ${c.source_url ? `<a href="${escapeHTML(c.source_url)}" target="_blank" rel="noopener">
+            ${c.source_url ? `<a href="${escapeHTML(c.source_url)}" target="_blank" rel="noopener" class="detail-primary-link">
               ${escapeHTML(c.source || 'Перейти к источнику')}
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6M10 14 21 3"/></svg>
             </a>` : `<span>${escapeHTML(c.source || '')}</span>`}
-            ${covered}
+            ${coveredHTML}
           </div>
         </div>
 
@@ -347,7 +567,6 @@ function openDetail(id) {
 
 // ===== Archive modal =====
 function buildArchiveIndex() {
-  // If server-provided index is available, use it; otherwise synthesize single "today"
   if (state.archiveIndex && state.archiveIndex.length) return state.archiveIndex;
   return [{ date: todayISO(), count: state.data ? state.data.total : 0 }];
 }
@@ -355,7 +574,7 @@ function buildArchiveIndex() {
 function renderArchiveList() {
   const list = $('#archive-list');
   const index = buildArchiveIndex();
-  const recent = index.slice(0, 10); // last 10
+  const recent = index.slice(0, 10);
 
   if (!recent.length) {
     list.innerHTML = '<li style="padding:12px;color:var(--color-text-muted);font-size:var(--text-sm)">Архив пока пуст</li>';
@@ -398,27 +617,21 @@ function renderCalendar() {
   const available = new Set(index.map(e => e.date));
   const countMap = Object.fromEntries(index.map(e => [e.date, e.count]));
 
-  // First day of month, weekday (Mon=0)
   const firstDay = new Date(year, month, 1);
-  const firstWeekday = (firstDay.getDay() + 6) % 7; // Mon=0
+  const firstWeekday = (firstDay.getDay() + 6) % 7;
 
-  // Last day of previous month
   const prevLastDay = new Date(year, month, 0).getDate();
   const daysInMonth = new Date(year, month + 1, 0).getDate();
 
   const cells = [];
-
-  // Leading days (previous month)
   for (let i = firstWeekday - 1; i >= 0; i--) {
     const d = prevLastDay - i;
     cells.push({ day: d, otherMonth: true, date: null });
   }
-  // Current month days
   for (let d = 1; d <= daysInMonth; d++) {
     const dateStr = `${year}-${String(month+1).padStart(2,'0')}-${String(d).padStart(2,'0')}`;
     cells.push({ day: d, otherMonth: false, date: dateStr });
   }
-  // Trailing days (to fill 6 rows of 7)
   while (cells.length % 7 !== 0) {
     cells.push({ day: cells.length - daysInMonth - firstWeekday + 1, otherMonth: true, date: null });
   }
@@ -481,19 +694,16 @@ function setupTheme() {
 
 // ===== Filter UI =====
 function setupFilters() {
-  // Chips
   $$('[data-filter]').forEach(btn => {
     btn.addEventListener('click', () => {
       const filter = btn.dataset.filter;
       const value = btn.dataset.value;
       state.filters[filter] = value;
-      // Toggle active
       $$(`[data-filter="${filter}"]`).forEach(b => b.classList.toggle('is-active', b.dataset.value === value));
       render();
     });
   });
 
-  // Search
   const search = $('#search');
   let searchTimer;
   search.addEventListener('input', () => {
@@ -504,30 +714,29 @@ function setupFilters() {
     }, 160);
   });
 
-  // Sort
   $('#sort').addEventListener('change', e => {
     state.sort = e.target.value;
     render();
   });
 
-  // Reset
   $('#btn-reset').addEventListener('click', resetFilters);
   $('#btn-reset-empty').addEventListener('click', resetFilters);
 }
 
 function resetFilters() {
-  state.filters = { category: 'all', period: '7d', priority: 'all', search: '' };
+  state.filters = { category: 'all', period: '7d', priority: 'all', region: 'all', subcategory_tag: 'all', search: '' };
   state.sort = 'relevance';
   $('#search').value = '';
   $('#sort').value = 'relevance';
-  // Reset chip active state
   $$('[data-filter]').forEach(b => {
     const f = b.dataset.filter;
     const v = b.dataset.value;
     b.classList.toggle('is-active',
       (f === 'category' && v === 'all') ||
       (f === 'period' && v === '7d') ||
-      (f === 'priority' && v === 'all')
+      (f === 'priority' && v === 'all') ||
+      (f === 'region' && v === 'all') ||
+      (f === 'subcategory_tag' && v === 'all')
     );
   });
   render();
