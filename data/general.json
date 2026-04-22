@@ -10,8 +10,23 @@
     "image_url": "https://corporate.walmart.com/content/dam/corporate/en_us/newsroom/2026/04/great-value-before-after.jpg",
     "subcategory": "retail",
     "subcategory_label": "Ритейл",
-    "tags": ["retail", "FMCG", "rebrand", "private-label", "packaging", "Walmart", "JKR", "USA"],
-    "also_covered_by": ["Fast Company", "USA Today", "DesignRush", "Fox Business", "World Brand Design Society"],
+    "tags": [
+      "retail",
+      "FMCG",
+      "rebrand",
+      "private-label",
+      "packaging",
+      "Walmart",
+      "JKR",
+      "USA"
+    ],
+    "also_covered_by": [
+      "Fast Company",
+      "USA Today",
+      "DesignRush",
+      "Fox Business",
+      "World Brand Design Society"
+    ],
     "priority": "A",
     "category": "general",
     "category_label": "Брендинг",
@@ -28,8 +43,21 @@
     "image_url": "https://www.foxcorporation.com/wp-content/uploads/2026/04/fox-advertising-rebrand.jpg",
     "subcategory": "services",
     "subcategory_label": "Сервисы",
-    "tags": ["media", "advertising", "rebrand", "FOX", "Sibling Rivalry", "B2B", "USA"],
-    "also_covered_by": ["World Brand Design Society", "Graphic Design USA", "Ads of the World", "Fox Corporation PR"],
+    "tags": [
+      "media",
+      "advertising",
+      "rebrand",
+      "FOX",
+      "Sibling Rivalry",
+      "B2B",
+      "USA"
+    ],
+    "also_covered_by": [
+      "World Brand Design Society",
+      "Graphic Design USA",
+      "Ads of the World",
+      "Fox Corporation PR"
+    ],
     "priority": "A",
     "category": "general",
     "category_label": "Брендинг",
@@ -46,8 +74,18 @@
     "image_url": "https://www.fyxer.com/og-image.png",
     "subcategory": "tech",
     "subcategory_label": "Технологии",
-    "tags": ["AI", "productivity", "SaaS", "rebrand", "Red Antler", "UK", "software"],
-    "also_covered_by": ["LinkedIn"],
+    "tags": [
+      "AI",
+      "productivity",
+      "SaaS",
+      "rebrand",
+      "Red Antler",
+      "UK",
+      "software"
+    ],
+    "also_covered_by": [
+      "LinkedIn"
+    ],
     "priority": "A",
     "category": "general",
     "category_label": "Брендинг",
@@ -64,7 +102,13 @@
     "image_url": "https://hoodzpahdesign.com/wp-content/uploads/extellis-brand-guidelines.jpg",
     "subcategory": "tech",
     "subcategory_label": "Технологии",
-    "tags": ["satellite", "technology", "rebrand", "Hoodzpah", "USA"],
+    "tags": [
+      "satellite",
+      "technology",
+      "rebrand",
+      "Hoodzpah",
+      "USA"
+    ],
     "also_covered_by": [],
     "priority": "B",
     "category": "general",
@@ -82,7 +126,14 @@
     "image_url": "https://www.underconsideration.com/brandnew/archives/the_push_sickdogwolfman_logo.jpg",
     "subcategory": "culture",
     "subcategory_label": "Культура",
-    "tags": ["non-profit", "culture", "brand identity", "SICKDOGWOLFMAN", "USA", "music"],
+    "tags": [
+      "non-profit",
+      "culture",
+      "brand identity",
+      "SICKDOGWOLFMAN",
+      "USA",
+      "music"
+    ],
     "also_covered_by": [],
     "priority": "B",
     "category": "general",
@@ -100,7 +151,14 @@
     "image_url": "https://www.underconsideration.com/brandnew/archives/wnba_draft_2026_sunday_afternoon.jpg",
     "subcategory": "culture",
     "subcategory_label": "Культура",
-    "tags": ["sports", "WNBA", "event branding", "Sunday Afternoon", "USA", "women's sports"],
+    "tags": [
+      "sports",
+      "WNBA",
+      "event branding",
+      "Sunday Afternoon",
+      "USA",
+      "women's sports"
+    ],
     "also_covered_by": [],
     "priority": "B",
     "category": "general",
@@ -118,7 +176,14 @@
     "image_url": "https://worldbranddesign.com/wp-content/uploads/dhiway-rebrand-small-town-folk.jpg",
     "subcategory": "tech",
     "subcategory_label": "Технологии",
-    "tags": ["blockchain", "tech", "rebrand", "Small Town Folk", "India", "fintech"],
+    "tags": [
+      "blockchain",
+      "tech",
+      "rebrand",
+      "Small Town Folk",
+      "India",
+      "fintech"
+    ],
     "also_covered_by": [],
     "priority": "B",
     "category": "general",
@@ -136,7 +201,14 @@
     "image_url": "https://worldbranddesign.com/wp-content/uploads/beckn-rebrand-small-town-folk.jpg",
     "subcategory": "tech",
     "subcategory_label": "Технологии",
-    "tags": ["open protocol", "tech", "decentralized", "rebrand", "Small Town Folk", "India"],
+    "tags": [
+      "open protocol",
+      "tech",
+      "decentralized",
+      "rebrand",
+      "Small Town Folk",
+      "India"
+    ],
     "also_covered_by": [],
     "priority": "B",
     "category": "general",
@@ -154,8 +226,17 @@
     "image_url": "https://worldbranddesign.com/wp-content/uploads/parva-brand-identity-lazy-snail.jpg",
     "subcategory": "finance",
     "subcategory_label": "Финансы",
-    "tags": ["consulting", "finance", "rebrand", "Lazy Snail Design", "Europe", "bespoke typeface"],
-    "also_covered_by": ["Business & Finance"],
+    "tags": [
+      "consulting",
+      "finance",
+      "rebrand",
+      "Lazy Snail Design",
+      "Europe",
+      "bespoke typeface"
+    ],
+    "also_covered_by": [
+      "Business & Finance"
+    ],
     "priority": "B",
     "category": "general",
     "category_label": "Брендинг",
@@ -172,7 +253,15 @@
     "image_url": "https://worldbranddesign.com/wp-content/uploads/grand-festival-afam-brand.jpg",
     "subcategory": "culture",
     "subcategory_label": "Культура",
-    "tags": ["education", "culture", "festival", "Italy", "Cappelli Identity Design", "dynamic brand", "RUFA"],
+    "tags": [
+      "education",
+      "culture",
+      "festival",
+      "Italy",
+      "Cappelli Identity Design",
+      "dynamic brand",
+      "RUFA"
+    ],
     "also_covered_by": [],
     "priority": "B",
     "category": "general",
@@ -190,7 +279,14 @@
     "image_url": "https://worldbranddesign.com/wp-content/uploads/neutron-ab-studio-brand.jpg",
     "subcategory": "tech",
     "subcategory_label": "Технологии",
-    "tags": ["digital intelligence", "tech", "brand creation", "AB Studio", "Morocco", "minimalist"],
+    "tags": [
+      "digital intelligence",
+      "tech",
+      "brand creation",
+      "AB Studio",
+      "Morocco",
+      "minimalist"
+    ],
     "also_covered_by": [],
     "priority": "C",
     "category": "general",
@@ -208,7 +304,15 @@
     "image_url": "https://worldbranddesign.com/wp-content/uploads/1n-brand-founders-makers.jpg",
     "subcategory": "fmcg",
     "subcategory_label": "FMCG",
-    "tags": ["FMCG", "wellness", "biohacking", "brand creation", "Founders Makers", "UK", "packaging"],
+    "tags": [
+      "FMCG",
+      "wellness",
+      "biohacking",
+      "brand creation",
+      "Founders Makers",
+      "UK",
+      "packaging"
+    ],
     "also_covered_by": [],
     "priority": "B",
     "category": "general",
@@ -226,7 +330,14 @@
     "image_url": "https://worldbranddesign.com/wp-content/uploads/the-perch-grant-studio-identity.jpg",
     "subcategory": "services",
     "subcategory_label": "Сервисы",
-    "tags": ["real estate", "residential", "brand identity", "Grant Studio", "Canada", "modular"],
+    "tags": [
+      "real estate",
+      "residential",
+      "brand identity",
+      "Grant Studio",
+      "Canada",
+      "modular"
+    ],
     "also_covered_by": [],
     "priority": "C",
     "category": "general",
@@ -244,8 +355,17 @@
     "image_url": "https://english.news.cn/20260421/asoif-brand-identity.jpg",
     "subcategory": "culture",
     "subcategory_label": "Культура",
-    "tags": ["sports federation", "Olympic", "rebrand", "ASOIF", "Switzerland", "Lausanne"],
-    "also_covered_by": ["UNI India"],
+    "tags": [
+      "sports federation",
+      "Olympic",
+      "rebrand",
+      "ASOIF",
+      "Switzerland",
+      "Lausanne"
+    ],
+    "also_covered_by": [
+      "UNI India"
+    ],
     "priority": "A",
     "category": "general",
     "category_label": "Брендинг",
@@ -262,7 +382,14 @@
     "image_url": "https://www.underconsideration.com/brandnew/archives/unrivaled_sports_itch_projects.jpg",
     "subcategory": "services",
     "subcategory_label": "Сервисы",
-    "tags": ["sports", "women's league", "basketball", "brand identity", "Itch Projects", "USA"],
+    "tags": [
+      "sports",
+      "women's league",
+      "basketball",
+      "brand identity",
+      "Itch Projects",
+      "USA"
+    ],
     "also_covered_by": [],
     "priority": "B",
     "category": "general",
@@ -280,8 +407,20 @@
     "image_url": "https://fgsglobal.com/wp-content/uploads/fgs-global-brand-2026.jpg",
     "subcategory": "services",
     "subcategory_label": "Сервисы",
-    "tags": ["consulting", "advisory", "rebrand", "Athletics", "FGS Global", "global", "PR"],
-    "also_covered_by": ["PR Week UK", "FGS Global official", "LinkedIn"],
+    "tags": [
+      "consulting",
+      "advisory",
+      "rebrand",
+      "Athletics",
+      "FGS Global",
+      "global",
+      "PR"
+    ],
+    "also_covered_by": [
+      "PR Week UK",
+      "FGS Global official",
+      "LinkedIn"
+    ],
     "priority": "B",
     "category": "general",
     "category_label": "Брендинг",
@@ -298,7 +437,15 @@
     "image_url": "https://worldbranddesign.com/wp-content/uploads/kuka-cosmetics-los-iconic.jpg",
     "subcategory": "beauty",
     "subcategory_label": "Красота",
-    "tags": ["beauty", "cosmetics", "packaging", "Los Iconic", "Egypt", "pastel", "body care"],
+    "tags": [
+      "beauty",
+      "cosmetics",
+      "packaging",
+      "Los Iconic",
+      "Egypt",
+      "pastel",
+      "body care"
+    ],
     "also_covered_by": [],
     "priority": "B",
     "category": "general",
@@ -316,8 +463,17 @@
     "image_url": "https://worldbranddesign.com/wp-content/uploads/trishi-fashion-brand-mumbai.jpg",
     "subcategory": "fashion",
     "subcategory_label": "Мода",
-    "tags": ["fashion", "sustainable", "Mumbai", "India", "women's clothing", "brand identity"],
-    "also_covered_by": ["Behance"],
+    "tags": [
+      "fashion",
+      "sustainable",
+      "Mumbai",
+      "India",
+      "women's clothing",
+      "brand identity"
+    ],
+    "also_covered_by": [
+      "Behance"
+    ],
     "priority": "B",
     "category": "general",
     "category_label": "Брендинг",
@@ -334,8 +490,17 @@
     "image_url": "https://worldbranddesign.com/wp-content/uploads/ollo-padel-creative-spark.jpg",
     "subcategory": "horeca",
     "subcategory_label": "HoReCa",
-    "tags": ["padel", "sports venue", "brand creation", "Creative Spark", "UK", "Leeds"],
-    "also_covered_by": ["LinkedIn"],
+    "tags": [
+      "padel",
+      "sports venue",
+      "brand creation",
+      "Creative Spark",
+      "UK",
+      "Leeds"
+    ],
+    "also_covered_by": [
+      "LinkedIn"
+    ],
     "priority": "C",
     "category": "general",
     "category_label": "Брендинг",
@@ -352,8 +517,17 @@
     "image_url": "https://worldbranddesign.com/wp-content/uploads/friday-fast-food-creativ-na.jpg",
     "subcategory": "horeca",
     "subcategory_label": "HoReCa",
-    "tags": ["fast food", "HoReCa", "Gen Z", "brand creation", "creativ.na", "Romania"],
-    "also_covered_by": ["Instagram"],
+    "tags": [
+      "fast food",
+      "HoReCa",
+      "Gen Z",
+      "brand creation",
+      "creativ.na",
+      "Romania"
+    ],
+    "also_covered_by": [
+      "Instagram"
+    ],
     "priority": "C",
     "category": "general",
     "category_label": "Брендинг",
@@ -370,7 +544,14 @@
     "image_url": "https://worldbranddesign.com/wp-content/uploads/lumiera-jewelry-ezoke.jpg",
     "subcategory": "luxury",
     "subcategory_label": "Люкс",
-    "tags": ["jewelry", "luxury", "brand creation", "Ezoke Brand Studio", "quiet luxury", "diamond"],
+    "tags": [
+      "jewelry",
+      "luxury",
+      "brand creation",
+      "Ezoke Brand Studio",
+      "quiet luxury",
+      "diamond"
+    ],
     "also_covered_by": [],
     "priority": "B",
     "category": "general",
@@ -388,7 +569,14 @@
     "image_url": "https://worldbranddesign.com/wp-content/uploads/fenx-supplement-colab.jpg",
     "subcategory": "fmcg",
     "subcategory_label": "FMCG",
-    "tags": ["supplements", "sports nutrition", "FMCG", "Co+Lab", "Ukraine", "brand creation"],
+    "tags": [
+      "supplements",
+      "sports nutrition",
+      "FMCG",
+      "Co+Lab",
+      "Ukraine",
+      "brand creation"
+    ],
     "also_covered_by": [],
     "priority": "C",
     "category": "general",
@@ -406,7 +594,14 @@
     "image_url": "https://www.underconsideration.com/brandnew/archives/kale_the_working_assembly.jpg",
     "subcategory": "fmcg",
     "subcategory_label": "FMCG",
-    "tags": ["food", "FMCG", "healthy eating", "brand identity", "The Working Assembly", "USA"],
+    "tags": [
+      "food",
+      "FMCG",
+      "healthy eating",
+      "brand identity",
+      "The Working Assembly",
+      "USA"
+    ],
     "also_covered_by": [],
     "priority": "C",
     "category": "general",

@@ -35,6 +35,109 @@ const NEWS_TYPE_LABELS = {
 
 const ASIAN_REGIONS = new Set(['CN', 'JP', 'KR', 'IN', 'asia']);
 
+// Правка 3: paywall-домены — ставят chip «подписка»
+const PAYWALL_DOMAINS = [
+  'shankennewsdaily.com', 'wsj.com', 'ft.com', 'winespectator.com',
+  'bloomberg.com/news', 'economist.com', 'nytimes.com', 'washingtonpost.com',
+  'thedrinksbusiness.com/paid', 'decanter.com/premium'
+];
+
+// Правка 4: домены могут быть недоступны в РФ без VPN — ставят chip «РФ: VPN»
+const GEOBLOCKED_DOMAINS = [
+  'inc.com', 'bloomberg.com', 'fastcompany.com', 'forbes.com', 'cnbc.com',
+  'businessinsider.com', 'theinformation.com', 'axios.com'
+];
+
+function getDomain(url) {
+  if (!url) return '';
+  try {
+    const u = new URL(url);
+    return u.hostname.replace(/^www\./, '');
+  } catch { return ''; }
+}
+
+function isPaywalled(url) {
+  if (!url) return false;
+  const lower = url.toLowerCase();
+  return PAYWALL_DOMAINS.some(d => lower.includes(d));
+}
+
+function isGeoBlocked(url) {
+  if (!url) return false;
+  const domain = getDomain(url);
+  return GEOBLOCKED_DOMAINS.some(d => domain === d || domain.endsWith('.' + d));
+}
+
+function accessBadges(url) {
+  const badges = [];
+  if (isPaywalled(url)) badges.push('<span class="badge badge-access badge-paywall" title="Платная подписка">Подписка</span>');
+  if (isGeoBlocked(url)) badges.push('<span class="badge badge-access badge-geoblock" title="Доступ из РФ только через VPN">РФ: VPN</span>');
+  return badges.join('');
+}
+
+// Правка 2: плитки-бренды для источников (заглушка когда нет картинки)
+const SOURCE_BRANDS = {
+  'Brand New': { bg: '#E31837', fg: '#ffffff', mark: 'BN' },
+  'UnderConsideration': { bg: '#E31837', fg: '#ffffff', mark: 'BN' },
+  'The Dieline': { bg: '#FFD400', fg: '#1a1a1a', mark: 'TD' },
+  'Dieline': { bg: '#FFD400', fg: '#1a1a1a', mark: 'TD' },
+  'Pentawards': { bg: '#111111', fg: '#C9A961', mark: 'PW' },
+  'Packaging of the World': { bg: '#2B2B2B', fg: '#ffffff', mark: 'POW' },
+  'World Brand Design Society': { bg: '#0F4C81', fg: '#ffffff', mark: 'WBDS' },
+  'World of Brand Design': { bg: '#0F4C81', fg: '#ffffff', mark: 'WBDS' },
+  'Behance': { bg: '#1769FF', fg: '#ffffff', mark: 'Be' },
+  'Topawards Asia': { bg: '#C1272D', fg: '#ffffff', mark: 'TA' },
+  'The Spirits Business': { bg: '#00205B', fg: '#C9A961', mark: 'TSB' },
+  'Drinks International': { bg: '#003865', fg: '#ffffff', mark: 'DI' },
+  'The Drinks Business': { bg: '#7A1F2E', fg: '#ffffff', mark: 'TDB' },
+  'Drinkhacker': { bg: '#2A2A2A', fg: '#F5A623', mark: 'DH' },
+  'Decanter': { bg: '#6E1A2E', fg: '#ffffff', mark: 'Dec' },
+  'VinePair': { bg: '#7A0019', fg: '#ffffff', mark: 'VP' },
+  'Vinepair': { bg: '#7A0019', fg: '#ffffff', mark: 'VP' },
+  'Wine Industry Advisor': { bg: '#4A3B4A', fg: '#ffffff', mark: 'WIA' },
+  'Harpers': { bg: '#1F3A5F', fg: '#ffffff', mark: 'HP' },
+  'Harpers Wine & Spirit': { bg: '#1F3A5F', fg: '#ffffff', mark: 'HP' },
+  'Wine Spectator': { bg: '#8B0000', fg: '#ffffff', mark: 'WS' },
+  'Fast Company': { bg: '#D7443E', fg: '#ffffff', mark: 'FC' },
+  'Adweek': { bg: '#0A0A0A', fg: '#ffffff', mark: 'AW' },
+  'The Drum': { bg: '#E60000', fg: '#ffffff', mark: 'TD' },
+  'Campaign': { bg: '#FF3366', fg: '#ffffff', mark: 'Cmp' },
+  'Campaign Live': { bg: '#FF3366', fg: '#ffffff', mark: 'Cmp' },
+  'Design Week': { bg: '#00A4E4', fg: '#ffffff', mark: 'DW' },
+  "It's Nice That": { bg: '#FF5AF2', fg: '#ffffff', mark: 'INT' },
+  'Creative Review': { bg: '#000000', fg: '#FFD400', mark: 'CR' },
+  'BranD': { bg: '#000000', fg: '#ffffff', mark: 'BD' },
+  'Shift Japan': { bg: '#BC002D', fg: '#ffffff', mark: 'SJ' },
+  'LinkedIn': { bg: '#0A66C2', fg: '#ffffff', mark: 'Li' },
+  'Trend Hunter': { bg: '#00A859', fg: '#ffffff', mark: 'TH' },
+  'Craft Spirits Magazine': { bg: '#3E2723', fg: '#D4AF37', mark: 'CSM' },
+  'Shanken News Daily': { bg: '#1B1B1B', fg: '#D4AF37', mark: 'SND' },
+  'Inc. Magazine': { bg: '#000000', fg: '#ffffff', mark: 'Inc' },
+  'Inc. Magazine / Bloomberg': { bg: '#000000', fg: '#ffffff', mark: 'Inc' },
+  'Bloomberg': { bg: '#000000', fg: '#FA7C1A', mark: 'Blm' },
+  'Xinhua': { bg: '#C00000', fg: '#FFD700', mark: 'XH' },
+  'Athletech News': { bg: '#00897B', fg: '#ffffff', mark: 'ATN' },
+  'Fast Company / Athletech News': { bg: '#D7443E', fg: '#ffffff', mark: 'FC' },
+  'LBBOnline': { bg: '#1A1A1A', fg: '#ffffff', mark: 'LBB' },
+  'LBBOnline / Campaign US': { bg: '#1A1A1A', fg: '#ffffff', mark: 'LBB' },
+  'Designboom': { bg: '#1A1A1A', fg: '#ffffff', mark: 'Db' },
+  'Resident Magazine': { bg: '#8B7355', fg: '#ffffff', mark: 'Res' },
+};
+
+function getSourceBrand(source) {
+  if (!source) return { bg: '#2a2a2a', fg: '#ffffff', mark: '?' };
+  if (SOURCE_BRANDS[source]) return SOURCE_BRANDS[source];
+  // Попробовать первый префикс до «/» или « — »
+  const cleaned = source.split(/[\/—\-|]/)[0].trim();
+  if (SOURCE_BRANDS[cleaned]) return SOURCE_BRANDS[cleaned];
+  // Генерим: берём цвет от хеша и первые буквы
+  let hash = 0;
+  for (let i = 0; i < source.length; i++) hash = (hash * 31 + source.charCodeAt(i)) | 0;
+  const hue = Math.abs(hash) % 360;
+  const mark = source.split(/\s+/).map(w => w[0]).filter(Boolean).slice(0, 3).join('').toUpperCase() || '?';
+  return { bg: `hsl(${hue}, 35%, 22%)`, fg: '#f5f0e6', mark };
+}
+
 const MONTHS_RU = [
   'Январь','Февраль','Март','Апрель','Май','Июнь',
   'Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'
@@ -324,32 +427,40 @@ function renderNewsCardHTML(n) {
 }
 
 function renderNewsPlaceholderHTML(source) {
-  // Упрощённая плашка для новостей: только источник + CTA (заголовок уже в body)
+  // Правка 2: яркая плитка-бренд источника
+  const b = getSourceBrand(source);
   return `
-    <div class="card-media-fallback news-media-fallback">
-      <div class="card-media-fallback-inner">
-        <div class="card-media-fallback-source">${escapeHTML(source || '')}</div>
-        <div class="card-media-fallback-cta">
-          Читать
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
-        </div>
-      </div>
+    <div class="source-tile" style="--tile-bg:${b.bg};--tile-fg:${b.fg}">
+      <div class="source-tile-mark">${escapeHTML(b.mark)}</div>
+      <div class="source-tile-source">${escapeHTML(source || '')}</div>
     </div>
   `;
 }
 
 function renderPlaceholderHTML(title, source) {
-  // Правка #1: плашка-заглушка с названием кейса + источником + "Смотреть кейс"
+  // Правка 2: яркая плитка + название кейса + CTA
+  const b = getSourceBrand(source);
   return `
-    <div class="card-media-fallback">
-      <div class="card-media-fallback-inner">
-        <div class="card-media-fallback-title">${escapeHTML(title || 'Кейс')}</div>
-        ${source ? `<div class="card-media-fallback-source">${escapeHTML(source)}</div>` : ''}
-        <div class="card-media-fallback-cta">
-          Смотреть кейс
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
-        </div>
+    <div class="source-tile source-tile-case" style="--tile-bg:${b.bg};--tile-fg:${b.fg}">
+      <div class="source-tile-mark">${escapeHTML(b.mark)}</div>
+      <div class="source-tile-case-title">${escapeHTML(title || 'Кейс')}</div>
+      ${source ? `<div class="source-tile-source">${escapeHTML(source)}</div>` : ''}
+      <div class="source-tile-cta">
+        Смотреть кейс
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
       </div>
+    </div>
+  `;
+}
+
+function renderPlaceholderLargeHTML(title, source) {
+  // Крупная плашка для детальной модалки (Правка 5)
+  const b = getSourceBrand(source);
+  return `
+    <div class="source-tile source-tile-large" style="--tile-bg:${b.bg};--tile-fg:${b.fg}">
+      <div class="source-tile-mark source-tile-mark-large">${escapeHTML(b.mark)}</div>
+      <div class="source-tile-case-title">${escapeHTML(title || 'Кейс')}</div>
+      ${source ? `<div class="source-tile-source">${escapeHTML(source)}</div>` : ''}
     </div>
   `;
 }
@@ -423,6 +534,9 @@ function renderCardHTML(c) {
     ? `<span class="badge badge-region" title="Азиатский дизайн">Азия</span>`
     : '';
 
+  // Правки 3–4: значки «Подписка» / «РФ: VPN» на карточке
+  const accessRow = accessBadges(c.source_url);
+
   return `
     <article class="card" data-id="${escapeHTML(c.id)}" tabindex="0" role="button" aria-label="${escapeHTML(c.title)}">
       <div class="card-media">
@@ -432,6 +546,7 @@ function renderCardHTML(c) {
           ${regionBadge}
           <span class="badge badge-priority-${c.priority}">${c.priority}</span>
         </div>
+        ${accessRow ? `<div class="card-access-badges">${accessRow}</div>` : ''}
       </div>
       <div class="card-body">
         <div class="card-meta">
@@ -484,9 +599,10 @@ function openDetail(id) {
 
   const inner = $('#detail-inner');
   const catLabel = CATEGORY_LABELS[c.category] || c.category;
+  // Правка 5: крупная hero-картинка/плашка в детали
   const mediaHTML = c.image_url
-    ? `<img src="${escapeHTML(c.image_url)}" alt="${escapeHTML(c.title)}">`
-    : renderPlaceholderHTML(c.title, c.source);
+    ? `<img src="${escapeHTML(c.image_url)}" alt="${escapeHTML(c.title)}" data-detail-fallback="1">`
+    : renderPlaceholderLargeHTML(c.title, c.source);
 
   // Правка #2: also_covered_by — кликабельные ссылки, если есть URL
   let coveredHTML = '';
@@ -524,6 +640,7 @@ function openDetail(id) {
           <span class="badge badge-priority-${c.priority}">Приоритет ${c.priority}</span>
           ${c.subcategory_label ? `<span class="badge badge-category">${escapeHTML(c.subcategory_label)}</span>` : ''}
           ${regionBadge}
+          ${accessBadges(c.source_url)}
         </div>
         <h2 class="detail-title">${escapeHTML(c.title)}</h2>
         ${c.agency ? `<div class="detail-agency">${escapeHTML(c.agency)}</div>` : ''}
@@ -563,6 +680,16 @@ function openDetail(id) {
   modal.showModal();
   inner.querySelector('.detail-close').addEventListener('click', () => modal.close());
   inner.querySelector('[data-close]')?.addEventListener('click', () => modal.close());
+
+  // Замена битых картинок в детальном окне на крупную плашку
+  const detailImg = inner.querySelector('img[data-detail-fallback]');
+  if (detailImg) {
+    detailImg.addEventListener('error', () => {
+      const ph = document.createElement('div');
+      ph.innerHTML = renderPlaceholderLargeHTML(c.title, c.source);
+      detailImg.replaceWith(ph.firstElementChild);
+    }, { once: true });
+  }
 }
 
 // ===== Archive modal =====

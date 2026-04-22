@@ -10,7 +10,14 @@
       "source_url": "https://www.shankennewsdaily.com/2026/04/16/39636/sazerac-reportedly-offers-15-billion-for-brown-forman/",
       "title_ru": "Sazerac предложила $15 млрд за производителя Jack Daniel's — компанию Brown-Forman",
       "summary_ru": "Крупнейший американский дистрибьютор спиртного по объёму Sazerac (бренды Buffalo Trace, Fireball, Svedka) официально предложил $15 млрд (около $32 за акцию) за Brown-Forman — владельца Jack Daniel's и Woodford Reserve. Ранее Brown-Forman вёл переговоры о «слиянии равных» с французским Pernod Ricard. Акции Brown-Forman выросли на 1,3% до $29,59 после публикации Wall Street Journal.",
-      "tags": ["M&A", "виски", "США", "Sazerac", "Brown-Forman", "Jack Daniel's"],
+      "tags": [
+        "M&A",
+        "виски",
+        "США",
+        "Sazerac",
+        "Brown-Forman",
+        "Jack Daniel's"
+      ],
       "image_url": "",
       "priority": "A",
       "type": "ma"
@@ -22,7 +29,14 @@
       "source_url": "https://www.inc.com/leila-sheridan/two-spirits-giants-fighting-jack-daniels/91333218",
       "title_ru": "Семья Brown предпочитает слияние с Pernod Ricard сделке с Sazerac",
       "summary_ru": "По данным Bloomberg, контролирующая семья Brown, владеющая около 50–70% голосующих акций Brown-Forman, отдаёт предпочтение предложению Pernod Ricard — слиянию «равных» (примерно 80% акции / 20% наличными), которое сохранит штаб-квартиру в Луисвилле. Pernod Ricard подтвердил на квартальном звонке с инвесторами: «переговоры продолжаются». Сделка изменила бы расстановку сил на мировом рынке крепкого алкоголя.",
-      "tags": ["M&A", "виски", "Pernod Ricard", "Brown-Forman", "США", "Франция"],
+      "tags": [
+        "M&A",
+        "виски",
+        "Pernod Ricard",
+        "Brown-Forman",
+        "США",
+        "Франция"
+      ],
       "image_url": "",
       "priority": "A",
       "type": "ma"
@@ -34,8 +48,16 @@
       "source_url": "https://vinepair.com/booze-news/duvel-firestone-walker-acquire-stone-brewing/",
       "title_ru": "Firestone Walker и Duvel USA покупают Stone Brewing у Sapporo",
       "summary_ru": "Craft-пивоварня Firestone Walker и Duvel Moortgat USA договорились о приобретении бренда Stone Brewing у Sapporo USA за нераскрытую сумму (Sapporo ожидает убытка ~$80 млн по активам). Firestone Walker получит права на рынки Калифорнии, Техаса и западного побережья, Duvel — восточное направление. Сделка добавит ~280 000 баррелей к производству Duvel, подняв его до почти 900 000 баррелей в год и выведя на 4-е место среди крафтовых пивоварен США.",
-      "tags": ["M&A", "пиво", "крафт", "США", "Stone Brewing", "Duvel", "Firestone Walker"],
-      "image_url": "",
+      "tags": [
+        "M&A",
+        "пиво",
+        "крафт",
+        "США",
+        "Stone Brewing",
+        "Duvel",
+        "Firestone Walker"
+      ],
+      "image_url": "https://vinepair.com/wp-content/uploads/2026/04/booze-news-firestone-duvel-acquire-stone-social.jpg",
       "priority": "A",
       "type": "ma"
     },
@@ -46,8 +68,16 @@
       "source_url": "https://athletechnews.com/gatorade-undergoes-rebrand-plans-to-remove-all-artificial-colors-from-products/",
       "title_ru": "Gatorade запускает масштабный ребрендинг: новая упаковка, отказ от искусственных красителей и система «Advanced Hydration»",
       "summary_ru": "PepsiCo объявила о трансформации Gatorade: обновлённый логотип с сохранением «молнии», новая система маркировки продуктов (Hydrate Better / Faster / Longer), поэтапное удаление искусственных красителей FD&C из всей линейки к осени 2026 года. Бренд целится выйти за рамки спортсменов и охватить повседневные потребности в гидратации. Новый продукт Gatorlyte Longer Lasting выйдет в 2027 году.",
-      "tags": ["ребрендинг", "упаковка", "напитки", "PepsiCo", "Gatorade", "тренды", "безалкогольные напитки"],
-      "image_url": "",
+      "tags": [
+        "ребрендинг",
+        "упаковка",
+        "напитки",
+        "PepsiCo",
+        "Gatorade",
+        "тренды",
+        "безалкогольные напитки"
+      ],
+      "image_url": "https://athletechnews.com/wp-content/uploads/2026/04/Gatorade-Restage_HERO.webp",
       "priority": "A",
       "type": "rebrand"
     },
@@ -58,8 +88,15 @@
       "source_url": "https://www.thespiritsbusiness.com/2026/04/label-5-launches-first-travel-retail-exclusive/",
       "title_ru": "Label 5 выпускает первый эксклюзив для travel retail — 8-летний купажированный Scotch",
       "summary_ru": "Бренд Label 5 (La Martiniquaise-Bardinet), 8-й по продажам Scotch whisky в мире, дебютирует с первым travel-retail-эксклюзивом: 8-летним купажом из бурбонных и хересных бочек (41,2% ABV, RRP £30). Запуск приурочен к выставке TFWA Asia Pacific в Сингапуре (май 2026). Дизайн бутылки обновлён в стилистике «чёрного и золота» для позиционирования в премиум-сегменте. Целевые рынки: Азия и Ближний Восток.",
-      "tags": ["запуск продукта", "виски", "Scotch", "travel retail", "упаковка", "Азия"],
-      "image_url": "",
+      "tags": [
+        "запуск продукта",
+        "виски",
+        "Scotch",
+        "travel retail",
+        "упаковка",
+        "Азия"
+      ],
+      "image_url": "https://www.thespiritsbusiness.com/content/uploads/2026/04/Label-5.jpg",
       "priority": "B",
       "type": "launch"
     },
@@ -70,8 +107,14 @@
       "source_url": "https://www.adweek.com/adweek-wire/tinuiti-names-abbey-klaassen-ceo-succeeding-zach-morrison-to-drive-cmo-growth/",
       "title_ru": "Независимое медиаагентство Tinuiti назначило Эбби Клаасен генеральным директором",
       "summary_ru": "Ведущее независимое медиаагентство Tinuiti объявило о назначении Эбби Клаасен (бывший CEO Dentsu Creative US) генеральным директором — она сменит основателя Зака Моррисона после 21 года работы. Параллельно Брайан Винер назначен председателем совета директоров. Смена руководства происходит на фоне стратегического курса агентства на рост в области ИИ, данных и интегрированных медиакампаний.",
-      "tags": ["назначение", "агентство", "медиа", "CEO", "Tinuiti"],
-      "image_url": "",
+      "tags": [
+        "назначение",
+        "агентство",
+        "медиа",
+        "CEO",
+        "Tinuiti"
+      ],
+      "image_url": "https://static-www.adweek.com/wp-content/uploads/2026/04/Welcome-Abbey-Klaassen_PR-copy-1.jpeg?w=600&h=315&crop=1",
       "priority": "B",
       "type": "appointment"
     },
@@ -82,8 +125,15 @@
       "source_url": "https://www.adweek.com/agencies/anomaly-makes-a-play-for-paris-creative-talent-with-new-office/",
       "title_ru": "Креативное агентство Anomaly открыло парижский офис, переманив топ-менеджеров BETC",
       "summary_ru": "Anomaly (New York, LA, London, Toronto, Berlin, Shanghai) объявило об открытии своего 7-го международного офиса в Париже. CEO нового офиса стал Мехди Бенали, CCO — Оливье Омар (оба пришли из BETC Paris). Агентство нацелено на укрепление присутствия в регионе EMEA и привлечение как глобальных, так и локальных французских клиентов.",
-      "tags": ["назначение", "агентство", "экспансия", "Париж", "Anomaly", "CCO"],
-      "image_url": "",
+      "tags": [
+        "назначение",
+        "агентство",
+        "экспансия",
+        "Париж",
+        "Anomaly",
+        "CCO"
+      ],
+      "image_url": "https://static-www.adweek.com/wp-content/uploads/2026/04/hyundai-world-cup.jpg?w=600&h=315&crop=1",
       "priority": "B",
       "type": "appointment"
     },
@@ -94,8 +144,14 @@
       "source_url": "https://lbbonline.com/news/FCB-Health-New-York-Rebrands-to-Olixir-New-York",
       "title_ru": "FCB Health New York переименовалась в Olixir New York — первый шаг к созданию нового глобального бренда",
       "summary_ru": "Omnicom Health провела ребрендинг FCB Health New York: агентство получило название Olixir New York («эликсир» + «O» от Omnicom). Изменения связаны с поглощением сети FCB материнской компанией Omnicom и отражают курс на интеграцию возможностей ИИ сети Omnicom Health. Руководство — президент Линда Беннет и CCO Кэтлин Нанда — остаётся прежним. Ребрендинг планируется распространить на другие рынки.",
-      "tags": ["ребрендинг", "агентство", "Omnicom", "healthcare", "FCB"],
-      "image_url": "",
+      "tags": [
+        "ребрендинг",
+        "агентство",
+        "Omnicom",
+        "healthcare",
+        "FCB"
+      ],
+      "image_url": "https://d3q27bh1u24u2o.cloudfront.net/news/2026-04/Olixir-New-York.qrU9q7yI.png",
       "priority": "B",
       "type": "rebrand"
     },
@@ -106,7 +162,14 @@
       "source_url": "https://www.campaignlive.com/article/movers-shakers-archer-aoa-utah-office-tourism/1954947",
       "title_ru": "Кадровые перестановки недели: новые CCO в Cactus и Gus, Гуан продвинут в Dentsu Creative Americas",
       "summary_ru": "По данным Campaign Live «Movers & Shakers» от 16 апреля: Cactus повысил Брайана Уотсона до CCO; Gus Agency продвинул Спенсера ЛаВаллée до CCO; Dentsu Creative повысил Фила Гоана до CEO Americas. Archie + Fox назначило Джеймис Сёрл креативным директором. Cactus также объявил о репозиционировании с обновлённой концепцией «helping brands thrive in harsh environments» (девиз с 1990 года).",
-      "tags": ["назначение", "CCO", "агентство", "Dentsu", "Campaign", "кадры"],
+      "tags": [
+        "назначение",
+        "CCO",
+        "агентство",
+        "Dentsu",
+        "Campaign",
+        "кадры"
+      ],
       "image_url": "",
       "priority": "C",
       "type": "appointment"
@@ -118,8 +181,15 @@
       "source_url": "https://www.designboom.com/design/designbooms-ultimate-guide-to-milan-design-week-2026/",
       "title_ru": "Открылась Миланская неделя дизайна 2026: Salone del Mobile 64-й выпуск, 1900+ участников из 32 стран",
       "summary_ru": "21–26 апреля 2026 года в Милане проходит Salone del Mobile (64-е издание) с темой Fuorisalone «Be the Project». Среди дебютов — Salone Raritas (коллекционный дизайн) и масштабные активации Hermès, Gucci (куратор Демна), H&M Home и Loro Piana. Мероприятие объединяет тренды упаковки, брендинга пространств и осязаемого дизайна в противовес цифровому — ключевой контекст для брендинг-индустрии.",
-      "tags": ["тренды", "дизайн", "Милан", "события", "упаковка", "Fuorisalone"],
-      "image_url": "",
+      "tags": [
+        "тренды",
+        "дизайн",
+        "Милан",
+        "события",
+        "упаковка",
+        "Fuorisalone"
+      ],
+      "image_url": "https://www.designboom.com/twitterimages/uploads/2026/03/818x600.jpg",
       "priority": "C",
       "type": "trend"
     }
